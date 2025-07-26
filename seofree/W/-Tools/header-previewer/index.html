@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free HTTP Header Viewer Tool - Analyze and inspect HTTP headers from any URL. Fast, accurate, and SEO-friendly." />
+  <meta name="keywords" content="HTTP Header Viewer, HTTP headers, HTTP response headers, request headers, header analyzer, website headers, inspect headers, online HTTP header checker, SEO tools" />
+  <meta name="author" content="tools.histream.me" />
+  <title>HTTP Header Viewer - Online Header Analyzer Tool</title>
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.7;
+    }
+    h1, h2 {
+      color: #000;
+    }
+    input, button {
+      width: 100%;
+      max-width: 800px;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    #output {
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin-top: 2rem;
+    }
+    .blog {
+      margin-top: 4rem;
+      max-width: 900px;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "HTTP Header Viewer",
+    "url": "https://us.histream.me/-Tools/http-header-viewer",
+    "description": "Analyze and inspect HTTP request and response headers from any website using this free online tool.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <h1>HTTP Header Viewer Tool</h1>
+  <p>Check and inspect HTTP headers from any website URL. This tool helps you understand how your web server responds and what data is passed with requests.</p>
+
+  <form onsubmit="fetchHeaders(event)">
+    <input type="url" id="url" placeholder="Enter website URL (e.g. https://example.com)" required />
+    <button type="submit">View HTTP Headers</button>
+  </form>
+
+  <h2>Response Headers:</h2>
+  <pre id="output">HTTP headers will appear here...</pre>
+
+  <script>
+    async function fetchHeaders(event) {
+      event.preventDefault();
+      const url = document.getElementById('url').value;
+      try {
+        const response = await fetch("https://api.allorigins.win/raw?url=" + encodeURIComponent(url));
+        const headers = [...response.headers.entries()].map(([key, value]) => key + ": " + value).join("\\n");
+        document.getElementById("output").textContent = headers || "No headers found.";
+      } catch (err) {
+        document.getElementById("output").textContent = "Error fetching headers: " + err;
+      }
+    }
+  </script>
+
+  <div class="blog">
+    <h2>Understanding HTTP Headers</h2>
+    <p>HTTP headers are key-value pairs sent between the client and server during a request or response. They play a crucial role in communication, authentication, caching, content-type declarations, and more.</p>
+
+    <h2>Why Use an HTTP Header Viewer?</h2>
+    <p>Inspecting HTTP headers is important for debugging server configurations, understanding how APIs behave, ensuring SEO-friendly setups, analyzing cookies, and implementing security headers like X-Frame-Options and Content-Security-Policy.</p>
+
+    <h2>Common HTTP Headers</h2>
+    <ul>
+      <li><strong>Content-Type:</strong> Specifies the media type of the resource</li>
+      <li><strong>Cache-Control:</strong> Controls how caching is handled</li>
+      <li><strong>Server:</strong> Identifies the server software</li>
+      <li><strong>Set-Cookie:</strong> Used to set cookies in the user's browser</li>
+      <li><strong>X-Frame-Options:</strong> Provides clickjacking protection</li>
+    </ul>
+
+    <h2>SEO Implications of HTTP Headers</h2>
+    <p>Headers can affect your site's SEO performance. For example, correct cache headers help improve speed, while proper redirection via 301/302 status codes ensures search engines index the correct URL.</p>
+
+    <h2>Related Keywords:</h2>
+    <p>http header viewer, analyze headers, response headers online, request headers viewer, inspect website headers, view http headers, free header checker, curl headers online, seo header analyzer</p>
+
+    <h2>Conclusion</h2>
+    <p>Our free HTTP Header Viewer provides you with real-time insights into what headers your site or server sends. It's a must-have tool for developers, SEOs, sysadmins, and marketers who want a deep understanding of website performance and behavior.</p>
+
+    <p><small>© 2025 HTTP Header Viewer by tools.histream.me — Powered by OpenAI</small></p>
+  </div>
+
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>
+"""
+
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Readability Score Checker (Flesch) Tool - Free Online Analyzer</title>
+  <meta name="description" content="Check the readability score of your content using the Flesch Reading Ease formula. Analyze how easy your text is to read with our free online tool." />
+  <meta name="keywords" content="Readability Score Checker, Flesch Reading Ease, readability calculator, SEO readability tool, free readability checker, online content analyzer, Flesch readability test, writing grade level, readability assessment" />
+  <meta name="author" content="HiStream Tools" />
+  <link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+  <style>
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem;
+      margin: 0;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 1rem;
+      border: 1px solid #000;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    button:hover {
+      background: #444;
+    }
+    .result {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .blog {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .blog h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Readability Score Checker (Flesch) Tool",
+    "description": "Free online tool to check your content's readability score using the Flesch Reading Ease formula. Perfect for writers, bloggers, SEO experts, and content marketers.",
+    "url": "https://histream.me/tools/readability-checker",
+    "image": "https://histream.me/favicons/tools.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "HiStream Tools"
+    }
+  }
+  </script>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <h1>Readability Score Checker (Flesch Reading Ease)</h1>
+  <textarea id="textInput" placeholder="Paste or write your text here..."></textarea>
+  <button onclick="calculateReadability()">Check Readability</button>
+  <div class="result" id="result">Your readability score will appear here.</div>
+
+  <div class="blog">
+    <h2>What is the Flesch Reading Ease Score?</h2>
+    <p>The Flesch Reading Ease Score is a readability test designed to indicate how difficult a passage in English is to understand. The higher the score, the easier it is to comprehend. This tool helps content creators ensure their writing is accessible to a wider audience, including students, web readers, and customers.</p>
+
+    <h2>Why Readability Matters for SEO</h2>
+    <p>Search engines like Google consider readability when ranking web pages. Content that is easy to read often performs better in search rankings. By optimizing your text for readability, you improve user experience, reduce bounce rates, and increase the likelihood of content sharing and backlinks.</p>
+
+    <h2>How to Interpret the Score</h2>
+    <ul>
+      <li><strong>90–100:</strong> Very Easy (5th grade)</li>
+      <li><strong>80–90:</strong> Easy (6th grade)</li>
+      <li><strong>70–80:</strong> Fairly Easy</li>
+      <li><strong>60–70:</strong> Standard</li>
+      <li><strong>50–60:</strong> Fairly Difficult</li>
+      <li><strong>30–50:</strong> Difficult</li>
+      <li><strong>0–30:</strong> Very Difficult</li>
+    </ul>
+
+    <h2>Optimize Your Content for All Readers</h2>
+    <p>Using the Readability Score Checker tool, you can edit and revise your content to meet the needs of your target audience. Writers, bloggers, marketers, and educators all benefit from clarity and simplicity in writing. Remember, great content is not only informative but also accessible.</p>
+
+    <h2>Best Practices to Improve Readability</h2>
+    <p>Shorten your sentences, use simple words, avoid jargon, and break up long paragraphs. Use headings and bullet points to structure your content. This helps users and search engines better understand the information.</p>
+
+    <h2>Other SEO Benefits of Readable Content</h2>
+    <p>Readable content increases dwell time, lowers bounce rate, and improves engagement — all factors that contribute to higher search engine rankings. High-quality, scannable text enhances UX and boosts conversions.</p>
+
+    <h2>Use Our Tool Anywhere, Anytime</h2>
+    <p>Our tool works on all modern browsers and is 100% free. No sign-up required. Whether you're creating a blog post, academic article, ad copy, or website landing page, this readability analyzer will help make your content shine.</p>
+  </div>
+
+  <script>
+    function calculateReadability() {
+      const text = document.getElementById("textInput").value;
+      const sentences = text.split(/[.!?]+/).filter(Boolean).length;
+      const words = text.match(/\b\w+\b/g) || [];
+      const syllables = words.reduce((total, word) => total + countSyllables(word), 0);
+      const wordCount = words.length;
+
+      if (sentences === 0 || wordCount === 0) {
+        document.getElementById("result").innerText = "Please enter complete sentences.";
+        return;
+      }
+
+      const flesch = 206.835 - 1.015 * (wordCount / sentences) - 84.6 * (syllables / wordCount);
+      document.getElementById("result").innerText = `Flesch Reading Ease Score: ${flesch.toFixed(2)}`;
+    }
+
+    function countSyllables(word) {
+      word = word.toLowerCase();
+      if (word.length <= 3) return 1;
+      word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
+      word = word.replace(/^y/, '');
+      const syllables = word.match(/[aeiouy]{1,2}/g);
+      return syllables ? syllables.length : 1;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

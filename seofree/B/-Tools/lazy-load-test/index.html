@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lazy Load Test Tool - Optimize Image Loading & Web Performance</title>
+<meta name="description" content="Test lazy loading for images on your website with our Lazy Load Test Tool. Improve your site speed and SEO by optimizing image loading behavior." />
+<meta name="keywords" content="Lazy Load Test Tool, lazy loading images, image optimization, website performance, SEO optimization, improve page speed, defer image loading, web performance testing, Google Core Web Vitals" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+<style>
+  body {
+    margin: 0; padding: 2rem; background: #fff; color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.07);
+  }
+  h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #fafafa;
+    color: #000;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.5rem;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  .images-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .images-preview img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    object-fit: contain;
+  }
+  .blog-section {
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #111;
+  }
+  .blog-section h2 {
+    margin-top: 2rem;
+    font-weight: 700;
+  }
+  .blog-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container" itemprop="mainContentOfPage">
+    <h1>Lazy Load Test Tool</h1>
+    <label for="image-urls">Enter Image URLs (separated by commas):</label>
+    <input type="text" id="image-urls" placeholder="https://example.com/image1.jpg, https://example.com/image2.png" aria-label="Image URLs input" />
+    <button onclick="loadImages()">Test Lazy Loading</button>
+
+    <div class="images-preview" id="images-preview" aria-live="polite" aria-relevant="additions"></div>
+  </div>
+
+  <div class="blog-section" itemprop="articleBody">
+    <h2>What is Lazy Loading and Why It Matters?</h2>
+    <p>Lazy loading is a powerful technique that delays loading images and other resources on a webpage until they are needed—typically when they enter the viewport. This approach improves initial page load times, reduces bandwidth usage, and significantly enhances user experience, especially on mobile devices and slow connections.</p>
+    <p>By deferring the loading of off-screen images, lazy loading helps websites achieve better scores in Google’s Core Web Vitals, directly impacting SEO rankings. Faster loading pages reduce bounce rates and increase engagement, which are crucial for any website's success.</p>
+    <p>Implementing lazy loading can be done using native browser features like the <code>loading="lazy"</code> attribute on <code>&lt;img&gt;</code> tags, or via JavaScript libraries for older browsers or more complex scenarios. Testing and verifying lazy load behavior is essential to ensure your images load correctly and your site performs optimally.</p>
+
+    <h2>How to Use the Lazy Load Test Tool?</h2>
+    <p>Simply enter the URLs of the images you want to test in the input box above, separated by commas. When you click the "Test Lazy Loading" button, the tool dynamically inserts these images into the page using the <code>loading="lazy"</code> attribute. Scroll down to see if images load as they come into view. This helps validate your lazy loading implementation or preview how lazy loading affects your images.</p>
+
+    <h2>Benefits of Lazy Loading</h2>
+    <ul>
+      <li><strong>Improved Page Load Speed:</strong> Loads only the images that are needed immediately.</li>
+      <li><strong>Reduced Bandwidth:</strong> Saves data by not loading images users may never see.</li>
+      <li><strong>Better SEO Performance:</strong> Google rewards faster-loading sites with higher rankings.</li>
+      <li><strong>Enhanced User Experience:</strong> Smooth scrolling and faster interactivity.</li>
+    </ul>
+
+    <h2>SEO Keywords for This Page</h2>
+    <p>Lazy Load Test Tool, lazy loading images test, image lazy loading checker, website speed optimization, SEO optimization, improve page speed, defer image loading, test lazy loading online, web performance testing, Core Web Vitals, image optimization, SEO tools, faster website loading.</p>
+
+    <h2>Advanced Tips for Lazy Loading</h2>
+    <p>Besides native lazy loading, consider these techniques to further enhance your site:</p>
+    <ul>
+      <li>Use low-quality image placeholders (LQIP) or blurred placeholders for smoother visual experience.</li>
+      <li>Lazy load other resources such as videos, iframes, and scripts where possible.</li>
+      <li>Combine lazy loading with caching strategies to minimize repeated requests.</li>
+      <li>Test on multiple devices and browsers to ensure compatibility.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Lazy loading is an essential strategy for modern web development, helping sites load faster and rank higher in search engines. Use this tool regularly to validate your lazy load implementation and keep your website performing at its best. Continual optimization is key to staying competitive in today’s digital landscape.</p>
+
+    <p>For developers, marketers, and SEO professionals alike, mastering lazy loading techniques will ensure your website delivers the best possible experience to visitors while maintaining high search engine visibility.</p>
+  </div>
+
+  <script>
+    function loadImages() {
+      const container = document.getElementById('images-preview');
+      const input = document.getElementById('image-urls').value.trim();
+      container.innerHTML = '';
+      if (!input) {
+        container.textContent = 'Please enter at least one image URL.';
+        return;
+      }
+      const urls = input.split(',').map(url => url.trim()).filter(url => url);
+      if (urls.length === 0) {
+        container.textContent = 'Please enter valid image URLs separated by commas.';
+        return;
+      }
+
+      urls.forEach(url => {
+        const img = document.createElement('img');
+        img.setAttribute('src', url);
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('alt', 'Lazy loaded test image');
+        img.onerror = () => { img.style.border = '2px solid red'; img.alt = 'Failed to load image'; }
+        container.appendChild(img);
+      });
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

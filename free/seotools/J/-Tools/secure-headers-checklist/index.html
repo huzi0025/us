@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="utf-8">
+  <title>Secure Headers Checklist | Free HTTP Security Headers Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Run our free Secure Headers Checklist tool to audit your website's HTTP response headers for best‑practice web security. Instantly test Content‑Security‑Policy, HSTS, X‑Frame‑Options, and more.">
+  <meta name="keywords" content="Secure Headers Checklist, HTTP security headers, Content Security Policy checker, HSTS analyzer, Strict‑Transport‑Security, X‑Frame‑Options, X‑Content‑Type‑Options, Referrer‑Policy, Permissions‑Policy, Expect‑CT, web application security, OWASP, free security tools, website hardening, HTTP header scanner, CSP evaluator, mitigate XSS, clickjacking prevention, HTTPS best practices, security header best practices, secure web design, SEO security compliance, data protection, GDPR security headers">
+  <link rel="icon" type="image/png" href="https://us.histream.me/favicons/tools.png">
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <!-- Schema.org structured data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Secure Headers Checklist",
+    "operatingSystem": "All",
+    "applicationCategory": "DeveloperApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "HiStream Tools"
+    },
+    "url": "https://us.histream.me/-Tools/secure-headers-checklist"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #0077ff;
+      --border: #e0e0e0;
+      --radius: 0.5rem;
+      --shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    .tool-card {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+    h1, h2, h3 { margin-top: 0; font-weight: 700; }
+    label { font-weight: 600; }
+    input[type="url"], textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin: 0.5rem 0 1rem 0;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: var(--radius);
+      background: var(--accent);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    th, td {
+      padding: 0.75rem 0.5rem;
+      border: 1px solid var(--border);
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    th { background: #f0f0f0; }
+    .status {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius);
+      color: #fff;
+      font-size: 0.8rem;
+    }
+    .ok { background: #28a745; }
+    .warn { background: #ffc107; color: #000; }
+    .missing { background: #dc3545; }
+
+    /* Blog styles */
+    #blog { margin-top: 4rem; }
+    #blog p { margin-bottom: 1.2rem; text-align: justify; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container">
+
+    <section class="tool-card">
+      <h1>Secure Headers Checklist</h1>
+      <p>Quickly audit your HTTP response headers for <strong>OWASP‑recommended</strong> security hardening. Enter a URL (fetches headers via a CORS proxy) or paste raw headers below.</p>
+
+      <label for="siteUrl">Website&nbsp;URL</label>
+      <input type="url" id="siteUrl" placeholder="https://example.com">
+      <button id="fetchBtn">Fetch&nbsp;Headers</button>
+
+      <label for="headerInput">Or&nbsp;Paste&nbsp;Response&nbsp;Headers</label>
+      <textarea id="headerInput" placeholder="Content-Security-Policy: default-src 'self';\nStrict-Transport-Security: max-age=63072000; includeSubDomains; preload\n..."></textarea>
+      <button id="analyzeBtn">Analyze&nbsp;Headers</button>
+
+      <div id="results"></div>
+    </section>
+
+    <section id="blog">
+      <h2>Why Secure Headers Matter for Web Application Security</h2>
+      <p>Cyber‑threat landscapes evolve daily, and attackers constantly probe for misconfigurations. HTTP <strong>Secure Headers</strong> provide an extra layer of defense by instructing browsers to enforce security policies. From mitigating XSS with <em>Content‑Security‑Policy (CSP)</em> to blocking clickjacking via <em>X‑Frame‑Options</em>, these headers transform passive webpages into active participants in your security posture.</p>
+      <p>Implementing security headers is among the most cost‑effective steps outlined by <strong>OWASP Top&nbsp;10</strong> and <em>ASVS</em>. Yet, many sites overlook them—often due to legacy stacks or misunderstanding of impact. Our Secure Headers Checklist bridges this gap, quickly surfacing missing headers and misconfigured directives for rapid remediation.</p>
+      <h3>Core HTTP Security Headers &amp; Best Practices</h3>
+      <ul>
+        <li><strong>Content‑Security‑Policy (CSP):</strong> Controls allowed sources for scripts, styles, images, and more, blocking injection attacks.</li>
+        <li><strong>Strict‑Transport‑Security (HSTS):</strong> Forces HTTPS, preventing protocol downgrade attacks and cookie hijacking.</li>
+        <li><strong>X‑Content‑Type‑Options:</strong> Stops MIME‑sniffing, reducing risk of drive‑by downloads and content‑type confusion.</li>
+        <li><strong>X‑Frame‑Options / frame‑ancestors in CSP:</strong> Defends against clickjacking by restricting framing.</li>
+        <li><strong>Referrer‑Policy:</strong> Controls how much referrer information is sent, balancing privacy and analytics.</li>
+        <li><strong>Permissions‑Policy (Feature‑Policy):</strong> Grants or denies use of powerful browser features like camera, geolocation, and USB.</li>
+        <li><strong>Expect‑CT / Certificate Transparency:</strong> Helps detect mis‑issued TLS certificates and enforce CT logging.</li>
+        <li><strong>Cross‑Origin‑Embedder‑Policy (COEP):</strong> Enhances isolation to enable advanced APIs like SharedArrayBuffer.</li>
+      </ul>
+      <p>While legacy headers such as <em>X‑XSS‑Protection</em> are deprecated, they remain in widespread use; however, modern browsers ignore them in favor of CSP. Tailor your header set to your browser support matrix.</p>
+      <h3>SEO &amp; Compliance Benefits</h3>
+      <p>Security headers indirectly influence <strong>SEO</strong>. Secure sites enjoy higher trust signals, faster indexing via <em>https://</em>, and fewer intrusive interstitial warnings. Additionally, data regulations—<strong>GDPR, CCPA, HIPAA</strong>—mandate reasonable security controls; headers form part of the demonstrable safeguards in compliance audits.</p>
+      <h3>Common Pitfalls &amp; How to Avoid Them</h3>
+      <p>Overly strict CSP directives can break third‑party scripts or CDN assets. Adopt a <em>report‑only</em> mode first, monitor violation reports, then migrate to enforcing mode. For HSTS, double‑check sub‑domain coverage and preload eligibility to lock in HTTPS.</p>
+      <h3>Frequently Asked Questions</h3>
+      <p><strong>Q:</strong> How often should I review my security headers?<br>
+      <strong>A:</strong> Review them quarterly, after major framework upgrades, or when adding significant third‑party integrations.</p>
+      <p><strong>Q:</strong> Can I automate header scans in CI/CD?<br>
+      <strong>A:</strong> Yes, integrate tools like <code>curl</code> with <code>grep</code>, <code>security‑headers.io</code> APIs, or open‑source scanners in your pipeline.</p>
+      <h3>Extended Guide to Security Headers (Deep Dive)</h3>
+      <p>HTTP security headers provide <em>declarative security</em>. Unlike runtime patching, they harden applications at the browser boundary. For instance, CSP’s <code>script‑src 'self'</code> directive blocks inline scripts, neutralizing many XSS vectors even if an attacker succeeds in injecting JavaScript. Combining CSP with <code>nonce</code> or <code>hash</code> whitelists further tightens execution privileges.</p>
+      <p>Another often overlooked header, <em>Cross‑Origin‑Opener‑Policy (COOP)</em>, prevents tab‑nabbing by isolating browsing contexts. Paired with COEP, it activates <strong>Site Isolation</strong> thresholds in Chromium‑based browsers, shielding sensitive data from speculative execution attacks.</p>
+      <p>From a performance standpoint, headers like HSTS reduce round‑trips by eliminating initial HTTP calls, shaving latency and improving <strong>Core Web Vitals</strong>. This performance boost can enhance search rankings and conversion rates.</p>
+      <p>As privacy trends escalate, browsers deprecate third‑party cookies and tighten cross‑origin data sharing. Headers such as <em>SameSite</em> cookies, though technically within <code>Set‑Cookie</code>, demonstrate how header hygiene intersects with privacy and tracking strategies.</p>
+      <p>To keep pace, engineering teams should embed header checks into their <em>Definition of Done</em>. Include linters or middleware that enforce required headers and reject builds lacking them. Adding our Secure Headers Checklist to your toolkit accelerates these guardrails.</p>
+      <p>Ultimately, robust security headers serve as the first responders against emerging threats. Adopt the mindset that each line of code introduces risk; headers, when configured correctly, offset that risk by instructing browsers to apply safest defaults. Audit continuously, iterate carefully, and stay informed of evolving standards.</p>
+    </section>
+
+  </main>
+
+<script>
+  const headersToCheck = [
+    {name: 'Content-Security-Policy', alias: 'CSP'},
+    {name: 'Strict-Transport-Security', alias: 'HSTS'},
+    {name: 'X-Content-Type-Options', alias: 'NoSniff'},
+    {name: 'X-Frame-Options', alias: 'FrameGuard'},
+    {name: 'Referrer-Policy', alias: 'Referrer'},
+    {name: 'Permissions-Policy', alias: 'PermPolicy'},
+    {name: 'Expect-CT', alias: 'ExpectCT'},
+    {name: 'Cross-Origin-Embedder-Policy', alias: 'COEP'}
+  ];
+
+  function parseHeaders(raw) {
+    const lines = raw.split(/\r?\n/);
+    const map = {};
+    lines.forEach(line => {
+      const idx = line.indexOf(':');
+      if (idx > -1) {
+        const key = line.slice(0, idx).trim();
+        const val = line.slice(idx + 1).trim();
+        map[key.toLowerCase()] = val;
+      }
+    });
+    return map;
+  }
+
+  function renderResults(map) {
+    let html = '<table><thead><tr><th>Header</th><th>Status</th><th>Value</th></tr></thead><tbody>';
+    headersToCheck.forEach(h => {
+      const val = map[h.name.toLowerCase()];
+      let statusCls = 'missing';
+      let label = 'Missing';
+      if (val) {
+        statusCls = /^default-src/.test(val) || val.length > 0 ? 'ok' : 'warn';
+        label = statusCls === 'ok' ? 'Present' : 'Check';
+      }
+      html += `<tr><td>${h.name}</td><td><span class="status ${statusCls}">${label}</span></td><td>${val ? val.replace(/</g,'&lt;') : '-'}</td></tr>`;
+    });
+    html += '</tbody></table>';
+    document.getElementById('results').innerHTML = html;
+  }
+
+  async function fetchHeaders(url) {
+    try {
+      const proxy = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
+      const res = await fetch(proxy, {method: 'GET'});
+      const txt = [...res.headers.entries()].map(([k,v]) => `${k}: ${v}`).join('\n');
+      renderResults(parseHeaders(txt));
+      document.getElementById('headerInput').value = txt;
+    } catch (e) {
+      alert('Failed to fetch headers. You may paste them manually instead.');
+    }
+  }
+
+  document.getElementById('analyzeBtn').addEventListener('click', () => {
+    const raw = document.getElementById('headerInput').value.trim();
+    if (!raw) {
+      alert('Please paste response headers first.');
+      return;
+    }
+    renderResults(parseHeaders(raw));
+  });
+
+  document.getElementById('fetchBtn').addEventListener('click', () => {
+    const url = document.getElementById('siteUrl').value.trim();
+    if (!url) {
+      alert('Enter a valid URL.');
+      return;
+    }
+    fetchHeaders(url);
+  });
+</script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

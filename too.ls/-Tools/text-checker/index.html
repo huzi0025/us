@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Image Alt Text Checker - SEO Accessibility Tool</title>
+<meta name="description" content="Check your images' alt text for SEO and accessibility compliance. Identify missing or empty alt attributes to improve your website's search engine optimization and user experience." />
+<meta name="keywords" content="Image Alt Text Checker, Alt Attribute Checker, SEO Image Tool, Accessibility Checker, Missing Alt Text, SEO Tools, Image SEO, Alt Text Validator, Web Accessibility" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image Alt Text Checker",
+  "url": "https://histream.me/-Tools/text-checker",
+  "applicationCategory": "SEO Tool",
+  "description": "Tool to verify and analyze alt text presence on website images for SEO and accessibility improvement.",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript"
+}
+</script>
+<style>
+  body {
+    margin: 0; padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 0.2em;
+  }
+  p.description {
+    max-width: 720px;
+    margin: 0 auto 2.5em;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  .tool-container {
+    max-width: 720px;
+    margin: 0 auto 60px;
+    padding: 30px 30px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    background: #fafafa;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  }
+  label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.8em;
+  }
+  textarea {
+    width: 100%;
+    min-height: 140px;
+    font-family: Consolas, monospace;
+    font-size: 1.05rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 14px 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  textarea:focus {
+    border-color: #0078d7;
+    outline-offset: 2px;
+  }
+  button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 16px 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  pre#result {
+    margin-top: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px 26px;
+    max-height: 360px;
+    overflow-y: auto;
+    font-family: Consolas, monospace;
+    font-size: 1rem;
+    color: #111;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    user-select: text;
+  }
+  .blog-content {
+    max-width: 900px;
+    margin: 60px auto 100px;
+    font-size: 1.125rem;
+    color: #111;
+  }
+  .blog-content h2 {
+    font-size: 1.85rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+  }
+  .blog-content p, .blog-content ul {
+    margin-bottom: 1.3em;
+    line-height: 1.75;
+  }
+  .blog-content ul {
+    padding-left: 1.5em;
+  }
+  .blog-content ul li {
+    margin-bottom: 0.9em;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="tool-container" role="main" aria-label="Image Alt Text Checker Tool">
+  <h1>Image Alt Text Checker</h1>
+  <p class="description">Paste your website’s HTML or image tags below to check for missing or empty <code>alt</code> attributes on images. Improve your SEO and accessibility by ensuring all images have meaningful alt text.</p>
+  
+  <label for="htmlInput">Paste HTML containing &lt;img&gt; tags here:</label>
+  <textarea id="htmlInput" placeholder='&lt;img src="image1.jpg" alt="Description of image"&gt;&#10;&lt;img src="image2.jpg"&gt;&#10;&lt;img src="image3.png" alt=""&gt;'></textarea>
+  <button onclick="checkAltTexts()">Check Alt Texts</button>
+
+  <pre id="result" aria-live="polite" aria-atomic="true" tabindex="0" aria-label="Alt text check results"></pre>
+</div>
+
+<section class="blog-content" aria-label="Image Alt Text Checker SEO blog content">
+  <h2>Why Image Alt Text Is Crucial for SEO and Accessibility</h2>
+  <p>Alt text (alternative text) is used to describe images on your website to both search engines and users who rely on screen readers. Proper alt attributes improve your website's search engine optimization by giving context to images and enhance accessibility for visually impaired users.</p>
+
+  <h2>How Missing or Empty Alt Text Affects Your Website</h2>
+  <p>Images without alt attributes or with empty alt text may be ignored by search engines, potentially reducing your site's SEO effectiveness. Moreover, accessibility tools will not be able to convey meaningful information to users, leading to a poor user experience.</p>
+
+  <h2>Features of This Image Alt Text Checker Tool</h2>
+  <ul>
+    <li>Detects images with missing <code>alt</code> attributes.</li>
+    <li>Identifies images with empty alt text (alt="").</li>
+    <li>Displays summary and detailed results for quick analysis.</li>
+    <li>Helps webmasters and SEO specialists improve image SEO and accessibility.</li>
+    <li>Simple copy-paste interface for quick checks.</li>
+  </ul>
+
+  <h2>Best Practices for Writing Image Alt Text</h2>
+  <ul>
+    <li>Describe the image content clearly and concisely.</li>
+    <li>Keep alt text relevant to the image and surrounding content.</li>
+    <li>Avoid keyword stuffing in alt attributes.</li>
+    <li>If the image is purely decorative, use empty alt text <code>alt=""</code> to indicate that.</li>
+    <li>Use alt text to improve accessibility for screen reader users.</li>
+  </ul>
+
+  <h2>SEO Keywords Related to Image Alt Text Checker</h2>
+  <p>Image alt text checker, alt attribute checker, SEO image tool, image accessibility checker, missing alt text, image SEO, alt text validation, web accessibility, alt text analyzer, SEO tools for images.</p>
+
+  <h2>How to Use This Tool Effectively</h2>
+  <p>Paste the HTML snippet containing &lt;img&gt; tags from your website into the textarea above, then click "Check Alt Texts". The tool will analyze each image tag and display whether the alt attribute is present, missing, or empty. Use this information to update your website’s images and improve SEO and accessibility.</p>
+
+  <h2>Why Accessibility Matters in SEO</h2>
+  <p>Search engines increasingly prioritize websites that offer excellent user experience, including accessibility. Proper use of alt text ensures your content is inclusive and can be properly indexed, improving overall site performance in search rankings.</p>
+
+  <h2>Additional Tips</h2>
+  <ul>
+    <li>Regularly audit your website images to maintain alt text quality.</li>
+    <li>Use automated tools along with manual reviews for best results.</li>
+    <li>Combine alt text optimization with other SEO practices like page speed, structured data, and mobile friendliness.</li>
+  </ul>
+
+  <h2>About This Tool</h2>
+  <p>This Image Alt Text Checker is a free online SEO and accessibility tool designed for webmasters, developers, and SEO specialists. It provides a fast, reliable way to identify alt text issues and enhance your website’s search engine performance and user accessibility.</p>
+
+  <p>Improve your website’s SEO and user experience by ensuring all images have appropriate alt text with this handy tool!</p>
+</section>
+
+<script>
+  function checkAltTexts() {
+    const input = document.getElementById('htmlInput').value;
+    const resultElem = document.getElementById('result');
+    resultElem.textContent = '';
+    if (!input.trim()) {
+      resultElem.textContent = 'Please paste HTML content containing <img> tags.';
+      return;
+    }
+
+    // Use DOMParser to parse input HTML safely
+    let parser = new DOMParser();
+    let doc = parser.parseFromString(input, 'text/html');
+    let images = doc.querySelectorAll('img');
+
+    if (images.length === 0) {
+      resultElem.textContent = 'No <img> tags found in the input.';
+      return;
+    }
+
+    let output = '';
+    let missingAlt = [];
+    let emptyAlt = [];
+    let validAlt = [];
+
+    images.forEach((img, idx) => {
+      let src = img.getAttribute('src') || '(no src attribute)';
+      let alt = img.getAttribute('alt');
+
+      if (alt === null) {
+        missingAlt.push(src);
+        output += `Image ${idx + 1} (src: ${src}) - ALT attribute is MISSING.\n`;
+      } else if (alt.trim() === '') {
+        emptyAlt.push(src);
+        output += `Image ${idx + 1} (src: ${src}) - ALT attribute is EMPTY.\n`;
+      } else {
+        validAlt.push({src, alt});
+        output += `Image ${idx + 1} (src: ${src}) - ALT attribute present: "${alt}"\n`;
+      }
+    });
+
+    output += '\nSummary:\n';
+    output += `Total images: ${images.length}\n`;
+    output += `Missing alt attribute: ${missingAlt.length}\n`;
+    output += `Empty alt attribute: ${emptyAlt.length}\n`;
+    output += `Valid alt attribute: ${validAlt.length}\n`;
+
+    resultElem.textContent = output;
+    resultElem.focus();
+  }
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

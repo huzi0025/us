@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A/B Test Split Tool - Calculate Optimal Traffic Split for Experiments</title>
+<meta name="description" content="Use our A/B Test Split Tool to easily calculate the optimal traffic split for your experiments and improve conversion rates. Perfect for marketers, product managers, and growth hackers." />
+<meta name="keywords" content="A/B Test Split Tool, A/B testing calculator, traffic split calculator, experiment traffic allocation, conversion optimization, split test tool, marketing experiment tool, statistical split calculator, A/B test design, growth hacking tool" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+<style>
+  /* Reset and base */
+  body {
+    margin: 0; padding: 2rem;
+    background: #fff; color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px 35px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+  label {
+    flex: 0 0 140px;
+    font-weight: 600;
+  }
+  input[type="number"] {
+    flex: 1 1 100px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background: #fafafa;
+    color: #000;
+    outline-offset: 2px;
+    min-width: 80px;
+  }
+  input[type="number"]:focus {
+    border-color: #000;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  #result {
+    margin-top: 1.5rem;
+    padding: 18px 20px;
+    border-radius: 10px;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+    min-height: 56px;
+  }
+  .blog-section {
+    margin-top: 4rem;
+    font-size: 1rem;
+    color: #111;
+  }
+  .blog-section h2 {
+    margin-top: 2.5rem;
+    font-weight: 700;
+  }
+  .blog-section p {
+    margin-bottom: 1.3rem;
+    text-align: justify;
+  }
+  .blog-section ul {
+    margin-left: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 480px) {
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    label {
+      flex: none;
+      margin-bottom: 6px;
+    }
+    input[type="number"] {
+      flex: none;
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container" itemprop="mainContentOfPage">
+    <h1>A/B Test Split Tool</h1>
+    <form id="abTestForm" aria-label="A/B Test Split Calculator">
+      <label for="totalVisitors">Total Visitors</label>
+      <input
+        type="number"
+        id="totalVisitors"
+        name="totalVisitors"
+        min="1"
+        step="1"
+        placeholder="1000"
+        required
+        aria-describedby="totalVisitorsHelp"
+      />
+      
+      <label for="variantPercent">Variant A %</label>
+      <input
+        type="number"
+        id="variantPercent"
+        name="variantPercent"
+        min="0"
+        max="100"
+        step="0.1"
+        placeholder="50"
+        required
+        aria-describedby="variantPercentHelp"
+      />
+      
+      <button type="submit" aria-label="Calculate Split">Calculate Split</button>
+    </form>
+    
+    <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+  </main>
+
+  <section class="blog-section" itemprop="articleBody">
+    <h2>What is A/B Testing?</h2>
+    <p>A/B testing, also called split testing, is a method used to compare two versions of a webpage or app against each other to determine which one performs better. It is widely used in marketing, product development, and UX design to make data-driven decisions that increase conversions and improve user experience.</p>
+
+    <h2>Why Use an A/B Test Split Tool?</h2>
+    <p>Determining how to split your website traffic between different variants is essential for obtaining statistically valid results while minimizing lost revenue. This tool helps you calculate the optimal number of visitors for each variant based on your total traffic and desired split percentages.</p>
+
+    <h2>How to Use This Tool</h2>
+    <ul>
+      <li>Enter the total number of visitors expected for your experiment.</li>
+      <li>Specify the percentage of traffic you want to assign to Variant A (the rest will go to Variant B).</li>
+      <li>Click the “Calculate Split” button to see the exact visitor count per variant.</li>
+    </ul>
+
+    <h2>Benefits of Proper Traffic Splitting</h2>
+    <ul>
+      <li>Ensures statistically significant results by balancing sample sizes.</li>
+      <li>Prevents skewed data by evenly distributing visitors.</li>
+      <li>Helps avoid lost conversions by optimizing test groups.</li>
+      <li>Enables faster experiment cycles by maximizing data utility.</li>
+    </ul>
+
+    <h2>Advanced Tips for A/B Testing</h2>
+    <p>Successful A/B testing goes beyond traffic splitting. Consider these tips:</p>
+    <ul>
+      <li>Use hypothesis-driven tests focusing on specific metrics.</li>
+      <li>Run tests for an appropriate duration to capture variability.</li>
+      <li>Segment audiences to understand different user behaviors.</li>
+      <li>Monitor for statistical significance and avoid premature decisions.</li>
+      <li>Implement robust tracking and analytics tools.</li>
+    </ul>
+
+    <h2>SEO Keywords for A/B Test Split Tool</h2>
+    <p>A/B Test Split Tool, A/B testing calculator, traffic split calculator, conversion optimization, split test design, marketing experiment tool, statistical split calculator, growth hacking tool, experiment traffic allocation, website optimization tool.</p>
+
+    <h2>Understanding the Science Behind A/B Testing</h2>
+    <p>A/B testing relies on randomized controlled experiments to isolate the effect of changes on user behavior. By splitting traffic and comparing outcomes, businesses can make evidence-based improvements. Statistical power and sample size calculations are crucial to detect meaningful differences and reduce false positives.</p>
+
+    <h2>Conclusion</h2>
+    <p>Using this A/B Test Split Tool allows marketers and product managers to design smarter experiments and make informed decisions that boost website performance and conversion rates. Test thoughtfully, measure accurately, and iterate quickly for the best results.</p>
+  </section>
+
+<script>
+  const form = document.getElementById('abTestForm');
+  const totalVisitorsInput = document.getElementById('totalVisitors');
+  const variantPercentInput = document.getElementById('variantPercent');
+  const resultDiv = document.getElementById('result');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const totalVisitors = Number(totalVisitorsInput.value);
+    const variantPercent = Number(variantPercentInput.value);
+
+    if (!totalVisitors || totalVisitors < 1) {
+      resultDiv.textContent = 'Please enter a valid total number of visitors (greater than 0).';
+      return;
+    }
+    if (variantPercent < 0 || variantPercent > 100) {
+      resultDiv.textContent = 'Please enter a valid percentage for Variant A (0 to 100).';
+      return;
+    }
+
+    const variantA = Math.round((variantPercent / 100) * totalVisitors);
+    const variantB = totalVisitors - variantA;
+
+    resultDiv.innerHTML = `
+      Total Visitors: <strong>${totalVisitors.toLocaleString()}</strong><br>
+      Variant A (${variantPercent.toFixed(1)}%): <strong>${variantA.toLocaleString()}</strong> visitors<br>
+      Variant B (${(100 - variantPercent).toFixed(1)}%): <strong>${variantB.toLocaleString()}</strong> visitors
+    `;
+  });
+</script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

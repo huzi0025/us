@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Security Policy (CSP) Generator Tool - Secure Your Website Easily</title>
+  <meta name="description" content="Generate custom Content Security Policy headers for your website with our free CSP Generator Tool. Boost web security, protect against XSS, and improve SEO." />
+  <meta name="keywords" content="Content Security Policy Generator, CSP generator, CSP header tool, XSS protection, website security tool, CSP builder, secure headers generator, web security policy, content security, CSP online tool" />
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+    textarea, select, input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #999;
+      font-size: 1rem;
+      background: #f8f8f8;
+      color: #000;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 12px 24px;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #222;
+    }
+    .output {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f4f4f4;
+      border-left: 5px solid #000;
+      border-radius: 6px;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+    .blog {
+      margin-top: 4rem;
+    }
+    .blog h2 {
+      margin-top: 2rem;
+      font-weight: 700;
+    }
+    .blog p, .blog ul {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+    .blog ul {
+      margin-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container" itemprop="mainContentOfPage">
+    <h1>Content Security Policy Generator Tool</h1>
+    <label for="defaultSrc">Default Source</label>
+    <input type="text" id="defaultSrc" placeholder="e.g. 'self'">
+
+    <label for="scriptSrc">Script Source</label>
+    <input type="text" id="scriptSrc" placeholder="e.g. 'self' https://apis.google.com">
+
+    <label for="styleSrc">Style Source</label>
+    <input type="text" id="styleSrc" placeholder="e.g. 'self' 'unsafe-inline'">
+
+    <label for="imgSrc">Image Source</label>
+    <input type="text" id="imgSrc" placeholder="e.g. * data:">
+
+    <label for="connectSrc">Connect Source</label>
+    <input type="text" id="connectSrc" placeholder="e.g. *">
+
+    <button onclick="generateCSP()">Generate CSP Header</button>
+
+    <div id="output" class="output" role="region" aria-live="polite"></div>
+  </main>
+
+  <section class="blog" itemprop="articleBody">
+    <h2>What is a Content Security Policy (CSP)?</h2>
+    <p>A Content Security Policy (CSP) is a powerful security feature that helps prevent cross-site scripting (XSS), clickjacking, and other code injection attacks on websites. By specifying allowed content sources, a CSP restricts what resources (like JavaScript, CSS, images, fonts, etc.) can be loaded by the browser.</p>
+
+    <h2>Why You Need a CSP Generator Tool</h2>
+    <p>Crafting a valid and effective CSP manually can be error-prone and time-consuming. Our CSP Generator Tool allows developers and security professionals to quickly build and customize policies that fit their website’s architecture and security requirements.</p>
+
+    <h2>How to Use This Tool</h2>
+    <ul>
+      <li>Enter your allowed sources for each content type such as scripts, styles, images, and more.</li>
+      <li>Click the "Generate CSP Header" button to output a complete policy.</li>
+      <li>Copy and paste the result into your server configuration or meta tag.</li>
+    </ul>
+
+    <h2>Common Directives in CSP</h2>
+    <ul>
+      <li><strong>default-src:</strong> Serves as a fallback for other types.</li>
+      <li><strong>script-src:</strong> Controls allowed JavaScript sources.</li>
+      <li><strong>style-src:</strong> Specifies CSS styles origin.</li>
+      <li><strong>img-src:</strong> Controls images and favicons loading.</li>
+      <li><strong>connect-src:</strong> Governs XHR, WebSocket, and EventSource.</li>
+    </ul>
+
+    <h2>SEO and Security Benefits</h2>
+    <p>Implementing a solid CSP not only strengthens your website against modern web threats but also improves trust signals to search engines and browsers, enhancing SEO and user safety.</p>
+
+    <h2>Top SEO Keywords</h2>
+    <p>Content Security Policy Generator, CSP generator tool, online CSP builder, XSS protection, web security tool, CSP header generator, secure headers, HTTP header security, secure JavaScript loading, CSP directive builder.</p>
+
+    <h2>Advanced CSP Practices</h2>
+    <ul>
+      <li>Use nonces or hashes for inline scripts instead of 'unsafe-inline'.</li>
+      <li>Host third-party scripts on subdomains with stricter controls.</li>
+      <li>Test your CSP with reporting enabled before enforcing it.</li>
+      <li>Use reporting tools like <code>report-uri</code> or <code>report-to</code>.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>With the increase in threats like cross-site scripting and content injection, using a Content Security Policy is more important than ever. This CSP Generator Tool makes it simple to build robust policies that help secure your website while remaining flexible enough to accommodate your third-party tools. Use it today to boost your website security and maintain a trustworthy online presence.</p>
+  </section>
+
+  <script>
+    function generateCSP() {
+      const defaultSrc = document.getElementById('defaultSrc').value.trim();
+      const scriptSrc = document.getElementById('scriptSrc').value.trim();
+      const styleSrc = document.getElementById('styleSrc').value.trim();
+      const imgSrc = document.getElementById('imgSrc').value.trim();
+      const connectSrc = document.getElementById('connectSrc').value.trim();
+
+      let csp = "Content-Security-Policy:";
+
+      if (defaultSrc) csp += ` default-src ${defaultSrc};`;
+      if (scriptSrc) csp += ` script-src ${scriptSrc};`;
+      if (styleSrc) csp += ` style-src ${styleSrc};`;
+      if (imgSrc) csp += ` img-src ${imgSrc};`;
+      if (connectSrc) csp += ` connect-src ${connectSrc};`;
+
+      document.getElementById('output').textContent = csp || 'Please fill at least one directive.';
+    }
+  </script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

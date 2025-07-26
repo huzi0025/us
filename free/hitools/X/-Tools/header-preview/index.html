@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HTTP Headers Preview Tool - Analyze & Inspect HTTP Headers Instantly</title>
+<meta name="description" content="Use our free HTTP Headers Preview Tool to instantly fetch and analyze HTTP response headers of any website URL. Perfect for web developers, SEO experts, and security analysts." />
+<meta name="keywords" content="HTTP Headers Preview, HTTP Header Analyzer, View HTTP Headers, Inspect Headers Online, HTTP Response Headers, SEO headers tool, website headers preview, HTTP headers checker" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 2rem;
+    background: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  input[type="url"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #999;
+    background-color: #f7f7f7;
+    color: #000;
+  }
+  button {
+    margin-top: 1.5rem;
+    padding: 12px 24px;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover, button:focus {
+    background-color: #222;
+    outline: none;
+  }
+  .output {
+    margin-top: 2rem;
+    background: #f9f9f9;
+    border-left: 5px solid #000;
+    padding: 1rem 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    max-height: 350px;
+    overflow-y: auto;
+    border-radius: 8px;
+  }
+  .error {
+    color: red;
+    margin-top: 1rem;
+  }
+  .blog {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+  }
+  .blog h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .blog p, .blog ul {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+  }
+  .blog ul {
+    margin-left: 1.6rem;
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main itemprop="mainContentOfPage">
+    <h1>HTTP Headers Preview Tool</h1>
+    <label for="urlInput">Enter Website URL to Preview HTTP Headers</label>
+    <input type="url" id="urlInput" placeholder="https://example.com" aria-describedby="urlHelp" autocomplete="off" required />
+    <button id="fetchHeadersBtn">Fetch HTTP Headers</button>
+    <div id="errorMsg" class="error" role="alert" aria-live="assertive"></div>
+    <pre id="output" class="output" aria-live="polite" aria-label="HTTP Headers output"></pre>
+  </main>
+
+  <section class="blog" itemprop="articleBody">
+    <h2>What are HTTP Headers?</h2>
+    <p>HTTP headers are essential components of HTTP requests and responses. They convey vital metadata about the request or response, such as content type, server information, caching policies, cookies, security policies, and more. Inspecting these headers helps developers understand how web servers communicate and how browsers interpret web pages.</p>
+
+    <h2>Why Use an HTTP Headers Preview Tool?</h2>
+    <p>This tool allows you to fetch and preview the HTTP response headers sent by any accessible website. It is invaluable for:</p>
+    <ul>
+      <li>Web developers troubleshooting server configurations and debugging web applications.</li>
+      <li>SEO specialists analyzing cache-control, robots directives, and content security policies.</li>
+      <li>Security analysts verifying HTTP security headers like Content-Security-Policy, X-Frame-Options, and Strict-Transport-Security.</li>
+      <li>Website owners ensuring their sites send proper headers to optimize performance and security.</li>
+    </ul>
+
+    <h2>Common HTTP Headers Explained</h2>
+    <ul>
+      <li><strong>Content-Type:</strong> Specifies the media type of the resource.</li>
+      <li><strong>Cache-Control:</strong> Controls caching mechanisms in browsers and CDNs.</li>
+      <li><strong>Set-Cookie:</strong> Instructs the browser to store cookies.</li>
+      <li><strong>Strict-Transport-Security:</strong> Enforces secure HTTPS connections.</li>
+      <li><strong>Content-Security-Policy:</strong> Defines approved sources for content to prevent XSS attacks.</li>
+      <li><strong>X-Frame-Options:</strong> Protects against clickjacking attacks by controlling iframe embedding.</li>
+    </ul>
+
+    <h2>How to Use This Tool Effectively</h2>
+    <p>Simply enter the full URL of the website you want to inspect, then click the "Fetch HTTP Headers" button. The tool will retrieve and display all response headers sent by the server.</p>
+    <p>Note: The tool works best with publicly accessible URLs and may not function correctly for URLs that block cross-origin requests.</p>
+
+    <h2>SEO & Security Benefits of Proper HTTP Headers</h2>
+    <p>Properly configured HTTP headers contribute to better search engine rankings, improved site speed, and enhanced user security. By analyzing these headers regularly, you ensure your website is optimized for both users and search engines.</p>
+
+    <h2>Top SEO Keywords for HTTP Headers</h2>
+    <p>HTTP Headers Preview, HTTP Header Analyzer, website headers checker, HTTP response headers tool, SEO headers preview, security headers, HTTP caching headers, web performance headers, HTTP header inspector.</p>
+
+    <h2>Advanced Tips</h2>
+    <ul>
+      <li>Use <code>Strict-Transport-Security</code> to force HTTPS usage.</li>
+      <li>Leverage <code>Cache-Control</code> headers to improve page load speed.</li>
+      <li>Set security headers like <code>Content-Security-Policy</code> and <code>X-Content-Type-Options</code> to mitigate attacks.</li>
+      <li>Combine this tool with browser developer tools for comprehensive analysis.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>The HTTP Headers Preview Tool is a quick and powerful way to inspect the technical HTTP headers that shape your website's behavior, security, and SEO effectiveness. Regular use of this tool helps you maintain a secure and performant web presence.</p>
+  </section>
+
+<script>
+  const btn = document.getElementById('fetchHeadersBtn');
+  const urlInput = document.getElementById('urlInput');
+  const output = document.getElementById('output');
+  const errorMsg = document.getElementById('errorMsg');
+
+  btn.addEventListener('click', async () => {
+    errorMsg.textContent = '';
+    output.textContent = 'Fetching headers... Please wait.';
+    let url = urlInput.value.trim();
+
+    if (!url) {
+      errorMsg.textContent = 'Please enter a valid URL.';
+      output.textContent = '';
+      return;
+    }
+
+    // Ensure URL has protocol
+    if (!/^https?:\/\//i.test(url)) {
+      url = 'https://' + url;
+    }
+
+    try {
+      // We must use a public CORS proxy because browsers block cross-origin fetches to arbitrary sites
+      // Note: For production, replace with your own proxy or backend endpoint
+      const proxy = 'https://cors-anywhere.herokuapp.com/';
+      const response = await fetch(proxy + url, {
+        method: 'HEAD',
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      // Extract headers
+      let headers = '';
+      for (const [key, value] of response.headers.entries()) {
+        headers += `${key}: ${value}\n`;
+      }
+
+      output.textContent = headers || 'No headers received.';
+    } catch (err) {
+      errorMsg.textContent = 'Failed to fetch headers. The URL might be inaccessible or block cross-origin requests.';
+      output.textContent = '';
+      console.error(err);
+    }
+  });
+</script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

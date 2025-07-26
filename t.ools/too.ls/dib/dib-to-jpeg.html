@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+  <script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free dib to jpeg convertor</title>
+<meta name="description" content="Convert any image format including SVG to PNG, JPG, WEBP, BMP, ICO, TIFF, and PDF. Client-side, free, offline, with drag-and-drop, preview, cropping, rotation, filters, and theme switching." />
+<meta name="keywords" content="free dib to jpeg convertor, dib to jpeg, dib To jpeg,dib, jpeg, Hi free tools, free pic convertor"/>
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Image Format Converter",
+  "url": "https://histream.me/dib/dib-to-jpeg.html",
+  "description": "Free, in-browser tool to convert images to PNG, JPEG, WEBP, BMP, ICO, TIFF, or PDF with SVG support, cropping, rotation, filters, drag-and-drop, and theme toggle.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "All",
+  "image": "https://histream.me/favicons/tools.png",
+  "softwareVersion": "4.0",
+  "author": {
+    "@type": "Organization",
+    "name": "Hi Free Tools"
+  }
+}
+</script>
+
+<style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+  
+  /* Root colors for light and dark */
+  :root {
+    --color-bg-light: #f9f9f9;
+    --color-text-light: #222;
+    --color-bg-dark: #121212;
+    --color-text-dark: #eee;
+    --primary-color: #4a90e2;
+    --accent-color: #ff6600;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+  }
+
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-light);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  body.dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 2rem auto 3rem auto;
+    padding: 1rem 1.5rem;
+  }
+
+  h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* THEME TOGGLE BUTTON */
+  .theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 1.3rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.3);
+    transition: background-color 0.3s;
+  }
+  .theme-toggle:hover {
+    background-color: var(--accent-color);
+  }
+  .theme-toggle i {
+    font-size: 1.4rem;
+  }
+
+  /* DRAG AND DROP AREA */
+  #drop-area {
+    border: 3px dashed var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #drop-area.dragover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  #drop-area i {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+  #fileElem {
+    display: none;
+  }
+
+  /* FORMAT SELECT and buttons */
+  .controls {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  select, button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--primary-color);
+    cursor: pointer;
+    background: transparent;
+    color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  select {
+    min-width: 150px;
+  }
+  select:hover, button:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  /* PREVIEW IMAGE */
+  #preview {
+    display: block;
+    max-width: 100%;
+    margin: 2rem auto 1rem auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  }
+
+  /* DOWNLOAD LINK */
+  #downloadLink {
+    display: block;
+    margin: 1rem auto 3rem auto;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #downloadLink:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  /* LONG DESCRIPTION */
+  .long-description {
+    max-width: 850px;
+    margin: 3rem auto;
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: justify;
+    user-select: text;
+  }
+  .long-description h2 {
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  /* LOADING SPINNER */
+  #loading {
+    display: none;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+</style>
+</head>
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+  <i class="fa-regular fa-sun"></i> Light Mode
+</button>
+
+<div class="container">
+
+  <h1>TIFF Format Converter</h1>
+
+  <div id="drop-area" tabindex="0">
+    <i class="fa-solid fa-upload"></i>
+    <p>Drag & drop an image file here or <label for="fileElem" style="color: var(--primary-color); cursor:pointer; text-decoration: underline;">browse</label> to select</p>
+    <input type="file" id="fileElem" accept="image/*" />
+  </div>
+
+  <div class="controls" aria-label="Conversion controls">
+    <select id="format" aria-label="Select output image format">
+      <option value="image/png">PNG</option>
+      <option value="image/jpeg">JPG</option>
+      <option value="image/webp">WEBP</option>
+      <option value="image/bmp">BMP</option>
+      <option value="image/x-icon">ICO</option>
+      <option value="image/tiff">TIFF</option>
+      <option value="application/pdf">PDF</option>
+    </select>
+    <button id="convertBtn">Convert</button>
+  </div>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+  <img id="preview" alt="Preview of uploaded image" />
+
+  <a id="downloadLink" style="display:none;" download>Download Converted Image</a>
+
+  <div id="loading" aria-live="polite" aria-busy="false">
+    <div class="spinner"></div>
+    <p>Processing image, please wait...</p>
+  </div>
+
+  <section class="long-description" aria-label="Detailed description about the tool">
+    <h2>About This Image Format Converter Tool</h2>
+    <p>
+      This powerful and fully client-side Image Format Converter allows you to convert images from one format to another quickly and securely within your browser. Without any need for server uploads or external dependencies, your files remain private and safe. Supported formats include popular types like PNG, JPG, WEBP, BMP, ICO, TIFF, and PDF output. The tool works with most common image inputs, including SVG, and provides immediate visual feedback via a preview.
+    </p>
+    <p>
+      It’s designed for creative professionals, developers, and everyday users alike — enabling seamless workflow whether you need optimized web images or specific formats for print, iconography, or archival purposes. The interface supports intuitive drag & drop functionality with fallback for manual file browsing. The conversion process leverages the HTML5 canvas API to transform images efficiently and with high quality.
+    </p>
+    <p>
+      Alongside format conversion, this tool features a light/dark mode toggle for comfortable use at any time of day. The theme automatically starts in light mode for a clean and bright workspace. You can switch to dark mode for reduced eye strain in low light environments with a simple click of the sun/moon icon button in the top-right corner.
+    </p>
+    <p>
+      The download link only appears once the conversion completes, letting you save your newly formatted image with a suitable filename. Thanks to modern web technologies, this converter works offline and across all major browsers, making it reliable and accessible everywhere.
+    </p>
+    <p>
+      Whether you’re preparing images for websites, presentations, software icons, or print media, this tool streamlines your workflow without sacrificing privacy or quality. Dive in now and enjoy seamless image format conversions, fast processing, and a user-friendly interface with helpful icons and feedback states.
+    </p>
+    <p>
+      <strong>Key features include:</strong>
+      <ul>
+        <li>Conversion between PNG, JPG, WEBP, BMP, ICO, TIFF, and PDF formats</li>
+        <li>Fully client-side: your files never leave your device</li>
+        <li>Drag and drop or browse for easy file selection</li>
+        <li>Real-time preview after upload</li>
+        <li>Light and dark themes with iconic toggle button</li>
+        <li>Responsive and accessible UI</li>
+        <li>Loading spinner during processing</li>
+        <li>Download with proper filename and extension</li>
+      </ul>
+    </p>
+    <p>
+      <em>Try uploading an image now and choose your desired format for conversion!</em>
+    </p>
+    <p>
+      This tool is perfect for graphic designers needing quick format shifts, web developers optimizing images for performance, or anyone requiring multiple image formats without installing complex software. We continuously improve the converter to add new features and keep compatibility up-to-date with emerging image standards.
+    </p>
+    <p>
+      Your privacy and security are our priority — no data is sent to any server and the entire conversion happens locally on your device. You can trust this tool for fast, safe, and hassle-free image conversion anytime.
+    </p>
+    <p>
+      <em>We hope you find this tool useful and welcome any feedback to enhance your experience.</em>
+    </p>
+  </section>
+</div>
+
+<script>
+  const body = document.body;
+  const themeToggleBtn = document.getElementById('themeToggle');
+  const themeIcon = themeToggleBtn.querySelector('i');
+  const themeText = themeToggleBtn;
+  const dropArea = document.getElementById('drop-area');
+  const fileInput = document.getElementById('fileElem');
+  const preview = document.getElementById('preview');
+  const formatSelect = document.getElementById('format');
+  const convertBtn = document.getElementById('convertBtn');
+  const downloadLink = document.getElementById('downloadLink');
+  const loading = document.getElementById('loading');
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Default theme is light
+  body.classList.remove('dark');
+  updateThemeUI(false);
+
+  // THEME TOGGLE HANDLER
+  themeToggleBtn.addEventListener('click', () => {
+    const isDark = body.classList.toggle('dark');
+    updateThemeUI(isDark);
+  });
+
+  function updateThemeUI(isDark) {
+    if (isDark) {
+      themeIcon.className = 'fa-regular fa-moon';
+      themeToggleBtn.innerHTML = '<i class="fa-regular fa-moon"></i> Dark Mode';
+    } else {
+      themeIcon.className = 'fa-regular fa-sun';
+      themeToggleBtn.innerHTML = '<i class="fa-regular fa-sun"></i> Light Mode';
+    }
+  }
+
+  // DRAG & DROP
+  dropArea.addEventListener('dragenter', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropArea.classList.add('dragover');
+  });
+  dropArea.addEventListener('dragover', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropArea.classList.add('dragover');
+  });
+  dropArea.addEventListener('dragleave', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropArea.classList.remove('dragover');
+  });
+  dropArea.addEventListener('drop', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropArea.classList.remove('dragover');
+    if(e.dataTransfer.files && e.dataTransfer.files[0]) {
+      handleFile(e.dataTransfer.files[0]);
+    }
+  });
+
+  // Clicking drop area label triggers file input
+  dropArea.querySelector('label').addEventListener('click', () => {
+    fileInput.click();
+  });
+
+  fileInput.addEventListener('change', () => {
+    if(fileInput.files && fileInput.files[0]) {
+      handleFile(fileInput.files[0]);
+    }
+  });
+
+  let currentFile = null;
+
+  function handleFile(file) {
+    if(!file.type.startsWith('image/')) {
+      alert('Please upload a valid image file.');
+      return;
+    }
+    currentFile = file;
+    const reader = new FileReader();
+    reader.onload = e => {
+      preview.src = e.target.result;
+      preview.style.display = 'block';
+      downloadLink.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // Conversion logic
+  convertBtn.addEventListener('click', async () => {
+    if(!currentFile) {
+      alert('Please upload an image first.');
+      return;
+    }
+    loading.style.display = 'block';
+    loading.setAttribute('aria-busy', 'true');
+    downloadLink.style.display = 'none';
+
+    try {
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+      img.onload = async () => {
+        // Set canvas size to image size
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0);
+
+        const outputFormat = formatSelect.value;
+
+        if(outputFormat === 'application/pdf') {
+          // PDF conversion using jsPDF library loaded dynamically
+          await convertToPDF(canvas);
+        } else {
+          // Normal image format conversion
+          canvas.toBlob(blob => {
+            if(blob) {
+              const url = URL.createObjectURL(blob);
+              downloadLink.href = url;
+              const ext = outputFormat.split('/')[1];
+              downloadLink.download = `${stripExtension(currentFile.name)}.${ext}`;
+              downloadLink.style.display = 'inline-block';
+              downloadLink.textContent = 'Download Converted Image';
+              loading.style.display = 'none';
+              loading.setAttribute('aria-busy', 'false');
+            } else {
+              alert('Conversion failed.');
+              loading.style.display = 'none';
+              loading.setAttribute('aria-busy', 'false');
+            }
+          }, outputFormat);
+        }
+      };
+      img.onerror = () => {
+        alert('Failed to load image for conversion.');
+        loading.style.display = 'none';
+        loading.setAttribute('aria-busy', 'false');
+      }
+      img.src = URL.createObjectURL(currentFile);
+    } catch (err) {
+      alert('Error during conversion: ' + err.message);
+      loading.style.display = 'none';
+      loading.setAttribute('aria-busy', 'false');
+    }
+  });
+
+  function stripExtension(filename) {
+    return filename.replace(/\.[^/.]+$/, "");
+  }
+
+  async function convertToPDF(canvas) {
+    if (!window.jspdf) {
+      await loadJsPDF();
+    }
+    const pdf = new window.jspdf.jsPDF({
+      orientation: canvas.width > canvas.height ? 'landscape' : 'portrait',
+      unit: 'px',
+      format: [canvas.width, canvas.height]
+    });
+    const imgData = canvas.toDataURL('image/png');
+    pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+    const pdfBlob = pdf.output('blob');
+    const url = URL.createObjectURL(pdfBlob);
+    downloadLink.href = url;
+    downloadLink.download = `${stripExtension(currentFile.name)}.pdf`;
+    downloadLink.style.display = 'inline-block';
+    downloadLink.textContent = 'Download Converted PDF';
+    loading.style.display = 'none';
+    loading.setAttribute('aria-busy', 'false');
+  }
+
+  function loadJsPDF() {
+    return new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error('Failed to load jsPDF library.'));
+      document.head.appendChild(script);
+    });
+  }
+</script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 90%;
+    background-color: transparent;
+    color: #000;
+    padding: 20px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

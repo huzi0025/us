@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Picker Tool | HEX, RGB, HSL Code Generator & Preview</title>
+  <meta name="description" content="Use our free Color Picker Tool to select, preview, and convert colors to HEX, RGB, and HSL. Ideal for designers, developers, and creators. Fast, accessible, and mobile-friendly." />
+  <meta name="keywords" content="color picker, HEX color tool, RGB to HEX, color code converter, color palette generator, HSL color preview, free color tool, UI color picker, web design tool, accessibility color checker, front-end design, online color utilities, HEX to RGB, color contrast analysis, visual design tools, HTML CSS color tool, digital palette, creative tools, brand color checker, color preview utility">
+  <link rel="icon" type="image/png" href="https://us.histream.me/favicons/tools.png">
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Color Picker Tool",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "HiStream Tools"
+      },
+      "url": "https://us.histream.me/-Tools/color-picker"
+    }
+  </script>
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .tool-card {
+      background: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+    input[type="color"] {
+      width: 100px;
+      height: 50px;
+      border: none;
+      background: none;
+    }
+    .output {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #fff;
+      border: 1px dashed #ccc;
+      font-family: monospace;
+      border-radius: 6px;
+    }
+    #colorPreview {
+      width: 100%;
+      height: 100px;
+      margin-top: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    #blog p {
+      text-align: justify;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container">
+    <section class="tool-card">
+      <h1>Color Picker Tool</h1>
+      <p>Select any color to get its HEX, RGB, and HSL values. Great for UI design, web development, and accessibility testing.</p>
+      <input type="color" id="colorInput" value="#3498db" />
+
+      <div class="output">
+        <p><strong>HEX:</strong> <span id="hexVal">#3498db</span></p>
+        <p><strong>RGB:</strong> <span id="rgbVal">rgb(52, 152, 219)</span></p>
+        <p><strong>HSL:</strong> <span id="hslVal">hsl(204, 70%, 53%)</span></p>
+      </div>
+
+      <div id="colorPreview" style="background-color: #3498db;"></div>
+    </section>
+
+    <section id="blog">
+      <h2>Why You Need a Color Picker Tool in Your Design Workflow</h2>
+      <p>Color is one of the most critical aspects of design. Whether you're crafting a user interface, building a web application, or composing graphics for social media, color plays a significant role in usability, emotion, and branding. A <strong>color picker tool</strong> simplifies the process of discovering, selecting, and converting colors across different formats such as HEX, RGB, and HSL.</p>
+      <p>This tool not only helps you select the right shade but also ensures your choices comply with accessibility standards. Ensuring contrast ratios and clear visibility across devices is a vital part of delivering an inclusive and visually appealing experience.</p>
+      <p>Modern web browsers and design software support a broad range of color inputs, but consistency is key. By having a centralized color reference, your project maintains a uniform look and feel across components, platforms, and user environments.</p>
+      <h3>Understanding HEX, RGB, and HSL</h3>
+      <p>HEX codes are widely used in CSS and design systems. RGB represents red, green, and blue values, while HSL (hue, saturation, lightness) allows for intuitive manipulation of tones. Designers use HSL for its ease in adjusting brightness and saturation without distorting hue. Our tool outputs all three simultaneously, empowering your decisions with flexibility and precision.</p>
+      <h3>Accessibility and Color Compliance</h3>
+      <p>Color accessibility is vital for users with visual impairments such as color blindness or low contrast sensitivity. Using tools to check color contrast and ensure adequate spacing and labeling is part of ethical and effective web design. Our color picker integrates perfectly with other tools such as a <strong>contrast checker</strong>, helping you achieve <strong>WCAG 2.2</strong> compliance easily.</p>
+      <p>Additionally, brands today operate globally. Your color palette must work across cultures, devices, and lighting conditions. Testing colors live with this tool ensures they’re versatile and meaningful.</p>
+      <h3>Use Cases: From Developers to Marketers</h3>
+      <ul>
+        <li><strong>Developers</strong> use it to retrieve HEX/RGB values for CSS or inline styles quickly.</li>
+        <li><strong>Designers</strong> refine brand palettes or generate interface previews.</li>
+        <li><strong>Marketers</strong> check color consistency in campaigns and digital ads.</li>
+        <li><strong>Content creators</strong> align visual assets with background colors for thumbnails and videos.</li>
+      </ul>
+      <h3>Tips for Choosing the Right Color</h3>
+      <p>Color psychology suggests that certain colors evoke specific feelings. Blue often suggests trust, green evokes calm and growth, while red can communicate urgency or excitement. Use this understanding to influence user behavior intentionally. Also, test your selected palette on both light and dark backgrounds to ensure versatility.</p>
+      <h3>Bonus: Build a Branded Color System</h3>
+      <p>Having consistent color naming (like primary-500 or accent-dark) simplifies handoffs between design and engineering. Pair this color picker with a style guide to ensure visual consistency at scale. Adopt tools like CSS variables or design tokens to implement your palette programmatically across themes and platforms.</p>
+      <h3>Beyond Aesthetics: SEO & Color Use</h3>
+      <p>While color itself doesn’t affect SEO directly, usability and user experience do. Proper use of color can reduce bounce rates, increase engagement, and improve content readability. This in turn sends positive behavioral signals to search engines. Tools like this empower you to make informed color choices that benefit both design and performance.</p>
+    </section>
+  </main>
+  <script>
+    function hexToRgb(hex) {
+      hex = hex.replace('#', '');
+      if (hex.length === 3) {
+        hex = hex.split('').map(c => c + c).join('');
+      }
+      const bigint = parseInt(hex, 16);
+      const r = (bigint >> 16) & 255;
+      const g = (bigint >> 8) & 255;
+      const b = bigint & 255;
+      return [r, g, b];
+    }
+
+    function rgbToHsl(r, g, b) {
+      r /= 255; g /= 255; b /= 255;
+      const max = Math.max(r, g, b), min = Math.min(r, g, b);
+      let h, s, l = (max + min) / 2;
+      if (max === min) {
+        h = s = 0;
+      } else {
+        const d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        switch(max){
+          case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+          case g: h = (b - r) / d + 2; break;
+          case b: h = (r - g) / d + 4; break;
+        }
+        h /= 6;
+      }
+      return [Math.round(h*360), Math.round(s*100), Math.round(l*100)];
+    }
+
+    const input = document.getElementById('colorInput');
+    input.addEventListener('input', e => {
+      const hex = e.target.value;
+      const [r, g, b] = hexToRgb(hex);
+      const [h, s, l] = rgbToHsl(r, g, b);
+      document.getElementById('hexVal').textContent = hex;
+      document.getElementById('rgbVal').textContent = `rgb(${r}, ${g}, ${b})`;
+      document.getElementById('hslVal').textContent = `hsl(${h}, ${s}%, ${l}%)`;
+      document.getElementById('colorPreview').style.backgroundColor = hex;
+    });
+  </script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

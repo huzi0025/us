@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>robots.txt Tester Tool – SEO Robots.txt Validator & Analyzer</title>
+  <meta name="description" content="Use our robots.txt Tester Tool to analyze and validate your robots.txt file. Ensure your website’s SEO is optimized by controlling which URLs are crawled or blocked by search engines." />
+  <meta name="keywords" content="robots.txt tester, robots.txt validator, SEO robots.txt tool, robots.txt analyzer, SEO crawler rules, disallow URL checker, allow URL checker, search engine optimization robots.txt" />
+  <link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+  <style>
+    /* Reset and base styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
+      color: #000;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.25em;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      font-family: monospace;
+      font-size: 1rem;
+      padding: 12px 15px;
+      border: 1.5px solid #000;
+      border-radius: 6px;
+      resize: vertical;
+    }
+    textarea {
+      min-height: 180px;
+    }
+    button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 15px;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #222;
+    }
+    #result {
+      margin-top: 25px;
+      padding: 15px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      min-height: 50px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 50px;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #000;
+      padding-bottom: 0.3em;
+    }
+    p, ul, ol, li {
+      font-size: 1rem;
+      margin-bottom: 1.2em;
+      max-width: 900px;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #444;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body itemprop="mainContentOfPage">
+  <h1>robots.txt Tester Tool</h1>
+  <p>Paste your <code>robots.txt</code> content below and enter a URL path to test if it is allowed or disallowed for search engine crawlers. This helps you ensure your SEO strategy properly controls crawler access to your website.</p>
+
+  <label for="robotsInput">robots.txt Content:</label>
+  <textarea id="robotsInput" placeholder="Paste your robots.txt content here..."></textarea>
+
+  <label for="urlPathInput">URL Path to Test (e.g., <code>/about-us/</code>):</label>
+  <input type="text" id="urlPathInput" placeholder="/example-path/" />
+
+  <button onclick="testRobotsTxt()">Test URL Access</button>
+
+  <div id="result" aria-live="polite" role="region"></div>
+
+  <h2>What is robots.txt and Why Is It Important for SEO?</h2>
+  <p>The <code>robots.txt</code> file is a crucial text file placed in the root of your website that guides search engine crawlers about which pages or sections they can or cannot crawl. Proper use of robots.txt helps control crawler traffic, prevents indexing of sensitive or duplicate content, and improves overall SEO performance.</p>
+
+  <h2>How Does Our robots.txt Tester Work?</h2>
+  <p>This tool parses your pasted <code>robots.txt</code> content and evaluates if the entered URL path is permitted or blocked based on the directives for all user-agents and specifically for Googlebot. It respects <code>Disallow</code>, <code>Allow</code>, and wildcard rules where applicable.</p>
+
+  <h2>SEO Best Practices for robots.txt Management</h2>
+  <ul>
+    <li>Always keep a clean and concise <code>robots.txt</code> file.</li>
+    <li>Use <code>Disallow</code> directives to block crawling of duplicate content, staging sites, or admin pages.</li>
+    <li>Allow critical resources like CSS and JS files so your pages render correctly.</li>
+    <li>Test your <code>robots.txt</code> regularly to avoid accidentally blocking important content.</li>
+    <li>Combine <code>robots.txt</code> with meta robots tags for fine-grained control.</li>
+  </ul>
+
+  <h2>Common robots.txt Mistakes That Harm SEO</h2>
+  <ol>
+    <li><strong>Blocking CSS/JS Files:</strong> Prevents Google from rendering your pages properly.</li>
+    <li><strong>Blocking Entire Site:</strong> Using <code>Disallow: /</code> accidentally hides your entire site from search engines.</li>
+    <li><strong>Incorrect Paths:</strong> Typos or wrong paths can block or allow the wrong URLs.</li>
+    <li><strong>Not Testing Updates:</strong> Changes in robots.txt require testing to confirm expected crawler behavior.</li>
+    <li><strong>Ignoring Case Sensitivity:</strong> URLs in robots.txt are case-sensitive.</li>
+  </ol>
+
+  <h2>robots.txt Syntax Overview</h2>
+  <p>The <code>robots.txt</code> file consists of groups of directives starting with <code>User-agent</code> lines followed by <code>Disallow</code> and <code>Allow</code> rules. Here's an example:</p>
+  <pre style="background:#eee;padding:10px;border-radius:6px;overflow-x:auto;">
+User-agent: *
+Disallow: /admin/
+Allow: /admin/public/
+
+User-agent: Googlebot
+Disallow: /no-google/
+  </pre>
+
+  <h2>Why Testing Your robots.txt File Regularly Matters</h2>
+  <p>Search engines evolve, and your website changes over time. Regular testing of your <code>robots.txt</code> file ensures:</p>
+  <ul>
+    <li>Your important pages remain crawlable.</li>
+    <li>Unwanted or sensitive pages remain blocked.</li>
+    <li>Your SEO performance stays strong and compliant with best practices.</li>
+  </ul>
+
+  <h2>Additional SEO Tips Related to robots.txt</h2>
+  <ul>
+    <li>Use Google Search Console's robots.txt Tester tool for additional verification.</li>
+    <li>Combine <code>robots.txt</code> with XML sitemaps for efficient crawling.</li>
+    <li>Do not rely solely on robots.txt to protect sensitive data—use authentication or noindex meta tags.</li>
+    <li>Keep your robots.txt file UTF-8 encoded and free of syntax errors.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+  <p><strong>Q: Can I block images or videos using robots.txt?<br></strong>
+  A: Yes, you can block media files by specifying their folders or file types using <code>Disallow</code> rules.</p>
+
+  <p><strong>Q: Will blocking URLs with robots.txt remove them from search results?<br></strong>
+  A: Not necessarily. Blocking crawling does not guarantee removal from search results; use <code>noindex</code> meta tags for that.</p>
+
+  <p><strong>Q: How do wildcards work in robots.txt?<br></strong>
+  A: You can use <code>*</code> as a wildcard to match any sequence of characters and <code>$</code> to indicate the end of a URL.</p>
+
+  <h2>Improve Your Website's SEO Health with Our robots.txt Tester Tool</h2>
+  <p>Keeping your <code>robots.txt</code> optimized is vital for search engine visibility and crawl efficiency. Use this tool regularly to verify and improve your site's crawler directives. Stay ahead in SEO by ensuring only the right content is indexed.</p>
+
+  <script>
+    function testRobotsTxt() {
+      const robotsTxt = document.getElementById('robotsInput').value.trim();
+      const urlPath = document.getElementById('urlPathInput').value.trim();
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.textContent = '';
+
+      if (!robotsTxt) {
+        resultDiv.textContent = 'Please paste your robots.txt content above.';
+        return;
+      }
+      if (!urlPath || !urlPath.startsWith('/')) {
+        resultDiv.textContent = 'Please enter a valid URL path starting with "/".';
+        return;
+      }
+
+      // Parse robots.txt rules
+      // We'll parse per user-agent groups, focus on * and Googlebot
+      // We'll combine rules from * and Googlebot user agents
+      const lines = robotsTxt.split('\n').map(l => l.trim());
+      let currentAgents = [];
+      let rules = {};
+      let currentRules = [];
+      let collecting = false;
+
+      function addRulesToAgents(agents, rulesToAdd) {
+        agents.forEach(agent => {
+          if (!rules[agent]) rules[agent] = [];
+          rules[agent].push(...rulesToAdd);
+        });
+      }
+
+      lines.forEach(line => {
+        if (!line || line.startsWith('#')) return;
+        const lowerLine = line.toLowerCase();
+
+        if (lowerLine.startsWith('user-agent:')) {
+          if (collecting && currentAgents.length > 0) {
+            addRulesToAgents(currentAgents, currentRules);
+            currentRules = [];
+          }
+          currentAgents = [line.split(':')[1].trim().toLowerCase()];
+          collecting = true;
+        } else if (collecting) {
+          if (lowerLine.startsWith('disallow:')) {
+            const path = line.substring(line.indexOf(':') + 1).trim();
+            currentRules.push({type:'disallow', path});
+          } else if (lowerLine.startsWith('allow:')) {
+            const path = line.substring(line.indexOf(':') + 1).trim();
+            currentRules.push({type:'allow', path});
+          }
+        }
+      });
+
+      // add last group rules
+      if (collecting && currentAgents.length > 0) {
+        addRulesToAgents(currentAgents, currentRules);
+      }
+
+      // Combine rules for 'googlebot' and '*' (most specific to general)
+      let combinedRules = [];
+      if (rules['*']) combinedRules = combinedRules.concat(rules['*']);
+      if (rules['googlebot']) combinedRules = combinedRules.concat(rules['googlebot']);
+
+      // Normalize: if no rules, everything allowed
+      if (combinedRules.length === 0) {
+        resultDiv.textContent = 'No crawl restrictions found. URL is allowed.';
+        return;
+      }
+
+      // Function to check if urlPath matches rulePath with wildcards (*)
+      function pathMatch(rulePath, testPath) {
+        if (rulePath === '') return false; // empty disallow means allow all
+        // Escape special regex chars except *
+        const escaped = rulePath.replace(/[-[\]/{}()+?.\\^$|]/g, '\\$&');
+        const regexStr = '^' + escaped.replace(/\*/g, '.*') + '.*$';
+        const regex = new RegExp(regexStr);
+        return regex.test(testPath);
+      }
+
+      // Apply rules in order; allow overrides disallow if matched later
+      let access = 'allowed'; // default allow
+
+      combinedRules.forEach(rule => {
+        if (pathMatch(rule.path, urlPath)) {
+          if (rule.type === 'disallow') access = 'disallowed';
+          else if (rule.type === 'allow') access = 'allowed';
+        }
+      });
+
+      resultDiv.textContent = `URL path "${urlPath}" is ${access.toUpperCase()} according to your robots.txt rules.`;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

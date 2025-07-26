@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Size Checker Tool - Check Image Dimensions Instantly</title>
+  <meta name="description" content="Check image dimensions easily with our free Image Size Checker tool. Supports PNG, JPG, GIF. Get width and height instantly.">
+  <meta name="keywords" content="image size checker, check image dimensions, image width height, online image tool, photo dimension checker, image resolution tool, image info, image SEO tools">
+  <link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    input[type="file"] {
+      display: block;
+      margin: 1rem auto;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    #result {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 1rem auto;
+      border: 1px solid #000;
+    }
+    .blog {
+      margin-top: 4rem;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Image Size Checker Tool",
+    "image": "https://histream.me/favicons/tools.png",
+    "url": "https://histream.me/tools/image-size-checker",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "description": "Check image dimensions like width and height instantly using this free online image size checker tool.",
+    "keywords": "image size checker, image dimension tool, photo resolution viewer, online image analyzer"
+  }
+  </script>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <h1>Image Size Checker Tool</h1>
+    <p style="text-align:center;">Upload an image (JPG, PNG, GIF) and instantly see its width and height in pixels.</p>
+    <input type="file" accept="image/*" onchange="checkImageSize(event)">
+    <div id="result"></div>
+    <img id="preview" style="display:none;" alt="Uploaded preview">
+    
+    <div class="blog">
+      <h2>Why Image Size Matters: A Deep Dive for SEO, Design & Web Performance</h2>
+      <p>Image size plays a critical role in modern web development. Whether you're a designer, developer, or digital marketer, understanding the dimensions and resolution of your image assets is essential for ensuring visual consistency, fast load times, and SEO optimization.</p>
+
+      <h3>1. Image Dimensions and SEO</h3>
+      <p>Search engines, especially Google, consider image optimization a key factor in page ranking. Proper image size ensures that your content loads quickly and displays clearly across all devices. Large images can drastically slow down a webpage, while overly small images may look blurry or unprofessional.</p>
+
+      <h3>2. Mobile-First Indexing</h3>
+      <p>With mobile-first indexing, images that are not appropriately sized for small screens may hurt user experience. Always check the width and height before uploading. Our image size checker lets you verify pixel dimensions without needing heavy software like Photoshop.</p>
+
+      <h3>3. Ideal Use Cases for Checking Image Sizes</h3>
+      <ul>
+        <li>Before uploading to websites or blogs</li>
+        <li>Ensuring banner and thumbnail accuracy</li>
+        <li>Verifying product images for e-commerce</li>
+        <li>Social media image optimization</li>
+        <li>Email newsletter performance tuning</li>
+      </ul>
+
+      <h3>4. Recommended Image Sizes for Popular Platforms</h3>
+      <p>Here are standard dimensions for key platforms:</p>
+      <ul>
+        <li>Instagram Post: 1080 x 1080 px</li>
+        <li>Facebook Cover: 820 x 312 px</li>
+        <li>Twitter Header: 1500 x 500 px</li>
+        <li>YouTube Thumbnail: 1280 x 720 px</li>
+        <li>Blog Feature Image: 1200 x 628 px</li>
+      </ul>
+
+      <h3>5. How to Use This Tool</h3>
+      <p>Simply upload an image file. The tool reads its metadata and renders its width and height in pixels below the input. It works entirely in-browser and supports common image formats including PNG, JPG, GIF, and WebP.</p>
+
+      <h3>6. Best Practices for Image Optimization</h3>
+      <ul>
+        <li>Always compress images before uploading.</li>
+        <li>Use WebP for modern browser compatibility.</li>
+        <li>Implement lazy loading on long pages.</li>
+        <li>Use descriptive alt tags for accessibility and SEO.</li>
+      </ul>
+
+      <h3>7. Frequently Asked Questions (FAQ)</h3>
+      <p><strong>Can I check animated GIF sizes?</strong> — Yes! This tool supports static and animated image formats.</p>
+      <p><strong>Is this image checker safe to use?</strong> — Absolutely. Your images are never uploaded or stored. It runs entirely in your browser.</p>
+      <p><strong>What is the difference between image size and file size?</strong> — Image size refers to dimensions in pixels (e.g., 800×600), while file size is the amount of storage it consumes (e.g., 120 KB).</p>
+
+      <h3>8. Conclusion</h3>
+      <p>Image dimension checking is more than just numbers. It’s about delivering a better visual experience, improving website performance, and enhancing your visibility on search engines. Use this free Image Size Checker tool anytime you need fast, reliable image info without installing anything.</p>
+
+      <p><em>© 2025 histream.me — All rights reserved.</em></p>
+    </div>
+  </div>
+
+  <script>
+    function checkImageSize(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const img = document.getElementById('preview');
+      const result = document.getElementById('result');
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        img.onload = function () {
+          result.textContent = `🖼️ Image Dimensions: ${img.naturalWidth}px × ${img.naturalHeight}px`;
+          img.style.display = 'block';
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

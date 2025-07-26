@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+  <script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<title>Simple HTML Insert Tool</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+  textarea { width: 100%; height: 180px; margin-bottom: 20px; font-family: monospace; font-size: 14px; padding: 10px; }
+  button { padding: 12px 20px; background: #000; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+  button:hover { background: #444; }
+  label { font-weight: bold; margin-bottom: 5px; display: block; }
+  #output { height: 300px; }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<h1>HTML Header, Footer & Ad Script Inserter</h1>
+
+<label for="inputHTML">Paste Your Full HTML Here:</label>
+<textarea id="inputHTML" placeholder="Paste your full HTML page here..."></textarea>
+
+<label for="adScript">Ad Script (insert under &lt;head&gt;):</label>
+<textarea id="adScript" placeholder="<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>"></textarea>
+
+<label for="headerCode">Header Code (insert right below ad script inside &lt;head&gt;):</label>
+<textarea id="headerCode" placeholder="<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+"></textarea>
+
+<label for="footerCode">Footer Code (insert just before &lt;/body&gt;):</label>
+<textarea id="footerCode" placeholder="<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>"></textarea>
+
+<button onclick="insertParts()">Insert Codes</button>
+<button onclick="copyOutput()">Copy Combined HTML</button>
+
+<h2>Combined HTML Output:</h2>
+<textarea id="output" readonly></textarea>
+
+<script>
+function insertParts() {
+  let html = document.getElementById('inputHTML').value;
+  const adScript = document.getElementById('adScript').value.trim();
+  const header = document.getElementById('headerCode').value.trim();
+  const footer = document.getElementById('footerCode').value.trim();
+
+  // Validate presence of <head> and </body>
+  if (!html.match(/<head[^>]*>/i)) {
+    alert('Input HTML must contain <head> tag');
+    return;
+  }
+  if (!html.match(/<\/body>/i)) {
+    alert('Input HTML must contain </body> tag');
+    return;
+  }
+
+  // Insert ad script immediately after <head> tag
+  html = html.replace(/<head[^>]*>/i, (match) => `${match}\n${adScript}`);
+
+  // Insert header code right after ad script inside head
+  // Since ad script is added just after <head>, header comes after ad script:
+  html = html.replace(/(<head[^>]*>[\s\S]*?)(<\/head>)/i, (match, p1, p2) => {
+    // p1 contains <head> + adScript now
+    // We append header right before </head>
+    return p1 + "\n" + header + "\n" + p2;
+  });
+
+  // Insert footer right before </body>
+  html = html.replace(/<\/body>/i, `${footer}\n</body>`);
+
+  document.getElementById('output').value = html.trim();
+}
+
+function copyOutput() {
+  const output = document.getElementById('output');
+  output.select();
+  output.setSelectionRange(0, 99999);
+  document.execCommand('copy');
+  alert('Combined HTML copied to clipboard!');
+}
+</script>
+
+</body>
+</html>

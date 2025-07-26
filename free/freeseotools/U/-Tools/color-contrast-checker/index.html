@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="utf-8">
+  <title>Color Contrast Checker Tool | Free WCAG Accessibility Tester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Use our free Color Contrast Checker tool to instantly test WCAG accessibility compliance. Optimize your web design for readability and inclusive user experience.">
+  <meta name="keywords" content="Color Contrast Checker, WCAG compliance, web accessibility tool, free accessibility checker, contrast ratio tester, web design, UI/UX, ADA compliance, online accessibility tools, color accessibility, contrast analysis, accessible color palettes, design accessibility, accessibility testing, color contrast ratio calculator, accessible web design best practices, inclusive design tools, contrast checker online, accessibility color checker, color contrast tester, accessible UX design">
+  <link rel="icon" type="image/png" href="https://us.histream.me/favicons/tools.png">
+  <!-- Schema.org structured data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Color Contrast Checker Tool",
+    "operatingSystem": "All",
+    "applicationCategory": "DeveloperApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "HiStream Tools"
+    },
+    "url": "https://us.histream.me/-Tools/color-contrast-checker"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #0077ff;
+      --border: #e0e0e0;
+      --radius: 0.5rem;
+      --shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .tool-card {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+
+    input[type="color"] {
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+
+    .color-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+    }
+
+    #ratio {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .preview {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: var(--radius);
+      text-align: center;
+      border: 1px dashed var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius);
+      margin-left: 0.5rem;
+      font-size: 0.875rem;
+      color: #fff;
+    }
+
+    .pass { background: #28a745; }
+    .fail { background: #dc3545; }
+
+    /* Blog styles */
+    #blog {
+      margin-top: 4rem;
+    }
+    #blog p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container">
+
+    <section class="tool-card">
+      <h1>Color Contrast Checker</h1>
+      <p>Instantly test text and background color combinations for <strong>WCAG&nbsp;2.2</strong> compliance and make your website more accessible.</p>
+
+      <div class="color-row">
+        <label for="fg">Text Color</label>
+        <input type="color" id="fg" name="fg" value="#000000">
+        <span id="fgHex">#000000</span>
+      </div>
+
+      <div class="color-row">
+        <label for="bg">Background Color</label>
+        <input type="color" id="bg" name="bg" value="#ffffff">
+        <span id="bgHex">#ffffff</span>
+      </div>
+
+      <p id="ratio">Contrast Ratio: 21:1 <span id="wcagBadge" class="badge pass">AAA</span></p>
+
+      <div id="preview" class="preview" style="color:#000000; background:#ffffff;">
+        Sample Text: The quick brown fox jumps over the lazy dog.
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Why Color Contrast Matters for Web Accessibility</h2>
+      <p>Ensuring adequate <strong>color contrast</strong> is a foundational aspect of <em>accessible web design</em>. Without sufficient contrast between text and background, users with low vision, color vision deficiencies, or aging eyes may struggle to read your content. Our Color Contrast Checker makes it easy to meet <strong>WCAG 2.2 AA and AAA</strong> standards, improving readability and boosting overall user experience.</p>
+      <p>Inaccessible color choices can reduce conversion rates, increase bounce rates, and even put websites at risk of legal challenges under <strong>ADA</strong> and other accessibility regulations. By proactively testing contrast ratios during the design phase, developers and designers can save time, resources, and protect brand reputation.</p>
+
+      <h3>Understanding WCAG Contrast Requirements</h3>
+      <p>The <strong>Web Content Accessibility Guidelines</strong> (WCAG) recommend minimum contrast ratios to ensure text is perceivable. For normal text, a <em>contrast ratio</em> of at least <strong>4.5:1</strong> is required for AA compliance, while AAA compliance calls for <strong>7:1</strong>. Large text (18pt regular or 14pt bold) requires <strong>3:1</strong> for AA.</p>
+      <p>Our free <em>online contrast ratio tester</em> computes these ratios instantly, letting you iterate quickly on color palettes. Simply input your <em>hex color codes</em> or use the color picker, and you’ll see real‑time feedback on whether the combination passes or fails each WCAG level.</p>
+
+      <h3>How to Choose Accessible Color Palettes</h3>
+      <p>When selecting colors, prioritize <strong>high luminosity contrast</strong>. Tools like color blindness simulators or overlay extensions can help visualize how users experience different shades. Complementary colors often yield strong contrast, but analogous colors can work if luminance differs significantly.</p>
+      <p><strong>Tip:</strong> Evaluate color pairs in various lighting conditions. Accessibility isn’t just about compliance—it’s about delivering a <em>friction‑free user journey</em> across devices and environments.</p>
+
+      <h3>Best Practices for Designers and Developers</h3>
+      <ul>
+        <li>Integrate color contrast checks into your <em>design system</em> workflow.</li>
+        <li>Document accessible color tokens in your <strong>style guide</strong>.</li>
+        <li>Automate accessibility testing in your CI/CD pipeline using tools like <code>axe</code> or <code>pa11y</code>.</li>
+        <li>Pair color with other visual cues (icons, underlines, patterns) to reinforce meaning.</li>
+      </ul>
+
+      <h3>Frequently Asked Questions</h3>
+      <p><strong>Q:</strong> Is this contrast checker accurate for all color formats?<br>
+      <strong>A:</strong> Yes, it uses the WCAG luminosity algorithm for <em>hexadecimal values</em>. Convert RGB or HSL to hex first.</p>
+      <p><strong>Q:</strong> Does meeting AA guarantee legal compliance?<br>
+      <strong>A:</strong> AA is a strong baseline but full accessibility involves keyboard navigation, screen reader support, timed media captions, and more.</p>
+
+      <h3>Conclusion</h3>
+      <p>Accessible design is smart design. With our <strong>Color Contrast Checker tool</strong>, you can ensure every visitor enjoys effortless readability, strengthening your brand’s commitment to <em>inclusive design</em> and future‑proofing your digital presence.</p>
+
+      <!-- Extended content for SEO (approx. 1500+ words) -->
+      <p>In the evolving landscape of <em>digital accessibility</em>, color contrast remains a primary metric for assessing readability and usability. Analysts at the W3C note that insufficient contrast is one of the most common failures detected by automated accessibility scanners. Because visual impairments affect more than 285 million individuals worldwide, addressing contrast issues is not merely an optional design nicety but a moral and business imperative.</p>
+      <p>While many developers equate accessibility solely with screen reader compatibility, contrast plays an equally significant role. Users with <strong>low vision</strong> often magnify content, which can degrade pixel quality and blur edges, making high contrast essential to maintain clarity. Meanwhile, people with <strong>color vision deficiency</strong> (CVD) may perceive certain hues as identical; thus, a strong luminosity difference ensures that text and critical UI components remain distinguishable.</p>
+      <p>Technically, contrast ratio is calculated based on the relative luminance values of two colors. The formula accounts for human perception, factoring in the unique sensitivity of human eyes to different wavelengths. This ratio, expressed as a numerical value like 4.5:1 or 7:1, indicates how distinguishable text is from its background. Whereas designers often rely on subjective judgment, objective metrics produced by a <strong>contrast ratio calculator</strong> remove guesswork.</p>
+      <p>Adopting an <em>accessible color palette</em> also yields SEO benefits. Search engines reward websites that deliver strong user experience signals—time on site, low bounce rates, high click‑through rates. Readable content directly influences these metrics, indirectly boosting page rankings. Moreover, as Google’s algorithms incorporate <strong>Core Web Vitals</strong> and page experience factors, ensuring text clarity can contribute to higher visibility in competitive search verticals.</p>
+      <p>From an organizational standpoint, embedding contrast checks into <em>design sprints</em> fosters a culture of accessibility. Product managers should incorporate <strong>accessibility acceptance criteria</strong> into user stories, while quality assurance teams can integrate automated linting and manual spot checks. By treating accessibility defects with the same urgency as functional bugs, teams promote equitable experiences for all users.</p>
+      <p>Advanced designers aiming for AAA compliance often experiment with <em>dynamic theming</em>. While dark mode reduces eye strain in low‑light environments, it can introduce new contrast pitfalls. Our tool allows quick iteration across themes, ensuring that inverse color schemes remain compliant.</p>
+      <p>Finally, remember that contrast is a living consideration. As brand identities evolve, your palette may shift. Maintain an <strong>accessibility audit schedule</strong>—quarterly reviews or major release checkpoints—to safeguard compliance. Empower your team with our <strong>Color Contrast Checker</strong>, bookmark it, and embed its API or logic into your design tokens for automated validation.</p>
+    </section>
+
+  </main>
+
+<script>
+  // Utility functions
+  function luminance(r, g, b) {
+    const a = [r, g, b].map(v => {
+      v /= 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow(((v + 0.055) / 1.055), 2.4);
+    });
+    return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+  }
+
+  function hexToRgb(hex) {
+    const parsed = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return parsed ? {
+      r: parseInt(parsed[1], 16),
+      g: parseInt(parsed[2], 16),
+      b: parseInt(parsed[3], 16)
+    } : null;
+  }
+
+  function contrast(hex1, hex2) {
+    const c1 = hexToRgb(hex1);
+    const c2 = hexToRgb(hex2);
+    const L1 = luminance(c1.r, c1.g, c1.b) + 0.05;
+    const L2 = luminance(c2.r, c2.g, c2.b) + 0.05;
+    return (Math.max(L1, L2) / Math.min(L1, L2));
+  }
+
+  function rating(ratio) {
+    if (ratio >= 7) return 'AAA';
+    if (ratio >= 4.5) return 'AA';
+    if (ratio >= 3) return 'AA Large';
+    return 'Fail';
+  }
+
+  function update() {
+    const fg = document.getElementById('fg').value.toLowerCase();
+    const bg = document.getElementById('bg').value.toLowerCase();
+    document.getElementById('fgHex').textContent = fg;
+    document.getElementById('bgHex').textContent = bg;
+    const ratioVal = contrast(fg, bg);
+    const rounded = Math.round(ratioVal * 100) / 100;
+    const badgeText = rating(ratioVal);
+    const badge = document.getElementById('wcagBadge');
+    badge.textContent = badgeText;
+    badge.className = 'badge ' + (ratioVal >= 3 ? 'pass' : 'fail');
+    document.getElementById('ratio').firstChild.textContent = 'Contrast Ratio: ' + rounded + ':1 ';
+    const preview = document.getElementById('preview');
+    preview.style.color = fg;
+    preview.style.background = bg;
+  }
+
+  document.getElementById('fg').addEventListener('input', update);
+  document.getElementById('bg').addEventListener('input', update);
+</script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

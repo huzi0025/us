@@ -1,0 +1,28 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://histream.me/sitemap_1.xml
+Sitemap: https://histream.me/sitemap_2.xml
+Sitemap: https://histream.me/sitemap_3.xml
+Sitemap: https://histream.me/sitemap_4.xml
+Sitemap: https://histream.me/sitemap_5.xml
+Sitemap: https://histream.me/sitemap_6.xml
+Sitemap: https://histream.me/sitemap_7.xml
+Sitemap: https://histream.me/sitemap_8.xml
+Sitemap: https://histream.me/sitemap_9.xml
+Sitemap: https://histream.me/sitemap_10.xml
+Sitemap: https://histream.me/sitemap_11.xml
+Sitemap: https://histream.me/sitemap_12.xml
+Sitemap: https://histream.me/sitemap_13.xml
+Sitemap: https://histream.me/sitemap_14.xml
+Sitemap: https://histream.me/sitemap_15.xml
+Sitemap: https://histream.me/sitemap_16.xml
+Sitemap: https://histream.me/sitemap_17.xml
+Sitemap: https://histream.me/sitemap_18.xml
+Sitemap: https://histream.me/sitemap_19.xml
+Sitemap: https://histream.me/sitemap_20.xml
+Sitemap: https://histream.me/sitemap_21.xml
+Sitemap: https://histream.me/sitemap_22.xml
+Sitemap: https://histream.me/sitemap_23.xml
+Sitemap: https://histream.me/sitemap_24.xml
+Sitemap: https://histream.me/sitemap_25.xml

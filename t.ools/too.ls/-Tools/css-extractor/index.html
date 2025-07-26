@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+     
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Critical CSS Extractor Tool - Optimize Above The Fold CSS</title>
+  <meta name="description" content="Extract and generate critical CSS for your website pages to optimize above-the-fold content and improve page load speed and SEO. Use our free online Critical CSS Extractor Tool now." />
+  <meta name="keywords" content="Critical CSS extractor, critical CSS generator, above the fold CSS, CSS optimization, page speed optimization, frontend tools, SEO tools, web performance, CSS critical path" />
+  <link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Critical CSS Extractor Tool",
+    "url": "https://histream.me/-Tools/css-extractor",
+    "description": "Online tool to extract critical CSS and optimize above the fold content for faster page loads and better SEO.",
+    "applicationCategory": "WebApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "JavaScript enabled",
+    "image": "https://histream.me/favicons/tools.png"
+  }
+  </script>
+
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    label {
+      font-weight: 700;
+      display: block;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      font-family: monospace;
+      font-size: 1rem;
+      padding: 0.9rem 1rem;
+      border: 2px solid #000;
+      border-radius: 6px;
+      resize: vertical;
+      background-color: #fff;
+      color: #000;
+      box-sizing: border-box;
+    }
+    input[type="text"] {
+      min-height: 40px;
+    }
+    button {
+      margin-top: 1.5rem;
+      background-color: #000;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      padding: 0.85rem 1.8rem;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #222;
+    }
+    pre#output {
+      background: #f7f7f7;
+      border: 2px solid #000;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 1rem;
+      min-height: 180px;
+      overflow-x: auto;
+      color: #000;
+    }
+    section.blog {
+      margin-top: 4rem;
+      font-size: 1.15rem;
+      max-width: 850px;
+      line-height: 1.7;
+    }
+    section.blog h2, section.blog h3 {
+      margin-top: 2.5rem;
+      font-weight: 700;
+      color: #111;
+    }
+    section.blog p, section.blog ul {
+      margin-top: 1rem;
+      max-width: 100%;
+    }
+    section.blog ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    section.blog a {
+      color: #000;
+      text-decoration: underline;
+    }
+    section.blog a:hover {
+      text-decoration: none;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container" role="main" aria-label="Critical CSS Extractor Tool">
+    <h1>Critical CSS Extractor Tool</h1>
+
+    <label for="cssInput">Full CSS Stylesheet:</label>
+    <textarea id="cssInput" placeholder="Paste your full CSS code here..."></textarea>
+
+    <label for="selectorsInput">Enter Above-The-Fold CSS Selectors (comma-separated):</label>
+    <input type="text" id="selectorsInput" placeholder=".header, .hero, #main-content, .navbar" />
+
+    <button onclick="extractCriticalCSS()">Extract Critical CSS</button>
+
+    <label for="output" class="output-label">Extracted Critical CSS:</label>
+    <pre id="output" aria-live="polite" aria-atomic="true"></pre>
+
+    <section class="blog">
+      <h2>Understanding Critical CSS and Its Importance</h2>
+      <p>Critical CSS is the CSS necessary to style the above-the-fold portion of your webpage, which users see first without scrolling. Extracting and loading only the critical CSS inline or early can drastically improve page load speed and perceived performance.</p>
+
+      <h2>Why Use a Critical CSS Extractor Tool?</h2>
+      <p>Modern web performance best practices recommend separating critical CSS from the rest of your stylesheets to enable faster rendering. Our Critical CSS Extractor tool helps you identify and isolate essential CSS rules affecting the initial viewport, allowing you to:</p>
+      <ul>
+        <li>Speed up the first meaningful paint of your webpage</li>
+        <li>Reduce render-blocking CSS and improve Core Web Vitals</li>
+        <li>Optimize your SEO by enhancing page load experience</li>
+        <li>Enable better caching strategies by loading non-critical CSS asynchronously</li>
+      </ul>
+
+      <h2>How This Tool Works</h2>
+      <p>Paste your full CSS code into the input area and specify the selectors relevant to your above-the-fold content. The tool will parse your CSS and return only the rules that match those selectors, effectively generating your critical CSS snippet.</p>
+
+      <h3>Limitations</h3>
+      <p>This frontend tool performs basic text matching and does not fully parse CSS specificity or media queries. For complex websites, consider using dedicated server-side tools like <a href="https://github.com/addyosmani/critical" target="_blank" rel="noopener noreferrer">Critical by Addy Osmani</a> or <a href="https://www.sitelocity.com/critical-path-css-generator" target="_blank" rel="noopener noreferrer">Sitelocity's Critical Path CSS Generator</a>.</p>
+
+      <h2>Benefits of Critical CSS for SEO</h2>
+      <p>Improving your page's loading speed not only benefits users but also positively impacts your search engine rankings. Google emphasizes Core Web Vitals and user experience as ranking factors, so optimizing CSS delivery is crucial for:</p>
+      <ul>
+        <li>Lower bounce rates and higher engagement</li>
+        <li>Better crawl efficiency and indexing</li>
+        <li>Enhanced mobile performance</li>
+        <li>Competitive advantage in search results</li>
+      </ul>
+
+      <h2>Best Practices for Using Critical CSS</h2>
+      <ul>
+        <li>Keep your critical CSS minimal and focused on visible content</li>
+        <li>Inline critical CSS in your HTML's <code>&lt;head&gt;</code> for fastest render</li>
+        <li>Load remaining CSS asynchronously or deferred to avoid render blocking</li>
+        <li>Test your site after implementation with tools like Google PageSpeed Insights</li>
+      </ul>
+
+      <h2>Additional Resources</h2>
+      <ul>
+        <li><a href="https://web.dev/critical-css/" target="_blank" rel="noopener noreferrer">web.dev: Critical CSS Explained</a></li>
+        <li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path" target="_blank" rel="noopener noreferrer">Google Developers: Critical Rendering Path</a></li>
+        <li><a href="https://css-tricks.com/critical-css/" target="_blank" rel="noopener noreferrer">CSS-Tricks: Critical CSS</a></li>
+      </ul>
+
+      <p>Optimize your web performance by extracting and inlining critical CSS today with our free, easy-to-use Critical CSS Extractor Tool!</p>
+    </section>
+  </div>
+
+  <script>
+    function extractCriticalCSS() {
+      const cssText = document.getElementById('cssInput').value;
+      const selectorsRaw = document.getElementById('selectorsInput').value.trim();
+
+      if (!cssText) {
+        alert('Please paste your full CSS code.');
+        return;
+      }
+      if (!selectorsRaw) {
+        alert('Please enter at least one CSS selector to extract.');
+        return;
+      }
+
+      // Parse selectors input as array trimmed, lowercase
+      const selectors = selectorsRaw.split(',').map(s => s.trim());
+
+      // Regex to extract CSS rules: selector { declarations }
+      // We will keep rules if selector matches any in the selectors list
+      // This is a simplified heuristic approach
+
+      // Prepare a regex to match all CSS rules (ignoring @ rules)
+      // Match selectors and their blocks (handles multi-line)
+      const ruleRegex = /([^{]+){([^}]+)}/g;
+
+      let match;
+      let criticalCSS = '';
+
+      // Normalize selectors for matching - simple contains for demo
+      // In production, use a proper CSS parser
+
+      while ((match = ruleRegex.exec(cssText)) !== null) {
+        let ruleSelector = match[1].trim();
+        let declarations = match[2].trim();
+
+        // Check if ruleSelector matches any of selectors input (partial match for demo)
+        // Split ruleSelector by commas for multi-selector rules
+        const ruleSelectors = ruleSelector.split(',').map(s => s.trim());
+
+        // If any of the selectors match the user input selectors (exact or partial)
+        const isCritical = ruleSelectors.some(rs =>
+          selectors.some(sel => rs === sel || rs.includes(sel) || sel.includes(rs))
+        );
+
+        if (isCritical) {
+          criticalCSS += `${ruleSelector} {${declarations}}\n\n`;
+        }
+      }
+
+      if (!criticalCSS) {
+        criticalCSS = 'No matching critical CSS rules found for the selectors you entered.';
+      }
+
+      document.getElementById('output').textContent = criticalCSS;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

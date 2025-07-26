@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Website Status Checker Tool - Check Website Uptime & HTTP Status</title>
+<meta name="description" content="Use our Website Status Checker Tool to verify if any website is online or offline. Check HTTP response status codes and uptime instantly with this free tool." />
+<meta name="keywords" content="website status checker, check website uptime, website online checker, HTTP status code checker, website availability tool, website downtime checker, website monitoring, online website tester, free website status tool" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Website Status Checker Tool",
+  "url": "https://us.histream.me/-Tools/website-status-checker",
+  "description": "Free tool to check website status, uptime, and HTTP response codes instantly.",
+  "inLanguage": "en",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Website Status Checker"
+  }
+}
+</script>
+
+<style>
+  body {
+    background: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto 4rem auto;
+    padding: 0 1rem;
+    line-height: 1.7;
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.3rem;
+  }
+  p.subtitle {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  input[type="url"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-bottom: 1.25rem;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.6rem;
+    font-size: 1.15rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    margin-bottom: 2rem;
+  }
+  button:hover {
+    background-color: #333;
+  }
+  .result {
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    padding: 1.5rem 1.75rem;
+    border-radius: 6px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height: 120px;
+    font-size: 1.1rem;
+  }
+  .blog {
+    margin-top: 3.5rem;
+  }
+  .blog h2 {
+    margin-top: 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .blog p, .blog ul {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .blog ul {
+    padding-left: 1.5rem;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #333;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<h1>Website Status Checker Tool</h1>
+<p class="subtitle">Check if a website is online and get its HTTP status code instantly. Verify uptime and monitor website availability with this free and easy tool.</p>
+
+<label for="urlInput">Enter Website URL:</label>
+<input type="url" id="urlInput" placeholder="https://example.com" aria-describedby="urlHelp" required />
+<button onclick="checkWebsiteStatus()">Check Status</button>
+
+<div class="result" id="result" aria-live="polite" aria-label="Website status results">Enter a website URL and click "Check Status" to see results here.</div>
+
+<section class="blog" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Article">
+  <h2>What is Website Status Checking?</h2>
+  <p>Website status checking refers to the process of verifying if a website is currently reachable and online. This involves sending an HTTP request to the website's server and interpreting the response code to determine its availability.</p>
+
+  <h2>Why Use a Website Status Checker?</h2>
+  <p>Using a website status checker helps website owners and users monitor uptime, identify downtime issues, and ensure their websites are accessible to visitors. It's an essential tool for maintaining reliability and trustworthiness online.</p>
+
+  <h2>Understanding HTTP Status Codes</h2>
+  <ul>
+    <li><strong>200 OK:</strong> The website is online and responding correctly.</li>
+    <li><strong>301 Moved Permanently:</strong> The website URL has permanently changed; usually redirects to a new URL.</li>
+    <li><strong>404 Not Found:</strong> The website or page does not exist on the server.</li>
+    <li><strong>500 Internal Server Error:</strong> The server has encountered an unexpected error.</li>
+    <li><strong>Other status codes:</strong> Various other codes indicate different server states or errors.</li>
+  </ul>
+
+  <h2>How Does This Tool Work?</h2>
+  <p>Our Website Status Checker sends a request to the specified URL and retrieves the HTTP status code and message. This information helps you quickly identify if your website is up or facing issues.</p>
+
+  <h2>Common Use Cases for Website Status Checking</h2>
+  <ul>
+    <li>Monitoring website uptime and downtime.</li>
+    <li>Checking if a domain is properly configured and accessible.</li>
+    <li>Diagnosing server or connectivity issues.</li>
+    <li>Verifying redirects and URL changes.</li>
+    <li>Testing third-party website availability.</li>
+  </ul>
+
+  <h2>Benefits of Regular Website Monitoring</h2>
+  <p>Regular monitoring of your website status can help you catch downtime early, reduce visitor frustration, and maintain your site's reputation and SEO rankings. Automated status checkers often alert site owners of problems before users notice them.</p>
+
+  <h2>SEO Keywords for Website Status and Uptime Tools</h2>
+  <p>website status checker, website uptime monitor, check website online, HTTP status code checker, website downtime detection, free website monitoring, website availability test, online website checker, domain status check, server response tester.</p>
+
+  <h2>Security and Privacy</h2>
+  <p>This tool performs all checks via client-side requests to your specified URL. No URLs or data are stored or transmitted to third parties, ensuring your privacy and security.</p>
+
+  <h2>Improve Your Website's Reliability</h2>
+  <p>Stay proactive by regularly checking your website’s status. Identify and fix issues quickly to provide a seamless browsing experience for your visitors.</p>
+
+  <h2>Additional Resources</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank" rel="noopener noreferrer">HTTP Status Codes - MDN Web Docs</a></li>
+    <li><a href="https://uptimerobot.com/" target="_blank" rel="noopener noreferrer">Uptime Robot - Website Monitoring Service</a></li>
+    <li><a href="https://www.google.com/search?q=website+uptime+monitoring" target="_blank" rel="noopener noreferrer">Google Search - Website Uptime Monitoring</a></li>
+  </ul>
+
+  <h2>Start Checking Your Website Now</h2>
+  <p>Enter any valid URL above and click the "Check Status" button to quickly verify your website's availability and HTTP response. Keep your site healthy and reliable with regular monitoring.</p>
+</section>
+
+<script>
+async function checkWebsiteStatus() {
+  const resultEl = document.getElementById('result');
+  const urlInput = document.getElementById('urlInput').value.trim();
+
+  if (!urlInput) {
+    resultEl.textContent = "Please enter a valid website URL.";
+    return;
+  }
+
+  let testUrl = urlInput;
+  // Add protocol if missing for fetch
+  if (!/^https?:\/\//i.test(testUrl)) {
+    testUrl = 'https://' + testUrl;
+  }
+
+  resultEl.textContent = "Checking website status...";
+
+  try {
+    // Use fetch with HEAD method for minimal data transfer if supported by server
+    const response = await fetch(testUrl, { method: 'HEAD', mode: 'cors' });
+
+    // Show status code and status text
+    resultEl.textContent = 
+      `Website URL: ${testUrl}\n` +
+      `Status Code: ${response.status}\n` +
+      `Status Text: ${response.statusText}\n` +
+      `OK: ${response.ok ? "Yes" : "No"}`;
+  } catch (error) {
+    resultEl.textContent = 
+      `Error: Unable to reach the website.\n` +
+      `Details: ${error.message}\n` +
+      `Note: Some websites block cross-origin HEAD requests. Try using the full URL with https:// or check the URL correctness.`;
+  }
+}
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

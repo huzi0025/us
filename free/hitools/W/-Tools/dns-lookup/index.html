@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DNS Lookup Tool - Check Domain DNS Records Instantly</title>
+<meta name="description" content="Perform DNS lookups for any domain with our DNS Lookup Tool. Check A, AAAA, MX, CNAME, NS, TXT records and analyze DNS configurations for SEO and performance." />
+<meta name="keywords" content="DNS Lookup Tool, DNS records check, domain DNS lookup, A record, AAAA record, MX record, CNAME record, NS record, TXT record, domain DNS analyzer, SEO DNS check, DNS diagnostics, website DNS lookup" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+<style>
+  body {
+    margin: 0; padding: 2rem; background: #fff; color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 0 14px rgba(0,0,0,0.05);
+  }
+  h1 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  input[type="text"], select {
+    flex: 1 1 250px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background: #fafafa;
+    color: #000;
+    outline-offset: 2px;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  #results {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    white-space: pre-wrap;
+    font-family: Consolas, monospace;
+    min-height: 120px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  }
+  .blog-section {
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #111;
+  }
+  .blog-section h2 {
+    margin-top: 2.5rem;
+    font-weight: 700;
+  }
+  .blog-section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .blog-section ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 480px) {
+    form {
+      flex-direction: column;
+    }
+    input[type="text"], select, button {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container" itemprop="mainContentOfPage">
+    <h1>DNS Lookup Tool</h1>
+    <form id="dnsForm" aria-label="DNS Lookup Form">
+      <input type="text" id="domainInput" name="domain" placeholder="Enter domain (e.g., example.com)" aria-label="Domain name" required pattern="^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+      <select id="recordType" name="recordType" aria-label="Select DNS record type">
+        <option value="A" selected>A (IPv4 address)</option>
+        <option value="AAAA">AAAA (IPv6 address)</option>
+        <option value="CNAME">CNAME (Alias)</option>
+        <option value="MX">MX (Mail Exchange)</option>
+        <option value="NS">NS (Name Server)</option>
+        <option value="TXT">TXT (Text records)</option>
+        <option value="SOA">SOA (Start of Authority)</option>
+        <option value="PTR">PTR (Pointer)</option>
+      </select>
+      <button type="submit">Lookup</button>
+    </form>
+    <pre id="results" aria-live="polite" aria-label="DNS lookup results">Enter domain and select record type to perform DNS lookup.</pre>
+  </div>
+
+  <div class="blog-section" itemprop="articleBody">
+    <h2>Understanding DNS and Its Importance</h2>
+    <p>The Domain Name System (DNS) acts as the phonebook of the internet, translating human-friendly domain names like <em>example.com</em> into IP addresses that computers use to identify each other on the network. A properly configured DNS is vital for website availability, email delivery, and overall internet performance.</p>
+    <p>Our DNS Lookup Tool allows you to query various DNS records to verify your domain's configuration and troubleshoot potential issues impacting your website or email systems.</p>
+
+    <h2>Common DNS Record Types Explained</h2>
+    <ul>
+      <li><strong>A Record:</strong> Maps a domain to an IPv4 address.</li>
+      <li><strong>AAAA Record:</strong> Maps a domain to an IPv6 address.</li>
+      <li><strong>CNAME Record:</strong> Canonical name record used for domain aliases.</li>
+      <li><strong>MX Record:</strong> Specifies mail servers responsible for receiving email.</li>
+      <li><strong>NS Record:</strong> Indicates the authoritative name servers for a domain.</li>
+      <li><strong>TXT Record:</strong> Stores arbitrary text data, often for verification or security.</li>
+      <li><strong>SOA Record:</strong> Contains administrative information about the domain.</li>
+      <li><strong>PTR Record:</strong> Provides reverse DNS lookup for IP addresses.</li>
+    </ul>
+
+    <h2>Why Regular DNS Checks Matter for SEO and Security</h2>
+    <p>Incorrect DNS settings can lead to website downtime, mail delivery failures, or even security vulnerabilities. Search engines like Google consider website availability and speed when ranking pages, and DNS issues can negatively impact both. Regular DNS audits help ensure your domain remains accessible, secure, and optimized for SEO.</p>
+
+    <h2>How to Use This DNS Lookup Tool</h2>
+    <p>Enter the domain name you want to check and select the type of DNS record you want to query. Click "Lookup" to get the current DNS records. This tool simulates the lookup on the client side; for full DNS query capability, backend integration is required.</p>
+
+    <h2>Advanced DNS Optimization Tips</h2>
+    <ul>
+      <li>Ensure your A and AAAA records point to the correct, fast, and reliable hosting servers.</li>
+      <li>Configure MX records correctly to avoid email delivery issues.</li>
+      <li>Use CNAME records to manage subdomains efficiently.</li>
+      <li>Implement SPF, DKIM, and DMARC in TXT records for email security.</li>
+      <li>Regularly check your NS records to verify your authoritative DNS servers.</li>
+    </ul>
+
+    <h2>SEO Keywords for DNS Lookup</h2>
+    <p>DNS Lookup Tool, DNS records check, domain DNS lookup, SEO DNS optimization, website DNS analysis, DNS troubleshooting, domain configuration checker, MX records test, A record check, CNAME record lookup, NS record verification, TXT record analysis, internet performance tools.</p>
+
+    <h2>Conclusion</h2>
+    <p>Monitoring and understanding your domain's DNS records is critical to maintaining your online presence, improving SEO, and securing your communications. Use this DNS Lookup Tool regularly to ensure your domain is configured correctly and to troubleshoot DNS-related issues quickly and efficiently.</p>
+
+    <p>For developers, site owners, and SEO specialists, mastering DNS management is a fundamental step towards reliable, secure, and fast websites.</p>
+  </div>
+
+<script>
+  // Simulated DNS records for demo purposes
+  const fakeDnsData = {
+    "example.com": {
+      A: ["93.184.216.34"],
+      AAAA: ["2606:2800:220:1:248:1893:25c8:1946"],
+      CNAME: [],
+      MX: ["0 mail.example.com"],
+      NS: ["ns1.example.com", "ns2.example.com"],
+      TXT: ["v=spf1 include:_spf.example.com ~all"],
+      SOA: ["ns1.example.com hostmaster.example.com 2024060101 7200 3600 1209600 3600"],
+      PTR: []
+    },
+    "google.com": {
+      A: ["142.250.190.78"],
+      AAAA: ["2607:f8b0:4009:80c::200e"],
+      CNAME: [],
+      MX: ["10 smtp.google.com"],
+      NS: ["ns1.google.com", "ns2.google.com"],
+      TXT: ["google-site-verification=abc123", "v=spf1 include:_spf.google.com ~all"],
+      SOA: ["ns1.google.com hostmaster.google.com 2024060101 900 900 1800 60"],
+      PTR: []
+    }
+  };
+
+  document.getElementById('dnsForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const domain = e.target.domain.value.trim().toLowerCase();
+    const recordType = e.target.recordType.value;
+    const resultsElem = document.getElementById('results');
+
+    if (!domain.match(/^[a-z0-9.-]+\.[a-z]{2,}$/)) {
+      resultsElem.textContent = 'Invalid domain format. Please enter a valid domain name.';
+      return;
+    }
+
+    if (fakeDnsData[domain] && fakeDnsData[domain][recordType] && fakeDnsData[domain][recordType].length > 0) {
+      const records = fakeDnsData[domain][recordType];
+      resultsElem.textContent = `${recordType} records for ${domain}:\n\n${records.join('\n')}`;
+    } else {
+      resultsElem.textContent = `No ${recordType} records found for ${domain} or domain not in demo database.`;
+    }
+  });
+</script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

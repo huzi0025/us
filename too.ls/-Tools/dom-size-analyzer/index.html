@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DOM Size Analyzer Tool - Analyze Your Webpage DOM Size & Structure</title>
+<meta name="description" content="Use the DOM Size Analyzer Tool to analyze your webpage's Document Object Model (DOM) size, depth, and structure. Optimize your site performance and SEO with detailed insights." />
+<meta name="keywords" content="DOM size analyzer, DOM structure tool, webpage performance, DOM depth, DOM nodes count, web optimization tool, frontend performance, SEO optimization tool" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "DOM Size Analyzer Tool",
+  "url": "https://histream.me/-Tools/dom-size-analyzer",
+  "description": "Free frontend tool to analyze DOM size, depth, and structure to improve website performance and SEO.",
+  "inLanguage": "en",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "DOM Size Analyzer"
+  }
+}
+</script>
+
+<style>
+  body {
+    background: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem 4rem 1rem;
+    line-height: 1.7;
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+  p.subtitle {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  textarea {
+    width: 100%;
+    min-height: 160px;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    resize: vertical;
+    margin-bottom: 1.5rem;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.6rem;
+    font-size: 1.15rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    margin-bottom: 2rem;
+  }
+  button:hover {
+    background-color: #333;
+  }
+  .result {
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    padding: 1.25rem 1.5rem;
+    border-radius: 6px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+    min-height: 140px;
+  }
+  .blog {
+    margin-top: 3.5rem;
+  }
+  .blog h2 {
+    margin-top: 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .blog p, .blog ul {
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .blog ul {
+    padding-left: 1.4rem;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <h1>DOM Size Analyzer Tool</h1>
+  <p class="subtitle">Analyze your HTML document's DOM size, node count, and structural depth to optimize your website's performance and SEO.</p>
+
+  <label for="htmlInput">Paste your HTML code here:</label>
+  <textarea id="htmlInput" placeholder="Paste your full HTML markup here..."></textarea>
+
+  <button onclick="analyzeDom()">Analyze DOM Size</button>
+
+  <div class="result" id="result" aria-live="polite" aria-label="DOM analysis results"></div>
+
+  <section class="blog" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Article">
+    <h2>Understanding the Document Object Model (DOM)</h2>
+    <p>The Document Object Model (DOM) represents the structure of an HTML document as a tree of nodes. Each element, attribute, and piece of text corresponds to a node in this tree. Browsers use the DOM to render webpages, making its size and complexity critical factors for performance and SEO.</p>
+
+    <h2>Why Analyze DOM Size?</h2>
+    <p>Large or deeply nested DOMs can slow down page rendering, increase memory usage, and negatively affect user experience, especially on mobile devices. Analyzing your DOM size helps identify performance bottlenecks and opportunities to simplify your webpage's structure.</p>
+
+    <h2>Key Metrics Provided by This Tool</h2>
+    <ul>
+      <li><strong>Total Elements:</strong> The total number of HTML elements present in the document.</li>
+      <li><strong>Total Nodes:</strong> The total count of all nodes, including elements, text nodes, and comments.</li>
+      <li><strong>Maximum Depth:</strong> The deepest level of nesting found in your DOM tree.</li>
+      <li><strong>Average Depth:</strong> The average nesting level, providing insight into overall structural complexity.</li>
+    </ul>
+
+    <h2>Performance Impact of Large DOMs</h2>
+    <p>A bloated DOM increases the time required for browser layout and paint operations. It also slows JavaScript execution during DOM manipulations and increases the chance of layout thrashing. Keeping your DOM small and shallow helps deliver a faster, smoother experience for your users.</p>
+
+    <h2>Best Practices to Optimize DOM Size</h2>
+    <ul>
+      <li><strong>Reduce unnecessary wrapper elements:</strong> Avoid excess <code>div</code> or <code>span</code> tags that don’t contribute meaningfully.</li>
+      <li><strong>Limit depth of nesting:</strong> Try to keep your DOM tree as flat as possible for faster traversal.</li>
+      <li><strong>Lazy-load content:</strong> Load non-essential elements only when needed, reducing initial DOM size.</li>
+      <li><strong>Use semantic HTML:</strong> Proper use of semantic tags can reduce complexity and improve accessibility.</li>
+      <li><strong>Remove unused scripts and styles:</strong> Minimize the DOM elements generated by third-party plugins.</li>
+    </ul>
+
+    <h2>SEO and Accessibility Benefits</h2>
+    <p>Search engines prefer faster-loading pages with clean, semantic HTML. A well-structured DOM makes your content easier to crawl and index. Additionally, a lean DOM improves accessibility by enabling assistive technologies to navigate your site more effectively.</p>
+
+    <h2>How This Tool Works</h2>
+    <p>Simply paste your full HTML markup into the textarea and click “Analyze DOM Size.” The tool parses the HTML, builds a DOM tree in the browser, and calculates key statistics about your document’s structure.</p>
+
+    <h2>SEO Keywords for DOM Size Optimization</h2>
+    <p>DOM size analyzer, DOM structure tool, website performance optimization, DOM depth analysis, total nodes count, front-end optimization, SEO and DOM size, reduce DOM size, website speed improvement, optimize HTML structure.</p>
+
+    <h2>Privacy & Security</h2>
+    <p>All analysis is performed client-side within your browser. No data is transmitted to any server, ensuring your code and data remain private and secure.</p>
+
+    <h2>Start Optimizing Your Website Today</h2>
+    <p>Understanding your DOM size is a crucial step towards faster, more efficient webpages. Use this tool regularly to monitor and improve your site’s frontend performance and SEO.</p>
+  </section>
+
+<script>
+  function analyzeDom() {
+    const input = document.getElementById('htmlInput').value.trim();
+    const resultEl = document.getElementById('result');
+
+    if (!input) {
+      resultEl.textContent = "Please paste your HTML code in the input box.";
+      return;
+    }
+
+    try {
+      // Parse the HTML string into a DOM tree inside a temporary container
+      const container = document.createElement('div');
+      container.innerHTML = input;
+
+      // Helper function to recursively count nodes and depth
+      let maxDepth = 0;
+      let totalElements = 0;
+      let totalNodes = 0;
+      let totalDepth = 0;
+
+      function traverse(node, depth) {
+        if (!node) return;
+        totalNodes++;
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          totalElements++;
+          maxDepth = Math.max(maxDepth, depth);
+          totalDepth += depth;
+          const children = node.childNodes;
+          for (let i = 0; i < children.length; i++) {
+            traverse(children[i], depth + 1);
+          }
+        }
+        else if (node.nodeType === Node.TEXT_NODE || node.nodeType === Node.COMMENT_NODE) {
+          // Count text and comment nodes but no depth increase
+          // (Or you can count depth as depth+1, but here we keep it simple)
+          // totalDepth += depth; // optional
+        }
+      }
+
+      // Start traversing child nodes of container at depth 1
+      const children = container.childNodes;
+      for (let i = 0; i < children.length; i++) {
+        traverse(children[i], 1);
+      }
+
+      const avgDepth = totalElements ? (totalDepth / totalElements).toFixed(2) : 0;
+
+      const output = 
+`DOM Size Analysis Results:
+
+Total Elements: ${totalElements}
+Total Nodes (Elements + Text + Comments): ${totalNodes}
+Maximum Depth of DOM Tree: ${maxDepth}
+Average Depth of Elements: ${avgDepth}`;
+
+      resultEl.textContent = output;
+    } catch (e) {
+      resultEl.textContent = "Error parsing HTML. Please check your input and try again.";
+    }
+  }
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

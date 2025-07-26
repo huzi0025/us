@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Domain Age Checker Tool - Find Domain Registration Age & History</title>
+<meta name="description" content="Check the exact age of any domain name with our Domain Age Checker tool. Understand domain registration date, expiration, and history to enhance SEO and trustworthiness." />
+<meta name="keywords" content="domain age checker, domain registration age, check domain age online, domain history, domain expiry date, SEO domain age, domain authority, domain checker tool, domain age lookup" />
+<meta name="author" content="HiStream Tools" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<style>
+  /* Reset and base styles */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+  }
+  p.intro {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+  }
+  form {
+    border: 1px solid #222;
+    padding: 25px 30px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    margin-bottom: 50px;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  button {
+    margin-top: 28px;
+    background: #000;
+    color: #fff;
+    padding: 15px 28px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #333;
+  }
+  #result {
+    margin-top: 30px;
+    background: #e7e7e7;
+    padding: 20px 24px;
+    border-radius: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+    min-height: 120px;
+  }
+  .error {
+    color: #cc0000;
+    font-weight: 700;
+  }
+  .blog {
+    margin-top: 60px;
+  }
+  .blog h2 {
+    font-size: 1.7rem;
+    margin-top: 42px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 8px;
+  }
+  .blog p, .blog ul, .blog ol {
+    margin-bottom: 20px;
+  }
+  .blog ul, .blog ol {
+    padding-left: 26px;
+  }
+  .blog strong {
+    color: #000;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Domain Age Checker Tool",
+  "url": "https://histream.me/tools/domain-age-checker",
+  "description": "An online tool to check the exact age and registration details of any domain to improve SEO and website trust.",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript enabled",
+  "author": {
+    "@type": "Organization",
+    "name": "HiStream Tools"
+  }
+}
+</script>
+
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container" role="main">
+    <h1>Domain Age Checker Tool</h1>
+    <p class="intro">
+      Instantly find out the age and registration details of any domain name. Understanding domain age helps in SEO analysis, trust building, and competitive research.
+    </p>
+
+    <form id="domainForm" aria-label="Domain Age Checker form" onsubmit="checkDomainAge(event)" novalidate>
+      <label for="domainInput">Enter Domain Name (e.g., example.com)</label>
+      <input
+        type="text"
+        id="domainInput"
+        name="domain"
+        placeholder="Enter a valid domain name"
+        pattern="^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$"
+        required
+        aria-describedby="domainHelp"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <small id="domainHelp">Only valid domain names, no protocols (http/https) or paths.</small>
+
+      <button type="submit" aria-live="polite" aria-atomic="true">Check Domain Age</button>
+    </form>
+
+    <pre id="result" aria-live="polite" aria-atomic="true" role="region" tabindex="0"></pre>
+
+    <article class="blog" aria-label="Detailed blog about domain age importance and SEO best practices">
+      <h2>What is Domain Age and Why It Matters</h2>
+      <p>
+        <strong>Domain age</strong> refers to the length of time since a domain name was first registered. Older domains are often considered more trustworthy by search engines and users alike. They can have an advantage in rankings, as longevity signals stability and reliability.
+      </p>
+      <p>
+        Many SEO professionals emphasize the importance of domain age as a ranking factor. While it is not the only factor, a domain with a longer history can benefit from established backlinks, trust, and recognition.
+      </p>
+
+      <h2>How Does Domain Age Affect SEO?</h2>
+      <ul>
+        <li><strong>Trustworthiness:</strong> Older domains tend to be viewed as more credible by search engines.</li>
+        <li><strong>Backlink Profile:</strong> Older domains often accumulate more backlinks over time, which enhances authority.</li>
+        <li><strong>Indexing:</strong> Established domains are indexed more quickly and frequently.</li>
+        <li><strong>Brand Recognition:</strong> A long-established domain name may be more recognizable to users.</li>
+      </ul>
+
+      <h2>Using the Domain Age Checker Tool</h2>
+      <p>
+        Our <strong>Domain Age Checker Tool</strong> allows you to manually enter any valid domain name and receive the domain's registration age, creation date, expiration date, and registrar information. This data can be used for competitor analysis, SEO audits, and domain purchasing decisions.
+      </p>
+
+      <h2>How Domain Age is Calculated</h2>
+      <p>
+        The domain age is typically calculated by subtracting the domain's creation date from the current date. This tool fetches registration data using WHOIS APIs and calculates the age automatically for you.
+      </p>
+
+      <h2>Important Considerations</h2>
+      <ul>
+        <li>Domains can be renewed, transferred, or re-registered, which may affect age data.</li>
+        <li>Some WHOIS information may be privacy protected, limiting data availability.</li>
+        <li>Different TLDs (.com, .net, .org) may have varying data access rules.</li>
+      </ul>
+
+      <h2>SEO Keywords for Domain Age Checker</h2>
+      <p>
+        <strong>domain age checker</strong>, <strong>domain registration age</strong>, <strong>check domain age online</strong>, <strong>domain history</strong>, <strong>domain expiry date</strong>, <strong>SEO domain age</strong>, <strong>domain authority</strong>, <strong>domain checker tool</strong>, <strong>domain age lookup</strong>.
+      </p>
+
+      <h2>How to Use Domain Age for SEO Success</h2>
+      <ol>
+        <li>Choose older domains when possible to improve trust and rankings.</li>
+        <li>Regularly audit your domain’s expiration date to avoid losing your site.</li>
+        <li>Use domain age alongside backlink quality for comprehensive SEO analysis.</li>
+        <li>Monitor competitors’ domain ages to assess their SEO strategies.</li>
+      </ol>
+
+      <h2>Conclusion</h2>
+      <p>
+        Knowing your domain's age is a crucial step in SEO and online marketing strategies. This <strong>Domain Age Checker Tool</strong> helps you quickly uncover domain history and make informed decisions about your website or domain purchases.
+      </p>
+    </article>
+  </main>
+
+<script>
+  async function checkDomainAge(e) {
+    e.preventDefault();
+    const domainInput = document.getElementById('domainInput');
+    const result = document.getElementById('result');
+    const domain = domainInput.value.trim().toLowerCase();
+
+    result.textContent = 'Checking domain age...';
+
+    // Simple domain validation pattern (already validated by pattern attribute, but double-check here)
+    const domainPattern = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/;
+    if (!domainPattern.test(domain)) {
+      result.innerHTML = '<span class="error">Invalid domain name format. Please enter a valid domain (e.g., example.com).</span>';
+      domainInput.focus();
+      return;
+    }
+
+    try {
+      // Using Whois API (free public API)
+      // Note: Replace the URL with a real API or proxy if needed. Here, we use https://api.domainsdb.info/v1/domains/search?domain=...
+      // Domainsdb.info does not provide creation dates, so use another free API or workaround.
+
+      // For demo, we'll use https://api.whois.vu/?q=domain.com which returns JSON with creation_date etc.
+      // If you want to implement with your own backend, replace here accordingly.
+
+      const apiURL = `https://api.whois.vu/?q=${encodeURIComponent(domain)}`;
+
+      const response = await fetch(apiURL);
+      if (!response.ok) throw new Error('Failed to fetch domain data.');
+
+      const data = await response.json();
+
+      if (!data.creation_date) {
+        result.innerHTML = `<span class="error">Sorry, domain registration date not available or domain does not exist.</span>`;
+        return;
+      }
+
+      const creationDate = new Date(data.creation_date);
+      const expirationDate = data.expiration_date ? new Date(data.expiration_date) : null;
+      const now = new Date();
+
+      // Calculate age in years, months, days
+      let ageYears = now.getFullYear() - creationDate.getFullYear();
+      let ageMonths = now.getMonth() - creationDate.getMonth();
+      let ageDays = now.getDate() - creationDate.getDate();
+
+      if (ageDays < 0) {
+        ageMonths--;
+        ageDays += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+      }
+      if (ageMonths < 0) {
+        ageYears--;
+        ageMonths += 12;
+      }
+
+      let ageString = `${ageYears} year${ageYears !== 1 ? 's' : ''}`;
+      if(ageMonths > 0) ageString += `, ${ageMonths} month${ageMonths !== 1 ? 's' : ''}`;
+      if(ageDays > 0) ageString += `, and ${ageDays} day${ageDays !== 1 ? 's' : ''}`;
+
+      let output = `
+Domain: ${domain}
+Created On: ${creationDate.toDateString()}
+Domain Age: ${ageString}
+`;
+
+      if (expirationDate) {
+        output += `Expiration Date: ${expirationDate.toDateString()}\n`;
+      }
+
+      if (data.registrar) {
+        output += `Registrar: ${data.registrar}\n`;
+      }
+
+      result.textContent = output.trim();
+
+    } catch (error) {
+      result.innerHTML = `<span class="error">Error fetching domain data. Please try again later.</span>`;
+      console.error(error);
+    }
+  }
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

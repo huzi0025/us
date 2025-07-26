@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anchor Text Analyzer Tool – Advanced SEO Keyword Optimization</title>
+  <meta name="description" content="Use our free Anchor Text Analyzer Tool to scan anchor text on any webpage and improve SEO link strategies. High-performance tool with rich keyword insights.">
+  <meta name="keywords" content="Anchor Text Analyzer, SEO Tool, Link Analysis, SEO Optimization, Backlink Audit, SEO Keyword Tool, Anchor Text Checker, SEO Link Strategy">
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      font-family: monospace;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #333;
+      border-radius: 4px;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .result {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container" itemprop="mainContentOfPage">
+    <h1>Anchor Text Analyzer Tool</h1>
+    <p>Paste your HTML code below to extract and analyze anchor texts from links. Perfect for SEO audits and backlink analysis.</p>
+    <textarea id="htmlInput" placeholder="Paste your HTML content here..."></textarea>
+    <button onclick="analyzeAnchors()">Analyze Anchor Texts</button>
+    <div class="result" id="result"></div>
+
+    <h2>What Is Anchor Text and Why Is It Important for SEO?</h2>
+    <p>
+      Anchor text is the visible, clickable text in a hyperlink. Search engines use anchor text to determine what the linked page is about.
+      Using a variety of anchor texts—including exact match, partial match, branded, and generic—improves your SEO performance.
+      Our Anchor Text Analyzer Tool helps you understand your anchor text distribution, optimize keyword usage, and avoid over-optimization penalties.
+      Whether you're conducting a backlink audit or optimizing internal links, this SEO tool is essential for improving your search rankings.
+    </p>
+
+    <h2>Features of Our Anchor Text Analyzer Tool</h2>
+    <ul>
+      <li>Instantly extracts all anchor texts from your HTML content</li>
+      <li>Counts frequency of each anchor phrase</li>
+      <li>Highlights duplicate anchor usage</li>
+      <li>Helps identify overused or under-optimized keywords</li>
+      <li>No login, no ads, 100% free and instant</li>
+    </ul>
+
+    <h2>Boost SEO with Smart Anchor Text Strategies</h2>
+    <p>
+      Search engines like Google evaluate anchor text when ranking pages. A healthy backlink profile includes a mix of branded, exact match, and natural anchor phrases.
+      Using this tool regularly can help you maintain a balanced anchor text strategy that avoids search engine penalties and improves keyword relevance.
+    </p>
+
+    <h2>Best Practices for Anchor Text SEO Optimization</h2>
+    <ol>
+      <li>Use keyword-rich anchor text sparingly and naturally</li>
+      <li>Don't repeat the same anchor across multiple links</li>
+      <li>Incorporate branded and long-tail anchor texts</li>
+      <li>Keep links relevant to content topics</li>
+      <li>Audit internal and external anchor usage frequently</li>
+    </ol>
+
+    <h2>Free Online Anchor Text SEO Tool – Unlimited Usage</h2>
+    <p>
+      Unlike many other SEO tools, our Anchor Text Analyzer offers unlimited access for free. Perfect for marketers, bloggers, SEOs, and webmasters.
+      Just paste your HTML, click analyze, and gain insights into how your anchor texts are working for or against your SEO.
+    </p>
+
+    <h2>FAQ – Anchor Text Analyzer Tool</h2>
+    <p><strong>Q: Is this tool free?</strong><br>A: Yes, 100% free and private. No data is saved.</p>
+    <p><strong>Q: Can I use it for any website?</strong><br>A: Yes, paste any site’s HTML or view-source output to analyze.</p>
+    <p><strong>Q: Does it support large HTML files?</strong><br>A: Yes, the tool is designed to handle long and complex HTML content.</p>
+
+    <h2>Try the Best SEO Anchor Text Analyzer Tool Now</h2>
+    <p>
+      Whether you're optimizing an affiliate blog, eCommerce site, or content hub, our anchor text checker is built for serious SEO professionals.
+      Improve your rankings and link relevance today with this high-performance analyzer.
+    </p>
+  </div>
+
+  <script>
+    function analyzeAnchors() {
+      const html = document.getElementById("htmlInput").value;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const anchors = doc.querySelectorAll('a');
+      const result = {};
+      anchors.forEach(a => {
+        const text = a.textContent.trim();
+        if (text) {
+          result[text] = (result[text] || 0) + 1;
+        }
+      });
+      let output = 'Anchor Text Analysis Results:\n\n';
+      for (let key in result) {
+        output += `"${key}": ${result[key]} time(s)\n`;
+      }
+      document.getElementById("result").textContent = output || "No anchor texts found.";
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Heatmap Visualizer Tool - Create Interactive Heatmaps Online</title>
+<meta name="description" content="Visualize your data instantly with our Heatmap Visualizer Tool. Paste your data and get an interactive heatmap preview. Perfect for data analysis, marketing, UX, and more." />
+<meta name="keywords" content="heatmap visualizer, data heatmap tool, interactive heatmap, heatmap generator, online heatmap, website heatmap, data visualization tool, marketing heatmap, UX heatmap, heatmap analysis" />
+<meta name="author" content="HiStream Tools" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<style>
+  /* Base resets */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 20px auto;
+    background: #fff;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    line-height: 1.7;
+  }
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+  }
+  p.intro {
+    font-size: 1.15rem;
+    margin-bottom: 28px;
+  }
+
+  form {
+    border: 2px solid #000;
+    padding: 20px 24px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    margin-bottom: 40px;
+  }
+
+  label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+    height: 160px;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 14px 18px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    resize: vertical;
+    background: #fff;
+    color: #000;
+    transition: border-color 0.3s ease;
+  }
+  textarea:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  button {
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #222;
+  }
+
+  #heatmapPreview {
+    margin-top: 28px;
+    border: 1px solid #000;
+    height: 350px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* Heatmap squares container */
+  .heatmap-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  }
+  .heatmap-cell {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Blog styling */
+  .blog {
+    margin-top: 60px;
+  }
+  .blog h2 {
+    font-size: 1.8rem;
+    margin-top: 48px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 8px;
+  }
+  .blog p, .blog ul, .blog ol {
+    margin-bottom: 22px;
+  }
+  .blog ul, .blog ol {
+    padding-left: 28px;
+  }
+  .blog strong {
+    color: #000;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Heatmap Visualizer Tool",
+  "url": "https://histream.me/tools/heatmap-visualizer",
+  "description": "Interactive Heatmap Visualizer Tool to help analyze and visualize your data easily and instantly.",
+  "applicationCategory": "DataVisualizationApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript enabled",
+  "author": {
+    "@type": "Organization",
+    "name": "HiStream Tools"
+  }
+}
+</script>
+
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main role="main">
+    <h1>Heatmap Visualizer Tool</h1>
+    <p class="intro">
+      Paste your data below in JSON or CSV format, then generate an interactive heatmap preview. Great for marketing analytics, UX research, geographic data visualization, and more.
+    </p>
+
+    <form id="heatmapForm" aria-label="Heatmap Visualizer Form" onsubmit="generateHeatmap(event)" novalidate>
+      <label for="dataInput">Enter Heatmap Data (JSON Array or CSV rows)</label>
+      <textarea id="dataInput" placeholder='Example JSON: [{"x":0,"y":0,"value":10}, {"x":1,"y":0,"value":15}, {"x":0,"y":1,"value":5}]'></textarea>
+      <button type="submit" aria-live="polite" aria-atomic="true">Generate Heatmap</button>
+    </form>
+
+    <section id="heatmapPreview" aria-label="Heatmap Preview" role="region" tabindex="0" aria-live="polite" aria-atomic="true">
+      <p style="text-align:center; padding-top: 140px; color: #666;">Heatmap preview will appear here after you submit data.</p>
+    </section>
+
+    <article class="blog" aria-label="Detailed blog about heatmaps and data visualization">
+      <h2>What is a Heatmap and Why Use It?</h2>
+      <p>
+        A <strong>heatmap</strong> is a graphical representation of data where individual values are represented as colors. It helps to visualize patterns, trends, and density of data points across two dimensions. Heatmaps are widely used in <strong>marketing analytics</strong>, <strong>website user behavior analysis</strong>, <strong>geographic information systems (GIS)</strong>, and <strong>scientific research</strong>.
+      </p>
+      <h2>Types of Heatmaps</h2>
+      <ul>
+        <li><strong>Website Heatmaps:</strong> Show where users click or scroll, valuable for UX optimization.</li>
+        <li><strong>Geospatial Heatmaps:</strong> Visualize density of data over geographic areas.</li>
+        <li><strong>Correlation Heatmaps:</strong> Display relationship strengths between variables in datasets.</li>
+        <li><strong>Cluster Heatmaps:</strong> Used in biology and machine learning for clustering data.</li>
+      </ul>
+      <h2>How Heatmaps Help Businesses and Researchers</h2>
+      <p>
+        Heatmaps simplify complex data and provide intuitive visual insights. Businesses use them to <strong>optimize website layouts</strong>, increase <strong>conversion rates</strong>, and improve <strong>marketing campaigns</strong>. Researchers leverage heatmaps to detect <strong>patterns</strong> and anomalies in large datasets efficiently.
+      </p>
+      <h2>Using Our Heatmap Visualizer Tool</h2>
+      <p>
+        Our tool lets you easily create heatmaps by inputting your raw data. The preview is interactive and responsive, showing data intensities with varying color shades. It supports JSON or CSV input, making it flexible for multiple data formats.
+      </p>
+      <h2>Understanding Heatmap Color Gradients</h2>
+      <p>
+        Colors in heatmaps usually range from cool (blue/green) to warm (yellow/red) shades to depict low to high values. Proper color choice enhances readability and ensures accessibility for all users.
+      </p>
+      <h2>SEO Benefits of Heatmap Data Visualization</h2>
+      <ul>
+        <li>Enhances user engagement by presenting data visually.</li>
+        <li>Improves content readability and time on page.</li>
+        <li>Boosts authority on data analysis topics through detailed content.</li>
+      </ul>
+      <h2>Technical Tips for Creating Effective Heatmaps</h2>
+      <ol>
+        <li>Ensure data quality and completeness.</li>
+        <li>Choose appropriate grid size and resolution.</li>
+        <li>Use contrasting colors for better distinction.</li>
+        <li>Label axes clearly and provide legends if necessary.</li>
+        <li>Test heatmaps for accessibility, including color blindness.</li>
+      </ol>
+      <h2>Conclusion</h2>
+      <p>
+        Heatmaps are a powerful tool for data visualization, turning raw data into actionable insights. Use our Heatmap Visualizer Tool to quickly create meaningful heatmaps that support better decision-making and effective communication.
+      </p>
+      <p><em>Unlock the potential of your data with intuitive heatmaps!</em></p>
+    </article>
+  </main>
+
+<script>
+  // Parse CSV input to array of objects
+  function parseCSV(str) {
+    const lines = str.trim().split('\n');
+    const result = [];
+    // Assume header present: x,y,value
+    const headers = lines[0].split(',').map(h => h.trim().toLowerCase());
+    for (let i = 1; i < lines.length; i++) {
+      const obj = {};
+      const currentline = lines[i].split(',');
+      for (let j = 0; j < headers.length; j++) {
+        const key = headers[j];
+        let val = currentline[j];
+        if (key === 'x' || key === 'y' || key === 'value') {
+          val = Number(val);
+          if (isNaN(val)) val = 0;
+        }
+        obj[key] = val;
+      }
+      result.push(obj);
+    }
+    return result;
+  }
+
+  // Normalize values to 0-1 range for coloring
+  function normalizeValues(data) {
+    let maxVal = Math.max(...data.map(d => d.value));
+    let minVal = Math.min(...data.map(d => d.value));
+    if (maxVal === minVal) maxVal = minVal + 1; // avoid division by zero
+    return data.map(d => ({
+      ...d,
+      norm: (d.value - minVal) / (maxVal - minVal)
+    }));
+  }
+
+  // Generate color from normalized value (blue to red gradient)
+  function valueToColor(norm) {
+    // blue (low) to red (high)
+    const r = Math.round(255 * norm);
+    const g = 0;
+    const b = Math.round(255 * (1 - norm));
+    return `rgb(${r},${g},${b})`;
+  }
+
+  // Generate heatmap grid CSS variables for layout
+  function generateGridCSS(width, height) {
+    return `grid-template-columns: repeat(${width}, 1fr); grid-template-rows: repeat(${height}, 1fr);`;
+  }
+
+  function generateHeatmap(data) {
+    // Find grid dimensions (max x and y)
+    const maxX = Math.max(...data.map(d => d.x));
+    const maxY = Math.max(...data.map(d => d.y));
+
+    // Create grid container with CSS grid
+    const heatmapDiv = document.createElement('div');
+    heatmapDiv.className = 'heatmap-grid';
+    heatmapDiv.style = generateGridCSS(maxX + 1, maxY + 1);
+
+    // Normalize values for color mapping
+    const normalizedData = normalizeValues(data);
+
+    // Create a 2D array for easy cell lookup by coordinates
+    const gridArray = Array.from({ length: maxY + 1 }, () =>
+      Array(maxX + 1).fill(null)
+    );
+    normalizedData.forEach(d => {
+      if (d.y >= 0 && d.x >= 0) {
+        gridArray[d.y][d.x] = d;
+      }
+    });
+
+    // Create cells for each grid point
+    for (let y = 0; y <= maxY; y++) {
+      for (let x = 0; x <= maxX; x++) {
+        const cell = document.createElement('div');
+        cell.className = 'heatmap-cell';
+        const cellData = gridArray[y][x];
+        if (cellData) {
+          cell.style.backgroundColor = valueToColor(cellData.norm);
+          cell.title = `x: ${x}, y: ${y}, value: ${cellData.value}`;
+        } else {
+          cell.style.backgroundColor = '#eee';
+          cell.title = `x: ${x}, y: ${y}, no data`;
+        }
+        heatmapDiv.appendChild(cell);
+      }
+    }
+    return heatmapDiv;
+  }
+
+  function generateHeatmapFromJSON(text) {
+    try {
+      const parsed = JSON.parse(text);
+      if (!Array.isArray(parsed)) throw new Error('JSON is not an array');
+      // Validate objects have x,y,value numeric properties
+      const filtered = parsed.filter(
+        (item) =>
+          item &&
+          typeof item.x === 'number' &&
+          typeof item.y === 'number' &&
+          typeof item.value === 'number'
+      );
+      if (filtered.length === 0) throw new Error('No valid data points found');
+      return filtered;
+    } catch {
+      return null;
+    }
+  }
+
+  function generateHeatmapFromInput(text) {
+    // Try JSON first
+    let data = generateHeatmapFromJSON(text);
+    if (data) return data;
+
+    // If JSON failed, try CSV parsing
+    try {
+      return parseCSV(text);
+    } catch {
+      return null;
+    }
+  }
+
+  function generateHeatmap(event) {
+    event.preventDefault();
+    const input = document.getElementById('dataInput').value.trim();
+    const preview = document.getElementById('heatmapPreview');
+    preview.innerHTML = ''; // clear previous
+
+    if (!input) {
+      preview.innerHTML =
+        '<p style="padding: 140px 0; text-align:center; color:#666;">Please enter heatmap data to generate preview.</p>';
+      return;
+    }
+
+    const data = generateHeatmapFromInput(input);
+    if (!data || data.length === 0) {
+      preview.innerHTML =
+        '<p style="padding: 140px 0; text-align:center; color:#c00;">Invalid data format. Please provide valid JSON array or CSV with x,y,value.</p>';
+      return;
+    }
+
+    const heatmap = generateHeatmap(data);
+    preview.appendChild(heatmap);
+  }
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canonical URL Checker Tool – SEO Canonical Tag Validator</title>
+  <meta name="description" content="Use the Canonical URL Checker Tool to validate and analyze canonical tags on your web pages for better SEO performance. Identify duplicate content issues and optimize your SEO strategy." />
+  <meta name="keywords" content="Canonical URL Checker, SEO Tool, Canonical Tag Validator, Duplicate Content Checker, SEO Optimization, Website SEO, SEO Best Practices, Search Engine Optimization" />
+  <link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+  <style>
+    /* Reset & base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
+      color: #000;
+      line-height: 1.7;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3em;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: 1.5px solid #000;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      font-family: monospace;
+    }
+    button {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    #result {
+      margin-top: 25px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+    h2 {
+      margin-top: 45px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #000;
+      padding-bottom: 0.3em;
+    }
+    p, li {
+      font-size: 1rem;
+      margin-bottom: 1em;
+      max-width: 900px;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 1.5em;
+    }
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #555;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body itemprop="mainContentOfPage">
+  <h1>Canonical URL Checker Tool</h1>
+  <p>Enter the HTML content of your webpage below to detect the canonical URL specified in your meta tags. This helps identify potential SEO issues related to duplicate content and URL canonicalization.</p>
+
+  <label for="htmlInput">Paste your page HTML here:</label>
+  <textarea id="htmlInput" rows="10" placeholder="Paste your full HTML source code here..." style="width:100%;font-family: monospace;padding:10px;border:1.5px solid #000;border-radius:5px;"></textarea>
+  <button onclick="checkCanonical()">Check Canonical URL</button>
+
+  <div id="result" aria-live="polite" role="region"></div>
+
+  <h2>Understanding Canonical URLs and Their SEO Importance</h2>
+  <p>
+    Canonical URLs are a fundamental part of SEO, used to prevent duplicate content issues that can hurt your website's ranking on search engines like Google and Bing.
+    By specifying a canonical URL, you inform search engines about the preferred version of a webpage when there are multiple URLs with similar or identical content.
+  </p>
+  <p>
+    Duplicate content can confuse search engines, diluting your page authority and negatively affecting your organic traffic.
+    The canonical tag helps consolidate link equity, signals to crawlers which URL to index, and ensures your SEO efforts are focused on the right page.
+  </p>
+
+  <h2>Why Use Our Canonical URL Checker Tool?</h2>
+  <ul>
+    <li>Instantly detect the canonical URL in your webpage HTML.</li>
+    <li>Verify if your canonical tag is correctly implemented.</li>
+    <li>Identify missing or incorrect canonical tags causing SEO issues.</li>
+    <li>Ensure search engines prioritize the right URL for indexing.</li>
+    <li>Optimize your site’s crawl budget and improve ranking signals.</li>
+  </ul>
+
+  <h2>Common Mistakes with Canonical Tags and How to Avoid Them</h2>
+  <ol>
+    <li><strong>Missing Canonical Tag:</strong> Failing to specify canonical URLs leads to duplicate content penalties.</li>
+    <li><strong>Self-Referencing Canonical URLs:</strong> Ensure the canonical URL points to the correct preferred page, usually itself.</li>
+    <li><strong>Conflicting Tags:</strong> Multiple canonical tags or incorrect URLs confuse search engines.</li>
+    <li><strong>Canonical Tag Points to Wrong URL:</strong> Always double-check the URL for typos or outdated paths.</li>
+    <li><strong>Ignoring Pagination:</strong> Use rel="next" and rel="prev" along with canonical URLs for paginated content.</li>
+  </ol>
+
+  <h2>How to Properly Implement Canonical Tags</h2>
+  <p>
+    Place the canonical link element within the &lt;head&gt; section of your HTML code:
+  </p>
+  <pre style="background:#eee;padding:10px;border-radius:4px;overflow-x:auto;">
+&lt;link rel="canonical" href="https://www.example.com/preferred-page/" /&gt;
+  </pre>
+  <p>
+    This tells search engines that the preferred URL for the content is <code>https://www.example.com/preferred-page/</code>. 
+    Always ensure this URL is consistent across your website to maximize SEO benefits.
+  </p>
+
+  <h2>Benefits of Using Canonical URLs</h2>
+  <ul>
+    <li>Prevents duplicate content penalties from search engines.</li>
+    <li>Consolidates page ranking signals to the canonical URL.</li>
+    <li>Improves user experience by directing visitors to preferred content.</li>
+    <li>Helps maintain a clean and efficient crawl budget.</li>
+    <li>Facilitates better backlink value distribution.</li>
+  </ul>
+
+  <h2>SEO Best Practices for Canonical URL Management</h2>
+  <ul>
+    <li>Always use absolute URLs in your canonical tags.</li>
+    <li>Ensure every page has a canonical tag, even if self-referencing.</li>
+    <li>Keep canonical URLs consistent with your sitemap URLs.</li>
+    <li>Regularly audit your site for canonical tag errors or conflicts.</li>
+    <li>Use canonical tags in combination with other SEO signals like robots.txt and meta robots.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions (FAQ)</h2>
+  <p><strong>Q:</strong> Can canonical URLs help with duplicate content on e-commerce sites?<br />
+  <strong>A:</strong> Yes! Canonical URLs are essential for e-commerce platforms where product pages might have multiple URLs due to sorting or filtering options.</p>
+
+  <p><strong>Q:</strong> What happens if my page doesn’t have a canonical tag?<br />
+  <strong>A:</strong> Search engines may treat duplicate pages as separate, splitting ranking signals and potentially lowering SEO effectiveness.</p>
+
+  <p><strong>Q:</strong> Can I use canonical URLs for cross-domain content?<br />
+  <strong>A:</strong> Yes, canonical tags can point to URLs on different domains to signal preferred content.</p>
+
+  <h2>Improve Your Website SEO with Proper Canonical URL Usage</h2>
+  <p>
+    Implementing and monitoring canonical URLs is a vital part of any SEO strategy. Using our Canonical URL Checker Tool, you can quickly verify your site’s canonical tags and fix issues before they impact your search rankings.
+  </p>
+  <p>
+    Regular SEO audits, including canonical checks, help keep your website optimized for search engine crawlers, improve user experience, and boost your organic visibility.
+  </p>
+  <p>
+    Try the tool now and take control of your website’s SEO health.
+  </p>
+
+  <script>
+    function checkCanonical() {
+      const html = document.getElementById('htmlInput').value;
+      if (!html.trim()) {
+        document.getElementById('result').textContent = 'Please paste your HTML content above to check canonical URL.';
+        return;
+      }
+      try {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const canonicalLink = doc.querySelector('link[rel="canonical"]');
+        if (canonicalLink && canonicalLink.href) {
+          document.getElementById('result').textContent = 'Canonical URL detected:\n' + canonicalLink.href;
+        } else {
+          document.getElementById('result').textContent = 'No canonical URL tag found in the provided HTML.';
+        }
+      } catch (e) {
+        document.getElementById('result').textContent = 'Error parsing HTML content. Please ensure you pasted valid HTML.';
+      }
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

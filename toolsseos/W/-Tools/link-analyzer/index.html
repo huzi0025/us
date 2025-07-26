@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link Analyzer Tool - Analyze Internal and External Links</title>
+  <meta name="description" content="Free online Link Analyzer Tool. Instantly analyze internal and external links from any HTML or web page. Improve your SEO by understanding your link structure."/>
+  <meta name="keywords" content="link analyzer, internal links checker, external links analyzer, seo tools, html link extractor, link analysis tool, backlink checker, link count tool, on-page seo tool"/>
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Link Analyzer Tool",
+    "description": "Analyze internal and external links from HTML or webpage input. Improve SEO and site structure.",
+    "url": "https://us.histream.me/-Tools/link-analyzer",
+    "inLanguage": "en",
+    "about": {
+      "@type": "Thing",
+      "name": "SEO Tools"
+    }
+  }
+  </script>
+
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      margin-bottom: 1rem;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #222;
+    }
+    .results {
+      margin-top: 2rem;
+    }
+    .results h3 {
+      margin-top: 1.5rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .blog {
+      margin-top: 3rem;
+    }
+    .blog h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+    .blog p {
+      text-align: justify;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Article">
+    <h1 itemprop="headline">Link Analyzer Tool</h1>
+    <p>Paste your HTML source code or a block of content below to analyze internal and external links.</p>
+    <textarea id="htmlInput" placeholder="Paste HTML content here..."></textarea>
+    <button onclick="analyzeLinks()">Analyze Links</button>
+
+    <div class="results" id="results" itemprop="articleBody"></div>
+
+    <div class="blog">
+      <h2>What is a Link Analyzer Tool?</h2>
+      <p>A link analyzer tool helps webmasters and SEO professionals analyze the internal and external links within a web page or HTML document. It shows the number of outbound links, internal references, and anchor texts. Understanding link distribution is key to on-page SEO optimization.</p>
+
+      <h2>Why Use a Link Analyzer Tool?</h2>
+      <p>Links are one of the most important ranking factors in search engine optimization. A well-structured internal linking strategy improves crawlability and distributes authority throughout your site. On the other hand, too many outbound links or broken links can hurt your rankings. A link analyzer helps identify and optimize these issues.</p>
+
+      <h2>How This Tool Works</h2>
+      <p>This tool scans the input HTML or content you paste and extracts all anchor tags (&lt;a&gt;). It categorizes them into:</p>
+      <ul>
+        <li>Internal links – links that point to the same domain or relative paths</li>
+        <li>External links – links that point to other domains</li>
+      </ul>
+
+      <h2>Top SEO Keywords:</h2>
+      <p>link analyzer, analyze website links, internal links SEO, external links checker, anchor tag checker, online html analyzer, seo tools for webmasters, link structure optimization, website seo audit, analyze on-page SEO</p>
+
+      <h2>Use Cases</h2>
+      <ul>
+        <li>🧩 Identifying overuse of outbound links</li>
+        <li>🔍 Improving internal navigation strategy</li>
+        <li>✅ Verifying proper use of anchor text</li>
+        <li>📊 SEO auditing and optimization</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>Our Link Analyzer Tool is free, fast, and efficient. Use it regularly to monitor the link structure of your website and maintain optimal SEO performance. Whether you're managing a blog, ecommerce site, or enterprise portal—link auditing is vital.</p>
+    </div>
+  </div>
+
+  <script>
+    function analyzeLinks() {
+      const html = document.getElementById('htmlInput').value;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const anchors = doc.querySelectorAll('a');
+
+      const internalLinks = [];
+      const externalLinks = [];
+
+      anchors.forEach(a => {
+        const href = a.getAttribute('href');
+        if (!href) return;
+
+        if (href.startsWith('/') || href.startsWith('#') || href.includes(window.location.hostname)) {
+          internalLinks.push(href);
+        } else {
+          externalLinks.push(href);
+        }
+      });
+
+      const resultDiv = document.getElementById('results');
+      resultDiv.innerHTML = `
+        <h3>Total Links Found: ${anchors.length}</h3>
+        <h3>Internal Links (${internalLinks.length})</h3>
+        <ul>${internalLinks.map(link => `<li>${link}</li>`).join('')}</ul>
+        <h3>External Links (${externalLinks.length})</h3>
+        <ul>${externalLinks.map(link => `<li>${link}</li>`).join('')}</ul>
+      `;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

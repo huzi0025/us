@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SSL Checker Tool - Check SSL Certificate Status & Expiry</title>
+<meta name="description" content="Check the SSL certificate status, expiry date, and grade of any website instantly using our SSL Checker Tool. Ensure your website is secure and trusted by visitors." />
+<meta name="keywords" content="SSL checker, SSL certificate check, check SSL expiry, SSL status tool, website security check, SSL grade, SSL certificate validation, HTTPS check, domain SSL checker" />
+<meta name="author" content="HiStream Tools" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<style>
+  /* Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+  }
+  p.intro {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+  }
+  form {
+    border: 1px solid #222;
+    padding: 25px 30px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    margin-bottom: 50px;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus {
+    border-color: #007acc;
+    outline: none;
+  }
+  button {
+    margin-top: 28px;
+    background: #000;
+    color: #fff;
+    padding: 15px 28px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #333;
+  }
+  #result {
+    margin-top: 30px;
+    background: #e7e7e7;
+    padding: 20px 24px;
+    border-radius: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+    min-height: 140px;
+  }
+  .error {
+    color: #cc0000;
+    font-weight: 700;
+  }
+  .blog {
+    margin-top: 60px;
+  }
+  .blog h2 {
+    font-size: 1.7rem;
+    margin-top: 42px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 8px;
+  }
+  .blog p, .blog ul, .blog ol {
+    margin-bottom: 20px;
+  }
+  .blog ul, .blog ol {
+    padding-left: 26px;
+  }
+  .blog strong {
+    color: #000;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SSL Checker Tool",
+  "url": "https://histream.me/tools/ssl-checker",
+  "description": "Online tool to check SSL certificate status, expiry, and grade for any domain, ensuring website security and trust.",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript enabled",
+  "author": {
+    "@type": "Organization",
+    "name": "HiStream Tools"
+  }
+}
+</script>
+
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container" role="main">
+    <h1>SSL Checker Tool</h1>
+    <p class="intro">
+      Quickly check the SSL certificate status, expiration date, and overall grade of any website. Ensure your site is secure and trusted by your visitors.
+    </p>
+
+    <form id="sslForm" aria-label="SSL Checker form" onsubmit="checkSSL(event)" novalidate>
+      <label for="domainInput">Enter Domain Name (e.g., example.com)</label>
+      <input
+        type="text"
+        id="domainInput"
+        name="domain"
+        placeholder="Enter a valid domain name"
+        pattern="^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$"
+        required
+        aria-describedby="domainHelp"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <small id="domainHelp">Only domain names without protocols or paths.</small>
+
+      <button type="submit" aria-live="polite" aria-atomic="true">Check SSL Certificate</button>
+    </form>
+
+    <pre id="result" aria-live="polite" aria-atomic="true" role="region" tabindex="0"></pre>
+
+    <article class="blog" aria-label="Detailed blog about SSL certificates and website security">
+      <h2>Understanding SSL Certificates and Why They Matter</h2>
+      <p>
+        An <strong>SSL certificate</strong> is a digital certificate that authenticates a website's identity and enables encrypted connections. It's a critical part of website security and essential for protecting sensitive information such as login credentials, payment details, and personal data.
+      </p>
+      <p>
+        Websites using SSL certificates show <strong>HTTPS</strong> in the browser address bar, along with a padlock icon, signaling to visitors that the connection is secure.
+      </p>
+
+      <h2>How SSL Certificates Work</h2>
+      <ul>
+        <li><strong>Encryption:</strong> SSL encrypts data exchanged between a user’s browser and the web server to prevent interception.</li>
+        <li><strong>Authentication:</strong> Validates that the website is who it claims to be.</li>
+        <li><strong>Data Integrity:</strong> Ensures data is not altered during transmission.</li>
+      </ul>
+
+      <h2>Why Check Your SSL Certificate Regularly?</h2>
+      <p>
+        SSL certificates expire after a set period, typically one or two years. Expired or misconfigured SSL certificates can lead to:
+      </p>
+      <ul>
+        <li>Browser warnings that may scare away visitors.</li>
+        <li>Loss of trust and damage to your brand reputation.</li>
+        <li>Lower search engine rankings.</li>
+        <li>Potential security vulnerabilities.</li>
+      </ul>
+
+      <h2>Using Our SSL Checker Tool</h2>
+      <p>
+        Our <strong>SSL Checker Tool</strong> helps you verify the SSL status of any domain. By simply entering the domain name, you can instantly see certificate details such as issuer, expiration date, grade, and more.
+      </p>
+
+      <h2>Understanding SSL Grades</h2>
+      <p>
+        SSL grades (A+, A, B, C, etc.) are given by SSL testing services based on various factors including certificate validity, protocol support, and security vulnerabilities. Aim for an <strong>A+</strong> grade for optimal security.
+      </p>
+
+      <h2>SEO and Security Benefits of SSL</h2>
+      <ul>
+        <li><strong>Better Rankings:</strong> Google favors HTTPS websites in search rankings.</li>
+        <li><strong>User Trust:</strong> Secure sites encourage more visitor engagement and conversions.</li>
+        <li><strong>Compliance:</strong> Many regulations require secure data transmission.</li>
+      </ul>
+
+      <h2>Common SSL Certificate Types</h2>
+      <ol>
+        <li><strong>Domain Validation (DV):</strong> Basic certificate verifying domain ownership.</li>
+        <li><strong>Organization Validation (OV):</strong> Provides additional organization authentication.</li>
+        <li><strong>Extended Validation (EV):</strong> Highest level of authentication, showing company name in the browser bar.</li>
+      </ol>
+
+      <h2>How to Maintain SSL Health</h2>
+      <ul>
+        <li>Monitor certificate expiration dates regularly.</li>
+        <li>Renew certificates before expiry.</li>
+        <li>Use strong protocols and ciphers.</li>
+        <li>Keep your server software updated.</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>
+        Ensuring your website has a valid and strong SSL certificate is crucial for security, trust, and SEO. Use our <strong>SSL Checker Tool</strong> regularly to stay ahead and protect your online presence.
+      </p>
+
+      <p><em>Stay safe, stay secure!</em></p>
+    </article>
+  </main>
+
+<script>
+async function checkSSL(e) {
+  e.preventDefault();
+  const domainInput = document.getElementById('domainInput');
+  const result = document.getElementById('result');
+  const domain = domainInput.value.trim().toLowerCase();
+
+  result.textContent = 'Checking SSL certificate...';
+
+  // Simple domain validation pattern (redundant because of pattern attr but double-check)
+  const domainPattern = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/;
+  if (!domainPattern.test(domain)) {
+    result.innerHTML = '<span class="error">Invalid domain format. Please enter a valid domain like example.com.</span>';
+    domainInput.focus();
+    return;
+  }
+
+  try {
+    // SSL Labs API for SSL report (public API, no key needed)
+    // We'll poll the API until status is READY or ERROR or timeout 15s max
+    const apiUrl = `https://api.ssllabs.com/api/v3/analyze?host=${encodeURIComponent(domain)}&publish=off&all=done`;
+
+    let response, data;
+    let attempts = 0;
+    const maxAttempts = 15;
+    const delay = ms => new Promise(r => setTimeout(r, ms));
+
+    while(attempts < maxAttempts) {
+      response = await fetch(apiUrl);
+      if (!response.ok) throw new Error('Failed to fetch SSL data.');
+
+      data = await response.json();
+
+      if (data.status === 'READY' || data.status === 'ERROR') break;
+      await delay(1000);
+      attempts++;
+    }
+
+    if(data.status === 'ERROR') {
+      result.innerHTML = `<span class="error">Error analyzing SSL for domain. It may not have an SSL certificate.</span>`;
+      return;
+    }
+    if(data.status !== 'READY') {
+      result.innerHTML = `<span class="error">Timeout waiting for SSL data. Please try again later.</span>`;
+      return;
+    }
+
+    // Extract certificate info from endpoint data
+    if (!data.endpoints || !data.endpoints.length) {
+      result.innerHTML = `<span class="error">No SSL endpoints found for this domain.</span>`;
+      return;
+    }
+
+    const endpoint = data.endpoints[0];
+    const grade = endpoint.grade || 'N/A';
+    const details = endpoint.details || {};
+    const cert = details.cert || {};
+    const validFrom = cert.notBefore ? new Date(cert.notBefore * 1000) : null;
+    const validTo = cert.notAfter ? new Date(cert.notAfter * 1000) : null;
+    const issuer = cert.issuerSubject || 'Unknown Issuer';
+    const subject = cert.subject || 'Unknown Subject';
+
+    let validFromStr = validFrom ? validFrom.toDateString() : 'N/A';
+    let validToStr = validTo ? validTo.toDateString() : 'N/A';
+
+    // Calculate days left before expiry
+    let daysLeft = 'N/A';
+    if(validTo) {
+      const now = new Date();
+      const diff = Math.floor((validTo - now) / (1000 * 60 * 60 * 24));
+      daysLeft = diff >= 0 ? diff + ' day(s)' : 'Expired';
+    }
+
+    result.textContent = 
+`Domain: ${domain}
+SSL Grade: ${grade}
+Issuer: ${issuer}
+Subject: ${subject}
+Valid From: ${validFromStr}
+Valid To: ${validToStr}
+Days Until Expiry: ${daysLeft}`;
+  } catch (error) {
+    result.innerHTML = `<span class="error">Error fetching SSL data. Please try again later.</span>`;
+    console.error(error);
+  }
+}
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

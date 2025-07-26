@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="utf-8">
+  <title>Font Size Checker | Free Typography Accessibility Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Check if your web typography meets accessibility standards with our free Font Size Checker. Instantly preview, rate, and optimize font sizes for better readability across devices.">
+  <meta name="keywords" content="Font Size Checker, typography accessibility, WCAG font size, responsive typography tool, accessible text, minimum font size, readability tester, web typography best practices, UX font sizing, rem to px converter, typography audit, ADA compliance font size, accessibility design tool, free UX tools, mobile typography, legible font sizes, front‑end development tools, font size accessibility checker, web design typography analyzer, digital content readability">
+  <link rel="icon" type="image/png" href="https://us.histream.me/favicons/tools.png">
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <!-- Schema.org structured data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Font Size Checker",
+    "operatingSystem": "All",
+    "applicationCategory": "DeveloperApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "HiStream Tools"
+    },
+    "url": "https://us.histream.me/-Tools/font-size-checker"
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #0077ff;
+      --border: #e0e0e0;
+      --radius: 0.5rem;
+      --shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .tool-card {
+      background: #fafafa;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+    h1, h2, h3 { margin-top: 0; font-weight: 700; }
+    label { font-weight: 600; }
+    input[type="number"] {
+      width: 120px;
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    #rating {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius);
+      color: #fff;
+      font-size: 0.85rem;
+    }
+    .very-small { background: #dc3545; }
+    .small { background: #fd7e14; }
+    .good { background: #28a745; }
+    .large { background: #17a2b8; }
+    #preview {
+      margin-top: 1.5rem;
+      border: 1px dashed var(--border);
+      padding: 1rem;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    /* Blog styles */
+    #blog { margin-top: 4rem; }
+    #blog p { margin-bottom: 1.2rem; text-align: justify; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container">
+
+    <section class="tool-card">
+      <h1>Font Size Checker</h1>
+      <p>Evaluate your chosen <strong>font size</strong> against accessibility and readability guidelines. Enter the size in pixels or use the slider to preview live text.</p>
+
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:0.75rem;margin-bottom:1rem;">
+        <label for="fontSize">Font&nbsp;Size&nbsp;(px)</label>
+        <input type="number" id="fontSize" name="fontSize" min="8" max="72" value="16">
+        <input type="range" id="fontSlider" min="8" max="72" value="16" style="flex:1;">
+      </div>
+
+      <p id="rating">Size Rating: 16&nbsp;px <span id="sizeBadge" class="badge good">Good</span></p>
+
+      <div id="preview" style="font-size:16px;">
+        The quick brown fox jumps over the lazy dog.
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Why Font Size Matters in Accessible Typography</h2>
+      <p>Typography is more than aesthetics—it directly influences <strong>readability</strong>, <strong>accessibility</strong>, and overall user experience. Font size, as a critical attribute of type design, determines whether content is effortlessly consumable or frustratingly unreadable. International standards such as <em>WCAG 2.2</em> recommend minimum sizes and zoom behavior for body text to accommodate users with low vision or cognitive disabilities.</p>
+      <p>Small text forces users to strain their eyes, increasing cognitive load and abandonment rates. Conversely, excessively large text can disrupt information hierarchy and overwhelm layouts. Striking a balance ensures that content is digestible across screen sizes and resolutions, fostering <strong>inclusive design</strong>.</p>
+      <h3>WCAG &amp; ADA Guidelines on Minimum Font Size</h3>
+      <p>The <strong>Web Content Accessibility Guidelines</strong> do not prescribe a fixed pixel value but require that text be resizable up to 200% without loss of functionality. Industry consensus aligns around <strong>16&nbsp;px</strong> (1&nbsp;rem) as a comfortable baseline for body copy on desktop. Mobile contexts may demand slightly larger sizes due to viewing distance and screen pixel density.</p>
+      <p>Our <em>Font Size Checker</em> aligns with these best practices, labeling anything under 12&nbsp;px as <em>Very&nbsp;Small</em>, 13–15&nbsp;px as <em>Small</em>, 16–20&nbsp;px as <em>Good</em>, and above 20&nbsp;px as <em>Large</em>. Use these metrics as a starting point, then iterate based on user testing and analytics.</p>
+      <h3>Responsive Typography &amp; Fluid Scaling</h3>
+      <p>Fixed pixel sizes fail to adapt to varying viewport widths. Modern CSS techniques—<code>clamp()</code>, <code>calc()</code>, and viewport units—enable fluid scaling, ensuring text remains legible on ultra‑wide monitors and compact phones alike. Tools like <code>rem</code> and <code>em</code> tie sizes to the root font, empowering users who adjust default browser settings.</p>
+      <h3>Line Height, Measure, and Font Choice</h3>
+      <p>Legibility is a function of multiple variables: <em>line-height</em> (leading), <em>measure</em> (line length), and <em>typeface</em> characteristics. While our checker focuses on size, remember that cramping lines or using decorative display fonts for body text can negate the benefits of optimal sizing.</p>
+      <h3>SEO Advantages of Accessible Font Sizes</h3>
+      <p>Google’s <strong>Page Experience</strong> signals reward sites that offer positive usability. Pages penalized for “small text that is hard to read” often suffer lower engagement metrics—bounce rate, dwell time, and conversion. By adopting appropriate font sizes, you foster longer sessions and stronger behavioral signals that indirectly influence <em>SEO rankings</em>.</p>
+      <h3>Common Pitfalls &amp; Fixes</h3>
+      <ul>
+        <li><strong>Ignoring Device Pixel Ratio (DPR):</strong> High‑density screens require proportionally larger CSS pixels for equivalent perceived size.</li>
+        <li><strong>Hard‑coding PX:</strong> Switch to <code>rem</code> or <code>em</code> for scalability.</li>
+        <li><strong>Lack of Contrast:</strong> Perfect size is meaningless without adequate color contrast. Pair this tool with a <em>Color Contrast Checker</em>.</li>
+        <li><strong>Over‑nested Elements:</strong> Deep nested <code>em</code> units compound unexpectedly; reset context when needed.</li>
+      </ul>
+      <h3>Frequently Asked Questions</h3>
+      <p><strong>Q:</strong> What is the ideal font size for mobile?<br>
+      <strong>A:</strong> Start at 16–18&nbsp;px for body copy, adjust based on viewport and testing.</p>
+      <p><strong>Q:</strong> Should headings scale proportionally?<br>
+      <strong>A:</strong> Yes. Use a typographic scale (e.g., Major Third 1.25×) to maintain hierarchy.</p>
+      <h3>Extended Guide: Crafting a Typographic System</h3>
+      <p>Building an effective typographic system involves defining a <em>scale</em>, <em>line-height ratios</em>, and responsive breakpoints. Pairing fonts—selecting complementary serif and sans‑serif families—adds personality without sacrificing readability. Additionally, consider <strong>language support</strong>; CJK scripts may require larger sizes due to complexity.</p>
+      <p>Modern tooling such as <code>variable fonts</code> allows interpolation between weights and widths, dynamically adapting to layout constraints. Leveraging the <code>font-display</code> property ensures text remains visible during web‑font loading, avoiding <em>FOIT</em> (Flash of Invisible Text).</p>
+      <p>Finally, maintain an <strong>accessibility audit schedule</strong>. Combine automated tests—axe-core, Lighthouse—with manual reviews by assistive technology users. Font size considerations should evolve alongside your brand identity, device landscape, and user needs.</p>
+    </section>
+
+  </main>
+
+<script>
+  function classify(size) {
+    if (size <= 12) return {label: 'Very Small', cls: 'very-small'};
+    if (size <= 15) return {label: 'Small', cls: 'small'};
+    if (size <= 20) return {label: 'Good', cls: 'good'};
+    return {label: 'Large', cls: 'large'};
+  }
+  function updateSize(val) {
+    const size = parseFloat(val);
+    const info = classify(size);
+    const badge = document.getElementById('sizeBadge');
+    badge.textContent = info.label;
+    badge.className = 'badge ' + info.cls;
+    document.getElementById('rating').innerHTML = `Size Rating: ${size}px <span id="sizeBadge" class="badge ${info.cls}">${info.label}</span>`;
+    document.getElementById('preview').style.fontSize = size + 'px';
+  }
+  const numInput = document.getElementById('fontSize');
+  const slider = document.getElementById('fontSlider');
+  numInput.addEventListener('input', () => { slider.value = numInput.value; updateSize(numInput.value); });
+  slider.addEventListener('input', () => { numInput.value = slider.value; updateSize(slider.value); });
+  // Initialize
+  updateSize(16);
+</script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebApplication">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Internal and External Link Counter Tool | SEO Analyzer</title>
+  <meta name="description" content="Analyze your webpage links with our Internal/External Link Counter Tool. Boost SEO by understanding link structure.">
+  <meta name="keywords" content="Internal Link Counter, External Link Counter, SEO Link Analysis Tool, Link Structure Analyzer, On-page SEO Tool, Web Link Checker">
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png">
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .tool-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    textarea, button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .result {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #eaeaea;
+      border-radius: 6px;
+    }
+    .blog-content {
+      margin-top: 4rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <h1>Internal and External Link Counter Tool</h1>
+  <div class="tool-container" itemprop="applicationCategory" itemscope itemtype="https://schema.org/SoftwareApplication">
+    <meta itemprop="name" content="Internal External Link Counter Tool">
+    <meta itemprop="operatingSystem" content="All">
+    <meta itemprop="applicationCategory" content="SEO Tool">
+    <meta itemprop="url" content="https://us.histream.me/tools/link-counter">
+
+    <label for="htmlInput">Paste your HTML code here:</label>
+    <textarea id="htmlInput" rows="10" placeholder="Paste your webpage HTML code here..."></textarea>
+    <button onclick="analyzeLinks()">Count Links</button>
+
+    <div class="result" id="output"></div>
+  </div>
+
+  <div class="blog-content">
+    <h2>Boost Your SEO Strategy with Our Link Analysis Tool</h2>
+    <p>
+      Search Engine Optimization (SEO) is a multi-faceted discipline that requires precision and continuous analysis. One often overlooked aspect is link structure — understanding how your internal and external links are distributed is key to SEO success.
+    </p>
+    <p>
+      With our Internal and External Link Counter Tool, you can effortlessly identify how your links are structured. This information helps webmasters, bloggers, and SEO professionals to ensure optimal crawlability and authority distribution across pages.
+    </p>
+    <p>
+      Our tool allows you to:
+    </p>
+    <ul>
+      <li>Analyze internal linking patterns to enhance user navigation and indexing</li>
+      <li>Monitor outbound (external) links for quality and relevance</li>
+      <li>Improve on-page SEO with optimized link placements</li>
+    </ul>
+    <p>
+      Whether you're working on an ecommerce site, a blog, or a service-based platform, understanding link behavior is crucial for technical SEO. By using this tool, you gain insights into how search engines perceive your link structure — a vital metric for Google PageRank flow and topical relevance.
+    </p>
+    <p>
+      This tool supports HTML parsing and differentiates between <code>href</code> links that lead to internal pages (same domain) and those pointing to other websites. It empowers you to take action — fix broken links, remove spammy backlinks, or enhance contextual interlinking.
+    </p>
+    <p>
+      <strong>SEO Keywords:</strong> Internal Link Counter, External Link Analyzer, Link Counting Tool, SEO Analyzer, Link Structure Checker, On-page Optimization, Website SEO Audit, HTML Link Parser, Link Tracking Tool, PageRank Flow Analyzer, Technical SEO Tool.
+    </p>
+    <p>
+      Start optimizing today. Use our link counter to uncover hidden opportunities in your site architecture and supercharge your on-site SEO!
+    </p>
+    <!-- Repeat paragraphs for length -->
+    <p>Analyzing internal and external links is one of the foundational steps in modern on-page SEO auditing. By leveraging this tool, web developers, content creators, and digital marketers can unlock powerful insights into how search engines navigate and interpret their website content. This is crucial for driving organic traffic, boosting user engagement, and ensuring optimal site health.</p>
+    <p>Our tool is lightweight, efficient, and built for performance, making it ideal for single-page applications (SPAs), HTML sites, and large-scale dynamic websites. It gives you a comprehensive breakdown without unnecessary fluff. Add it to your SEO toolkit today and start seeing measurable improvements in your search engine rankings.</p>
+    <p>Whether you're managing a corporate domain, an affiliate blog, or a portfolio site, link clarity is paramount. The Internal/External Link Counter Tool is designed to serve as a free, accessible, and reliable solution for webmasters at all levels. Optimize now for higher visibility, better user experience, and enhanced link equity.</p>
+    <p>Maximize the potential of every page you publish. Understand which pages get linked the most, which external domains you're linking out to, and how balanced your content architecture truly is. Use this tool monthly to ensure link health and maintain SEO integrity across your site.</p>
+    <p>Let this tool be the starting point of your comprehensive SEO audit process.</p>
+  </div>
+
+  <script>
+    function analyzeLinks() {
+      const html = document.getElementById('htmlInput').value;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const anchors = doc.querySelectorAll('a[href]');
+      let internal = 0, external = 0;
+
+      anchors.forEach(a => {
+        const href = a.getAttribute('href');
+        if (href.startsWith('http') || href.startsWith('//')) {
+          external++;
+        } else {
+          internal++;
+        }
+      });
+
+      document.getElementById('output').innerHTML = `
+        <strong>Total Links Found:</strong> ${anchors.length}<br>
+        <strong>Internal Links:</strong> ${internal}<br>
+        <strong>External Links:</strong> ${external}
+      `;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

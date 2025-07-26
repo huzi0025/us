@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebApplication">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nofollow vs DoFollow Checker Tool | SEO Link Analyzer</title>
+  <meta name="description" content="Check and analyze all DoFollow and NoFollow links in your HTML code. Use our Nofollow/DoFollow Link Checker Tool for advanced SEO audits.">
+  <meta name="keywords" content="Nofollow Checker, DoFollow Checker, SEO link audit, Link attribute checker, Follow Nofollow analyzer, Nofollow tag detector, SEO link tool, HTML anchor checker, Website backlink checker">
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png">
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+      font-family: "Segoe UI", sans-serif;
+      padding: 2rem;
+      margin: 0;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .tool-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f8f8f8;
+    }
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+    button {
+      padding: 0.7rem 1rem;
+      background: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #333;
+    }
+    .result {
+      margin-top: 1rem;
+      background: #eee;
+      padding: 1rem;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .blog-content {
+      margin-top: 4rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.75;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <h1>Nofollow / DoFollow Link Checker Tool</h1>
+
+  <div class="tool-container" itemprop="applicationCategory" itemscope itemtype="https://schema.org/SoftwareApplication">
+    <meta itemprop="name" content="Nofollow DoFollow Link Checker">
+    <meta itemprop="operatingSystem" content="All">
+    <meta itemprop="applicationCategory" content="SEO Tool">
+    <meta itemprop="url" content="https://us.histream.me/tools/nofollow-dofollow-checker">
+
+    <label for="htmlInput">Paste your HTML content below:</label>
+    <textarea id="htmlInput" rows="10" placeholder="Paste your HTML content here..."></textarea>
+    <button onclick="checkLinks()">Check Links</button>
+
+    <div class="result" id="output"></div>
+  </div>
+
+  <div class="blog-content">
+    <h2>Why You Need a Nofollow vs DoFollow Checker Tool</h2>
+    <p>
+      Understanding how your website handles outbound and internal links is critical to SEO success. Every time you add a link to your site, you're influencing how authority (or "link juice") is passed — or not passed — between domains.
+    </p>
+    <p>
+      <strong>Nofollow links</strong> tell search engines not to follow the link or pass ranking authority, while <strong>DoFollow links</strong> are standard links that pass SEO value to the target. Our tool makes it easy to analyze your HTML content and distinguish between the two.
+    </p>
+    <ul>
+      <li>✅ Identify DoFollow and Nofollow links in seconds</li>
+      <li>✅ Clean up over-usage of Nofollow tags</li>
+      <li>✅ Improve internal linking strategies</li>
+      <li>✅ Optimize external backlinking for maximum authority flow</li>
+    </ul>
+    <p>
+      Whether you're managing a blog, a corporate site, or an eCommerce store, knowing which links are dofollow or nofollow is crucial. Google and other search engines take link attributes into account when crawling and ranking your pages.
+    </p>
+    <p>
+      Our Nofollow/DoFollow Checker Tool is 100% client-side — no data is sent to a server. It's fast, safe, and reliable for marketers, developers, and SEO professionals alike.
+    </p>
+    <p><strong>SEO Keywords:</strong> Dofollow link checker, nofollow tag checker, anchor link analyzer, html rel attribute parser, backlink type checker, search engine optimization tool, link relationship audit, advanced SEO audit tool, link tag checker, Google SEO tools, external link inspector.</p>
+    <p>
+      Use this tool as part of your technical SEO audit process. Regularly checking link attributes can help you stay compliant with Google best practices, improve domain authority, and prevent penalties due to unnatural link patterns.
+    </p>
+    <p>
+      In modern SEO, link management is not optional — it’s essential. Start using the Nofollow/DoFollow Checker Tool today to maintain control over your SEO footprint and rank smarter.
+    </p>
+    <p>
+      Search engines constantly evolve their algorithms to interpret the value and intent behind every link on your site. Tools like this make your job easier by highlighting potential issues before they impact rankings.
+    </p>
+    <p>
+      <em>Analyze, Optimize, and Rank — that’s the power of understanding your link structure.</em>
+    </p>
+    <p>For the best results, combine this tool with our Internal/External Link Counter and Broken Link Checker for a full link audit suite. These tools together form the foundation of a high-performance technical SEO toolkit.</p>
+    <p>Use the tool frequently to ensure your outgoing links to third-party websites don’t drain your authority or raise spam flags. Also, identify internal links that could benefit from nofollow treatment.</p>
+    <p>By carefully managing follow and nofollow attributes, you take control of how search engines pass link equity. This helps you strategically grow your domain’s relevance and visibility on search engine result pages (SERPs).</p>
+    <p>Join thousands of SEO professionals who use our free tools to audit their links and optimize their websites for better rankings and improved user experience.</p>
+    <p><strong>Take action now. Paste your HTML, analyze your links, and master your SEO strategy.</strong></p>
+  </div>
+
+  <script>
+    function checkLinks() {
+      const html = document.getElementById('htmlInput').value;
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const links = doc.querySelectorAll('a[href]');
+      let dofollow = 0, nofollow = 0;
+
+      links.forEach(link => {
+        const rel = (link.getAttribute('rel') || '').toLowerCase();
+        if (rel.includes('nofollow')) {
+          nofollow++;
+        } else {
+          dofollow++;
+        }
+      });
+
+      document.getElementById('output').innerHTML = `
+        <strong>Total Links:</strong> ${links.length}<br>
+        <strong>DoFollow Links:</strong> ${dofollow}<br>
+        <strong>NoFollow Links:</strong> ${nofollow}
+      `;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

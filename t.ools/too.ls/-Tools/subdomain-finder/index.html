@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Subdomain Finder Tool - Discover Subdomains Instantly</title>
+<meta name="description" content="Use our free Subdomain Finder Tool to discover all subdomains of any domain name instantly. Explore domain infrastructure, improve security, and boost SEO." />
+<meta name="keywords" content="Subdomain finder, subdomain lookup, find subdomains, domain subdomains, DNS subdomain check, website subdomains, free subdomain tool, domain reconnaissance, SEO subdomain tool" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Subdomain Finder Tool",
+  "url": "https://histream.me/-Tools/subdomain-finder",
+  "description": "Free online Subdomain Finder Tool to discover all subdomains of a domain quickly and easily.",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript enabled",
+  "image": "https://histream.me/favicons/tools.png"
+}
+</script>
+
+<style>
+  /* Base reset & typography */
+  body {
+    margin: 0;
+    padding: 2rem;
+    background-color: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #fff;
+    font-family: monospace;
+  }
+  button {
+    margin-top: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  #result {
+    margin-top: 2rem;
+    background-color: #f7f7f7;
+    border: 2px solid #000;
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #000;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+  }
+  section.blog {
+    margin-top: 4rem;
+    font-size: 1.15rem;
+    max-width: 850px;
+    line-height: 1.7;
+    color: #111;
+  }
+  section.blog h2, section.blog h3 {
+    margin-top: 2.5rem;
+    font-weight: 700;
+    color: #111;
+  }
+  section.blog p, section.blog ul {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  section.blog ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  section.blog a {
+    color: #000;
+    text-decoration: underline;
+  }
+  section.blog a:hover {
+    text-decoration: none;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main class="container" role="main" aria-label="Subdomain Finder Tool">
+    <h1>Subdomain Finder Tool</h1>
+
+    <label for="domainInput">Enter Domain Name (e.g. example.com):</label>
+    <input
+      type="text"
+      id="domainInput"
+      placeholder="example.com"
+      autocomplete="off"
+      aria-describedby="inputHelp"
+    />
+    <button id="findBtn" aria-live="polite" aria-atomic="true">Find Subdomains</button>
+
+    <div id="result" aria-live="polite" aria-atomic="true" role="region" aria-label="Subdomain results will appear here"></div>
+
+    <section class="blog">
+      <h2>What is a Subdomain?</h2>
+      <p>
+        A subdomain is a prefix added to a main domain name, allowing an organization to create separate sections or services on their website. For example, in <code>blog.example.com</code>, "blog" is a subdomain of "example.com".
+      </p>
+
+      <h2>Why Find Subdomains?</h2>
+      <p>
+        Discovering subdomains of a target domain can provide insight into the website’s structure and reveal hidden or forgotten services. This is important for:
+      </p>
+      <ul>
+        <li>Security auditing and vulnerability assessments</li>
+        <li>SEO optimization by understanding site architecture</li>
+        <li>Competitive analysis and reconnaissance</li>
+        <li>Finding additional content or services related to a domain</li>
+      </ul>
+
+      <h2>How Does This Subdomain Finder Work?</h2>
+      <p>
+        This tool uses public DNS records and various online sources to discover subdomains of any domain you enter. Simply type your domain and click <strong>Find Subdomains</strong> — the tool will fetch and display known subdomains quickly.
+      </p>
+
+      <h3>Limitations</h3>
+      <p>
+        Keep in mind that some subdomains might be hidden, private, or protected by DNS security mechanisms, so this tool may not find every subdomain.
+      </p>
+
+      <h2>Benefits of Subdomain Enumeration for Security</h2>
+      <p>
+        Identifying subdomains can help security professionals find potentially vulnerable entry points and services that may require patching or monitoring.
+      </p>
+
+      <h2>How Subdomains Affect SEO</h2>
+      <p>
+        Subdomains are treated as separate websites by search engines, so understanding their existence helps you manage SEO strategy and avoid duplicate content issues.
+      </p>
+
+      <h2>Common Uses of Subdomains</h2>
+      <ul>
+        <li>Hosting blogs (e.g., blog.example.com)</li>
+        <li>Support or helpdesk portals (e.g., support.example.com)</li>
+        <li>Staging or testing environments (e.g., staging.example.com)</li>
+        <li>Regional websites (e.g., us.example.com)</li>
+      </ul>
+
+      <h2>Ethical Considerations and Legal Use</h2>
+      <p>
+        Use this tool responsibly and only on domains you own or have permission to analyze. Unauthorized scanning may violate terms of service or laws.
+      </p>
+
+      <h2>Further Resources</h2>
+      <ul>
+        <li><a href="https://owasp.org/www-project-subdomain-takeover/" target="_blank" rel="noopener noreferrer">OWASP Subdomain Takeover</a></li>
+        <li><a href="https://securitytrails.com/blog/subdomain-enumeration" target="_blank" rel="noopener noreferrer">SecurityTrails Guide to Subdomain Enumeration</a></li>
+        <li><a href="https://dnsdumpster.com/" target="_blank" rel="noopener noreferrer">DNSDumpster - Free Subdomain Discovery</a></li>
+      </ul>
+
+      <p>Use our Subdomain Finder tool to explore domain infrastructure with ease and security awareness.</p>
+    </section>
+  </main>
+
+<script>
+  const findBtn = document.getElementById('findBtn');
+  const domainInput = document.getElementById('domainInput');
+  const resultDiv = document.getElementById('result');
+
+  function isValidDomain(domain) {
+    const domainRegex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)+[a-zA-Z]{2,11}?$/;
+    return domainRegex.test(domain.trim());
+  }
+
+  async function fetchSubdomains(domain) {
+    // Using a public subdomain finder API for demo:
+    // NOTE: Replace or get your own API if you want more extensive usage or privacy.
+    // Here we use https://sonar.omnisint.io/subdomains/{domain} (free, no key required)
+    const apiUrl = `https://sonar.omnisint.io/subdomains/${encodeURIComponent(domain)}`;
+    try {
+      const res = await fetch(apiUrl);
+      if (!res.ok) throw new Error('Failed to fetch subdomains');
+      const data = await res.json();
+      return data;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  findBtn.addEventListener('click', async () => {
+    const domain = domainInput.value.trim().toLowerCase();
+    resultDiv.textContent = '';
+    if (!domain) {
+      resultDiv.textContent = 'Please enter a domain name.';
+      return;
+    }
+    if (!isValidDomain(domain)) {
+      resultDiv.textContent = 'Invalid domain format. Example: example.com';
+      return;
+    }
+
+    resultDiv.textContent = 'Finding subdomains...';
+
+    try {
+      const subdomains = await fetchSubdomains(domain);
+      if (!subdomains || subdomains.length === 0) {
+        resultDiv.textContent = `No subdomains found for ${domain}.`;
+        return;
+      }
+      resultDiv.textContent = subdomains.map(sd => `${sd}.${domain}`).join('\n');
+    } catch (error) {
+      resultDiv.textContent = 'Error fetching subdomains. Please try again later.';
+      console.error(error);
+    }
+  });
+
+  domainInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') findBtn.click();
+  });
+</script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

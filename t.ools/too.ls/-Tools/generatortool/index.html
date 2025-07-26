@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom .htaccess Generator Tool</title>
+  <meta name="description" content="Generate custom .htaccess files for SEO, security, redirects, and performance with our high-level tool. Fully customizable Apache configurations." />
+  <meta name="keywords" content="htaccess generator, custom htaccess file, SEO htaccess rules, Apache redirect, force HTTPS, www redirect, caching htaccess, mod_rewrite tool, .htaccess builder" />
+  <link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 1.2rem 0 0.4rem;
+      font-weight: 600;
+    }
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+    }
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      padding: 1rem;
+      border: 1px solid #000;
+      font-family: monospace;
+      font-size: 0.95rem;
+      background: #f9f9f9;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 1.2rem;
+      cursor: pointer;
+    }
+    .blog {
+      margin-top: 4rem;
+    }
+    .blog h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .blog p, .blog li {
+      margin-bottom: 1rem;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Custom .htaccess Generator Tool",
+    "description": "Generate optimized .htaccess rules for SEO, redirects, HTTPS, and caching with this custom Apache configuration builder.",
+    "url": "https://histream.me/-Tools/generatortool",
+    "image": "https://histream.me/favicons/tools.png"
+  }
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <main>
+    <h1>Custom .htaccess Generator Tool</h1>
+    <form id="htaccessForm">
+      <label><input type="checkbox" name="https" /> Force HTTPS</label>
+      <label><input type="checkbox" name="www" /> Redirect non-www to www</label>
+      <label><input type="checkbox" name="caching" /> Enable browser caching</label>
+      <label><input type="checkbox" name="security" /> Basic security headers</label>
+      <label><input type="checkbox" name="redirect" /> Redirect old page to new</label>
+      <input type="text" name="oldUrl" placeholder="Old URL (e.g., /old-page.html)" />
+      <input type="text" name="newUrl" placeholder="New URL (e.g., /new-page.html)" />
+
+      <button type="button" onclick="generateHtaccess()">Generate .htaccess</button>
+    </form>
+
+    <label for="output">Generated .htaccess:</label>
+    <textarea id="output" readonly></textarea>
+
+    <section class="blog">
+      <h2>Why .htaccess Optimization Is Critical for Your Website</h2>
+      <p>The <strong>.htaccess</strong> file is a powerful configuration file for Apache servers. It allows you to enforce SEO-friendly redirects, improve security, enable compression, force HTTPS, and control browser caching without touching server code. This makes it an essential asset for any website owner or developer focused on <strong>performance</strong>, <strong>security</strong>, and <strong>SEO</strong>.</p>
+      <p>With our tool, you can dynamically create a highly tailored .htaccess file that meets your site’s needs. Whether you're migrating pages, improving page load times, or protecting sensitive resources, this generator covers it all.</p>
+      <h3>Popular Use Cases</h3>
+      <ul>
+        <li><strong>301 redirects</strong> to maintain SEO authority during page migrations</li>
+        <li><strong>Forcing HTTPS</strong> to secure all communication</li>
+        <li><strong>Non-www to www redirect</strong> for consistent URLs</li>
+        <li><strong>Browser caching rules</strong> to speed up returning visits</li>
+        <li><strong>Security headers</strong> to mitigate XSS and clickjacking</li>
+      </ul>
+      <p>Each configuration comes with proven, SEO-safe Apache directives. You don’t need deep sysadmin knowledge—just check what you need, and paste the output in your website’s root directory.</p>
+      <h3>SEO Impact of .htaccess</h3>
+      <p>From a search engine’s perspective, proper redirects and canonical structures avoid <strong>duplicate content</strong> issues. Fast-loading pages with cache-control policies increase <strong>user satisfaction</strong> and <strong>rank potential</strong>. Plus, a secure site improves <strong>trust and crawlability</strong>.</p>
+      <h3>Advanced Tips</h3>
+      <ul>
+        <li>Always test changes in a staging environment first</li>
+        <li>Use <code>RewriteCond</code> conditions to fine-tune rules</li>
+        <li>Monitor your site with Google Search Console after updates</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum dolor non dui convallis, vel euismod sem elementum. Suspendisse vitae sem erat. Aenean ac nunc nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent rutrum nulla sed urna gravida, vitae malesuada elit convallis. In lobortis ac est vitae dignissim. Aliquam erat volutpat. Curabitur eget mattis ligula.</p>
+    </section>
+  </main>
+
+  <script>
+    function generateHtaccess() {
+      const form = document.getElementById('htaccessForm');
+      const output = document.getElementById('output');
+      let lines = [];
+
+      if (form.https.checked) {
+        lines.push(
+          '# Force HTTPS',
+          '<IfModule mod_rewrite.c>',
+          'RewriteEngine On',
+          'RewriteCond %{HTTPS} off',
+          'RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]',
+          '</IfModule>', ''
+        );
+      }
+
+      if (form.www.checked) {
+        lines.push(
+          '# Redirect non-www to www',
+          '<IfModule mod_rewrite.c>',
+          'RewriteEngine On',
+          'RewriteCond %{HTTP_HOST} !^www\.',
+          'RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]',
+          '</IfModule>', ''
+        );
+      }
+
+      if (form.caching.checked) {
+        lines.push(
+          '# Browser caching',
+          '<IfModule mod_expires.c>',
+          'ExpiresActive On',
+          'ExpiresByType image/jpg "access plus 1 year"',
+          'ExpiresByType text/css "access plus 1 month"',
+          'ExpiresByType application/javascript "access plus 1 month"',
+          '</IfModule>', ''
+        );
+      }
+
+      if (form.security.checked) {
+        lines.push(
+          '# Security headers',
+          'Header set X-Content-Type-Options "nosniff"',
+          'Header set X-Frame-Options "SAMEORIGIN"',
+          'Header set X-XSS-Protection "1; mode=block"', ''
+        );
+      }
+
+      if (form.redirect.checked && form.oldUrl.value && form.newUrl.value) {
+        lines.push(
+          '# Custom 301 Redirect',
+          `Redirect 301 ${form.oldUrl.value.trim()} ${form.newUrl.value.trim()}`, ''
+        );
+      }
+
+      output.value = lines.join('\n');
+    }
+  </script>
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

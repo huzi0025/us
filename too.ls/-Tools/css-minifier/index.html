@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSS Minifier Tool - Compress & Optimize CSS Online</title>
+<meta name="description" content="Compress and minify your CSS code easily using our online CSS Minifier Tool. Reduce file size, improve load speed and optimize your website CSS with this free tool." />
+<meta name="keywords" content="CSS minifier, CSS compressor, CSS optimizer, minify CSS online, compress CSS code, reduce CSS size, web performance, SEO tools, frontend tools, optimize CSS" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "CSS Minifier Tool",
+  "url": "https://histream.me/-Tools/css-minifier",
+  "description": "Online CSS Minifier Tool that compresses and optimizes CSS code for better website performance.",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript",
+  "image": "https://histream.me/favicons/tools.png"
+}
+</script>
+
+<style>
+  body {
+    background-color: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  textarea {
+    width: 100%;
+    min-height: 180px;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    color: #000;
+    background-color: #fff;
+  }
+  button {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  .output-label {
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  #output {
+    white-space: pre-wrap;
+    background: #f7f7f7;
+    border: 2px solid #000;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: 5px;
+    min-height: 180px;
+  }
+  .blog {
+    margin-top: 4rem;
+    font-size: 1.1rem;
+  }
+  .blog h2, .blog h3 {
+    margin-top: 2rem;
+    font-weight: 700;
+  }
+  .blog p, .blog ul {
+    margin-top: 1rem;
+    max-width: 700px;
+  }
+  .blog ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container">
+    <h1>CSS Minifier Tool</h1>
+    <textarea id="cssInput" placeholder="Paste your CSS code here..."></textarea>
+    <button onclick="minifyCSS()">Minify CSS</button>
+
+    <label for="output" class="output-label">Minified CSS Output:</label>
+    <pre id="output" aria-live="polite" aria-atomic="true"></pre>
+
+    <section class="blog" role="main">
+      <h2>What is CSS Minification?</h2>
+      <p>CSS minification is the process of removing unnecessary characters from CSS code — such as whitespace, comments, and line breaks — without changing its functionality. This results in smaller file sizes, which can help improve website loading times and performance.</p>
+
+      <h2>Why Use a CSS Minifier Tool?</h2>
+      <p>Large CSS files can slow down page load speeds, which negatively impacts user experience and SEO rankings. By minifying CSS:</p>
+      <ul>
+        <li>You reduce the bandwidth usage for your site visitors.</li>
+        <li>Improved load times help with SEO, as search engines favor fast-loading websites.</li>
+        <li>Smaller files reduce the time browsers take to parse and apply styles.</li>
+        <li>You make your frontend code cleaner for production environments.</li>
+      </ul>
+
+      <h2>How Does This CSS Minifier Work?</h2>
+      <p>This tool uses JavaScript to remove:</p>
+      <ul>
+        <li>All CSS comments <code>/* comment */</code></li>
+        <li>Extra spaces and tabs</li>
+        <li>Newlines and carriage returns</li>
+        <li>Redundant semicolons and whitespace around characters</li>
+      </ul>
+      <p>It outputs compact, optimized CSS ready to be deployed on your website.</p>
+
+      <h2>Best Practices for CSS Optimization</h2>
+      <ul>
+        <li>Use minified CSS files in production to reduce file size.</li>
+        <li>Combine multiple CSS files to reduce HTTP requests.</li>
+        <li>Use CSS preprocessors like SASS or LESS with minification in your build pipeline.</li>
+        <li>Serve your CSS files with gzip or Brotli compression on your web server.</li>
+      </ul>
+
+      <h2>SEO Benefits of Optimized CSS</h2>
+      <p>Fast-loading websites contribute positively to your SEO rankings. Google and other search engines prioritize user experience metrics, including page speed. By minimizing your CSS, you ensure:</p>
+      <ul>
+        <li>Lower bounce rates due to faster page render</li>
+        <li>Better crawl efficiency by search bots</li>
+        <li>Improved Core Web Vitals scores</li>
+      </ul>
+
+      <h2>Additional Resources</h2>
+      <p>Want to further optimize your website? Explore:</p>
+      <ul>
+        <li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency" target="_blank" rel="noopener noreferrer">Google Web Fundamentals</a></li>
+        <li><a href="https://web.dev/fast/" target="_blank" rel="noopener noreferrer">Web Performance Optimization</a></li>
+        <li><a href="https://css-tricks.com/how-to-minify-css/" target="_blank" rel="noopener noreferrer">CSS Tricks on Minification</a></li>
+      </ul>
+
+      <p>Use this CSS Minifier Tool regularly to keep your stylesheets clean, fast, and optimized!</p>
+    </section>
+  </div>
+
+<script>
+  function minifyCSS() {
+    const css = document.getElementById('cssInput').value;
+    if (!css.trim()) {
+      document.getElementById('output').textContent = 'Please enter CSS code to minify.';
+      return;
+    }
+    // Remove comments, whitespace, new lines, and redundant semicolons
+    let minified = css
+      .replace(/\/\*[\s\S]*?\*\//g, '') // Remove comments
+      .replace(/\s+/g, ' ')             // Collapse whitespace
+      .replace(/\s*([{}:;,])\s*/g, '$1') // Remove space around selectors, colons, commas, semicolons
+      .replace(/;}/g, '}')              // Remove last semicolon before }
+      .trim();
+    document.getElementById('output').textContent = minified;
+  }
+</script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

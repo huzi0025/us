@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free AMP Page Generator Tool - Generate valid AMP HTML pages easily with SEO best practices and schema integration." />
+  <meta name="keywords" content="AMP Page Generator, AMP HTML, SEO AMP, generate AMP pages, AMP builder tool, AMP template, AMP SEO tool, amp site generator, amp code online, html amp generator" />
+  <meta name="author" content="tools.histream.me" />
+  <title>AMP Page Generator - Create SEO-Optimized AMP HTML Pages</title>
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png">
+  <!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.7;
+    }
+
+    h1, h2 {
+      color: #000;
+    }
+
+    textarea, input, button {
+      width: 100%;
+      max-width: 800px;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    #output {
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin-top: 2rem;
+    }
+
+    .blog {
+      margin-top: 4rem;
+      max-width: 900px;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AMP Page Generator",
+    "url": "https://us.histream.me/tools/amp-page-generator",
+    "description": "Generate SEO-optimized AMP HTML pages using this free online AMP generator tool.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <h1>AMP Page Generator Tool</h1>
+  <p>Generate valid AMP HTML pages with built-in structure and meta tags optimized for speed, mobile performance, and SEO best practices.</p>
+
+  <form onsubmit="generateAMP(event)">
+    <label for="title">Page Title:</label>
+    <input type="text" id="title" placeholder="Enter page title" required />
+
+    <label for="description">Meta Description:</label>
+    <input type="text" id="description" placeholder="Enter meta description" required />
+
+    <label for="content">Page Content (HTML allowed):</label>
+    <textarea id="content" rows="8" placeholder="Paste or type your AMP-compatible HTML content..." required></textarea>
+
+    <button type="submit">Generate AMP Page</button>
+  </form>
+
+  <h2>Generated AMP HTML:</h2>
+  <pre id="output"></pre>
+
+  <script>
+    function generateAMP(event) {
+      event.preventDefault();
+      const title = document.getElementById('title').value.trim();
+      const description = document.getElementById('description').value.trim();
+      const content = document.getElementById('content').value.trim();
+
+      const ampTemplate = `
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>${title}</title>
+    <link rel="canonical" href="#">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="${description}">
+    <style amp-boilerplate>body{visibility:hidden}</style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom>
+      body { font-family: Arial, sans-serif; padding: 2rem; color: #000; background: #fff; }
+    </style>
+  </head>
+  <body>
+    ${content}
+  </body>
+</html>
+`.trim();
+
+      document.getElementById('output').textContent = ampTemplate;
+    }
+  </script>
+
+  <div class="blog">
+    <h2>What is AMP?</h2>
+    <p>AMP (Accelerated Mobile Pages) is an open-source framework created by Google to improve the performance of mobile web pages. AMP pages are lightweight, fast-loading, and prioritize user experience. AMP restricts the use of certain HTML tags and requires asynchronous scripts to ensure maximum speed.</p>
+
+    <h2>Why Use an AMP Page Generator?</h2>
+    <p>Creating AMP-compliant pages manually can be time-consuming. This AMP Page Generator simplifies the process by providing a quick tool to generate valid AMP HTML templates. Simply enter your title, description, and content, and copy the generated code into your site.</p>
+
+    <h2>SEO Benefits of AMP</h2>
+    <ul>
+      <li>Improved page speed and load time</li>
+      <li>Higher mobile search rankings</li>
+      <li>Better user experience</li>
+      <li>Increased click-through rate from search results</li>
+    </ul>
+
+    <h2>Best Practices for AMP SEO</h2>
+    <ol>
+      <li>Use concise, keyword-rich meta descriptions</li>
+      <li>Always add canonical links to non-AMP versions</li>
+      <li>Keep CSS under 75KB and inline it using amp-custom</li>
+      <li>Use structured data (schema.org) where applicable</li>
+      <li>Ensure AMP validation passes via <a href="https://validator.ampproject.org" target="_blank">AMP Validator</a></li>
+    </ol>
+
+    <h2>Keywords: AMP Generator, AMP HTML Tool, AMP Template Maker</h2>
+    <p>If you are a developer, blogger, or marketer, using AMP can be a major boost to your site's SEO and performance. This tool is especially useful for generating AMP-compliant pages for blog posts, landing pages, and marketing campaigns. Whether you need an AMP article generator, AMP blog builder, or AMP SEO starter, this tool has you covered.</p>
+
+    <h2>More Resources</h2>
+    <ul>
+      <li><a href="https://amp.dev/" target="_blank" rel="noopener">Official AMP Website</a></li>
+      <li><a href="https://developers.google.com/search/docs/appearance/amp" target="_blank" rel="noopener">Google AMP SEO Guide</a></li>
+      <li><a href="https://validator.ampproject.org/" target="_blank" rel="noopener">AMP Validator</a></li>
+    </ul>
+
+    <p><small>© 2025 AMP Generator by tools.histream.me — Powered by OpenAI</small></p>
+  </div>
+
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

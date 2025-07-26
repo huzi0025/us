@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Link Shortener Tool - Free Frontend URL Shortener</title>
+  <meta name="description" content="Use our free Link Shortener frontend tool to create shorter and cleaner URLs. Ideal for social media, SMS, SEO, and more." />
+  <meta name="keywords" content="link shortener, url shortener, short link tool, clean url generator, online link shortener, free url shortener, SEO link tools, frontend link tool, lightweight shortener UI" />
+  <link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Link Shortener Tool",
+    "url": "https://us.histream.me/tools/link-shortener",
+    "description": "Frontend interface for link shortening. Clean, simple, and fast tool to create short URLs for your content and social media.",
+    "inLanguage": "en",
+    "about": {
+      "@type": "Thing",
+      "name": "Link Shortening Tool"
+    }
+  }
+  </script>
+
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #222;
+    }
+    .result {
+      margin-top: 1.5rem;
+      font-weight: bold;
+      word-break: break-all;
+    }
+    .blog {
+      margin-top: 3rem;
+    }
+    .blog h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+    .blog p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+  </style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Article">
+    <h1 itemprop="headline">Link Shortener (Frontend Only)</h1>
+    <p>Paste your long URL below and click the button to generate a short version (placeholder output for demo purposes).</p>
+    
+    <input type="text" id="longUrl" placeholder="Enter a long URL here..." />
+    <button onclick="shortenUrl()">Shorten Link</button>
+    
+    <div id="shortUrl" class="result" itemprop="articleBody"></div>
+
+    <div class="blog">
+      <h2>Why Use a Link Shortener?</h2>
+      <p>Link shorteners are useful tools for marketers, bloggers, and businesses looking to share long URLs in a more user-friendly format. These tools can reduce lengthy URLs into compact, easy-to-share links that are perfect for platforms with character limits such as Twitter, SMS, or business cards.</p>
+      
+      <h2>Advantages of a Shortened URL</h2>
+      <p>Shortened links look clean and professional. They increase click-through rates (CTR), help track analytics, and prevent URL truncation in emails or posts. Many online campaigns perform better when using short and memorable URLs.</p>
+      
+      <h2>Top Use Cases</h2>
+      <ul>
+        <li>Social media sharing</li>
+        <li>Email marketing</li>
+        <li>SMS or print media campaigns</li>
+        <li>Affiliate links</li>
+        <li>Clean URLs for QR codes</li>
+      </ul>
+
+      <h2>How This Tool Works</h2>
+      <p>This frontend-only tool mimics the appearance and functionality of a URL shortener. You can integrate it with a real API such as Bitly, TinyURL, or a custom backend service for actual link shortening. It's a lightweight, privacy-respecting interface built with performance in mind.</p>
+
+      <h2>High-Level SEO Keywords</h2>
+      <p>link shortener, online link shortener, frontend url shortener tool, short link maker, create short links, clean url generator, url compression tool, SEO url shortener, compact link generator, quick url shortening tool</p>
+
+      <h2>Integrate with a Real Backend</h2>
+      <p>If you want this frontend to generate actual short links, connect it with a backend API that returns a short URL. Services like <strong>Rebrandly</strong>, <strong>Bitly</strong>, or custom PHP/Node.js backends are excellent options.</p>
+
+      <h2>Conclusion</h2>
+      <p>Whether you need to shorten links for branding, SEO optimization, or ease of sharing, our Link Shortener Tool UI is a fast and flexible solution. With schema.org integration, clean design, and SEO optimization, this frontend template is ready to integrate into any professional toolkit.</p>
+    </div>
+  </div>
+
+  <script>
+    function shortenUrl() {
+      const longUrl = document.getElementById('longUrl').value.trim();
+      if (!longUrl) {
+        alert('Please enter a URL.');
+        return;
+      }
+
+      // Simulated short URL (can be replaced with real API integration)
+      const hash = Math.random().toString(36).substring(2, 8);
+      const shortUrl = `https://short.ly/${hash}`;
+
+      document.getElementById('shortUrl').textContent = `Shortened URL: ${shortUrl}`;
+    }
+  </script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

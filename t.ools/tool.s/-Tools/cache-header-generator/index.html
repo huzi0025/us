@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cache Header Generator Tool - Generate HTTP Cache Headers for SEO & Performance</title>
+<meta name="description" content="Generate custom HTTP cache headers with our Cache Header Generator Tool to improve your website's performance and SEO ranking. Customize Cache-Control, Expires, and more." />
+<meta name="keywords" content="cache header generator, cache-control header, expires header generator, http cache headers, seo cache headers, website performance optimization, http headers tool, cache control max-age, cache header generator online" />
+<meta name="author" content="HiStream Tools" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+
+<style>
+  /* Reset & base styles */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  p.intro {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+  form {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    margin-top: 18px;
+  }
+  select, input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1.8px solid #000;
+    border-radius: 6px;
+  }
+  button {
+    margin-top: 25px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #333;
+  }
+  #output {
+    margin-top: 30px;
+    background: #e7e7e7;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+  }
+  .blog {
+    margin-top: 50px;
+  }
+  .blog h2 {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 6px;
+  }
+  .blog p, .blog ul, .blog ol {
+    margin-bottom: 18px;
+  }
+  .blog ul, .blog ol {
+    padding-left: 22px;
+  }
+  .blog strong {
+    color: #000;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cache Header Generator Tool",
+  "url": "https://us.histream.me/tools/cache-header-generator",
+  "description": "Online tool to generate HTTP cache headers to optimize website performance and SEO.",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript enabled",
+  "author": {
+    "@type": "Organization",
+    "name": "HiStream Tools"
+  }
+}
+</script>
+
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="container">
+    <h1>Cache Header Generator Tool</h1>
+    <p class="intro">
+      Generate HTTP cache headers quickly and easily to improve your website's loading speed and SEO performance. Customize <code>Cache-Control</code>, <code>Expires</code>, and other caching directives for optimal results.
+    </p>
+
+    <form id="cacheForm" onsubmit="generateCacheHeaders(event)">
+      <label for="cacheControl">Cache-Control Directive</label>
+      <select id="cacheControl" required>
+        <option value="" disabled selected>Select Cache-Control directive</option>
+        <option value="no-cache">no-cache</option>
+        <option value="no-store">no-store</option>
+        <option value="public">public</option>
+        <option value="private">private</option>
+        <option value="max-age">max-age</option>
+        <option value="must-revalidate">must-revalidate</option>
+      </select>
+
+      <label for="maxAgeValue" id="maxAgeLabel" style="display:none;">Max-Age (seconds)</label>
+      <input type="number" id="maxAgeValue" min="0" placeholder="Enter max-age value" style="display:none;" />
+
+      <label for="expiresDate">Expires Header (optional)</label>
+      <input type="text" id="expiresDate" placeholder="e.g., Fri, 01 Jan 2026 12:00:00 GMT" />
+
+      <button type="submit">Generate Cache Headers</button>
+    </form>
+
+    <div id="output" aria-live="polite" aria-atomic="true" role="region"></div>
+
+    <section class="blog" aria-label="Detailed blog about HTTP caching and SEO">
+      <h2>Understanding HTTP Cache Headers</h2>
+      <p>
+        HTTP cache headers are vital for improving website speed and SEO. They inform browsers and proxy servers how to handle caching of resources, reducing load times and server requests.
+      </p>
+
+      <h2>Cache-Control Header Explained</h2>
+      <p>
+        The <code>Cache-Control</code> header is the most important HTTP cache header. It specifies caching policies such as whether content is cacheable, how long it is fresh, and conditions to revalidate the cache. Some common directives:
+      </p>
+      <ul>
+        <li><strong>no-cache:</strong> Forces caches to submit the request to the origin server for validation before releasing a cached copy.</li>
+        <li><strong>no-store:</strong> Prevents caching completely.</li>
+        <li><strong>public:</strong> Indicates the response may be cached by any cache.</li>
+        <li><strong>private:</strong> Indicates the response is intended for a single user and should not be stored by shared caches.</li>
+        <li><strong>max-age=&lt;seconds&gt;:</strong> Specifies the maximum amount of time a resource is considered fresh.</li>
+        <li><strong>must-revalidate:</strong> The cache must verify the status with the origin server before reuse.</li>
+      </ul>
+
+      <h2>Expires Header</h2>
+      <p>
+        The <code>Expires</code> header defines a date/time after which the response is considered stale. It provides backward compatibility with HTTP/1.0 caches and is often used alongside <code>Cache-Control</code>.
+      </p>
+
+      <h2>Why Use Caching Headers?</h2>
+      <p>
+        Proper use of caching headers drastically reduces page load times and server bandwidth usage. Search engines reward faster sites with better rankings. Users experience smoother, faster interactions.
+      </p>
+
+      <h2>SEO Keywords for Cache Header Generator</h2>
+      <p>
+        <strong>cache header generator</strong>, <strong>cache-control header</strong>, <strong>expires header generator</strong>, <strong>http cache headers</strong>, <strong>seo cache headers</strong>, <strong>website performance optimization</strong>, <strong>http headers tool</strong>, <strong>cache control max-age</strong>, <strong>cache header generator online</strong>.
+      </p>
+
+      <h2>Best Practices for HTTP Caching</h2>
+      <ol>
+        <li>Use <code>Cache-Control</code> with <code>max-age</code> to define freshness lifetime.</li>
+        <li>Prefer <code>public</code> for assets that can be cached by any cache.</li>
+        <li>Use <code>private</code> for user-specific content.</li>
+        <li>Avoid <code>no-store</code> unless necessary to prevent caching sensitive data.</li>
+        <li>Set reasonable expiry times balancing freshness and bandwidth savings.</li>
+      </ol>
+
+      <h2>Common Mistakes to Avoid</h2>
+      <ul>
+        <li>Setting <code>max-age</code> too long for frequently changing content.</li>
+        <li>Not using <code>must-revalidate</code> when needed.</li>
+        <li>Ignoring browser and proxy caching behavior.</li>
+        <li>Forgetting to set headers for all static resources like CSS, JS, images.</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>
+        Efficient cache header configuration enhances your website's performance and SEO. Use this tool to generate optimal cache headers for your site resources, ensuring faster load times and happy visitors.
+      </p>
+    </section>
+  </div>
+
+<script>
+  const cacheControlSelect = document.getElementById('cacheControl');
+  const maxAgeLabel = document.getElementById('maxAgeLabel');
+  const maxAgeInput = document.getElementById('maxAgeValue');
+  const output = document.getElementById('output');
+
+  // Show/hide max-age input based on directive selected
+  cacheControlSelect.addEventListener('change', () => {
+    if (cacheControlSelect.value === 'max-age') {
+      maxAgeLabel.style.display = 'block';
+      maxAgeInput.style.display = 'block';
+      maxAgeInput.required = true;
+    } else {
+      maxAgeLabel.style.display = 'none';
+      maxAgeInput.style.display = 'none';
+      maxAgeInput.required = false;
+      maxAgeInput.value = '';
+    }
+  });
+
+  function generateCacheHeaders(e) {
+    e.preventDefault();
+
+    const directive = cacheControlSelect.value;
+    let maxAgeVal = maxAgeInput.value;
+    const expiresVal = document.getElementById('expiresDate').value.trim();
+
+    if (!directive) {
+      output.textContent = 'Please select a Cache-Control directive.';
+      return;
+    }
+
+    if (directive === 'max-age' && (maxAgeVal === '' || isNaN(maxAgeVal) || maxAgeVal < 0)) {
+      output.textContent = 'Please enter a valid max-age value in seconds.';
+      return;
+    }
+
+    let cacheControlHeader = 'Cache-Control: ';
+    switch (directive) {
+      case 'max-age':
+        cacheControlHeader += `max-age=${maxAgeVal}`;
+        break;
+      default:
+        cacheControlHeader += directive;
+    }
+
+    let expiresHeader = expiresVal ? `Expires: ${expiresVal}` : '';
+
+    let result = cacheControlHeader;
+    if (expiresHeader) result += '\n' + expiresHeader;
+
+    output.textContent = result;
+  }
+</script>
+
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>

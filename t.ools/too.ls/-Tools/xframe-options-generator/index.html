@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="158630" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>X-Frame Options Generator Tool - Protect Your Site from Clickjacking</title>
+<meta name="description" content="Generate the perfect X-Frame-Options HTTP header to secure your website from clickjacking attacks. This X-Frame Options Generator helps you create safe iframe policies with ease." />
+<meta name="keywords" content="X-Frame Options Generator, Clickjacking Protection, HTTP Security Headers, X-Frame-Options Header, Frame Ancestors, Frame Busting, Web Security Tools, CSP Frame Ancestors, Security Headers Generator" />
+<link rel="icon" href="https://histream.me/favicons/tools.png" type="image/png" />
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+
+<style>
+  body {
+    background: #fff;
+    color: #000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+  }
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  label {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: 600;
+  }
+  select, input[type="text"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  button {
+    margin-top: 1.8rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  button:hover {
+    background: #333;
+  }
+  pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-top: 1.5rem;
+    white-space: pre-wrap;
+  }
+  .blog {
+    margin-top: 4rem;
+  }
+  .blog h3 {
+    margin-top: 2.5rem;
+  }
+  .blog ul {
+    margin-left: 1.6rem;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #444;
+  }
+  small {
+    color: #555;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "X-Frame Options Generator",
+  "applicationCategory": "SecurityTool",
+  "operatingSystem": "All",
+  "description": "Tool to generate X-Frame-Options HTTP header values to prevent clickjacking and improve website security.",
+  "url": "https://histream.me/-Tools/xframe-options-generator",
+  "keywords": "X-Frame Options Generator, Clickjacking Protection, Security Header Generator, HTTP Security, Frame Options, Web Security"
+}
+</script>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<h1>X-Frame Options Generator Tool</h1>
+<p style="text-align:center;">Generate the perfect <code>X-Frame-Options</code> HTTP header to protect your website against clickjacking attacks.</p>
+
+<form id="xframeForm" onsubmit="generateXFrame(event)">
+  <label for="option">Choose X-Frame-Options Value:</label>
+  <select id="option" required>
+    <option value="" disabled selected>Select an option</option>
+    <option value="DENY">DENY - Disallow all framing</option>
+    <option value="SAMEORIGIN">SAMEORIGIN - Allow framing only from the same origin</option>
+    <option value="ALLOW-FROM">ALLOW-FROM - Allow framing from a specific URL</option>
+  </select>
+
+  <label for="allowFromUrl">If ALLOW-FROM, enter allowed origin URL:</label>
+  <input type="text" id="allowFromUrl" placeholder="https://example.com" disabled />
+
+  <button type="submit">Generate X-Frame-Options Header</button>
+</form>
+
+<pre id="output" aria-live="polite" aria-atomic="true"></pre>
+
+<div class="blog">
+  <h2>Complete Guide to X-Frame-Options and Clickjacking Protection</h2>
+
+  <h3>What is X-Frame-Options?</h3>
+  <p>
+    The <code>X-Frame-Options</code> HTTP header is a critical security measure that prevents your website from being embedded into other sites using <code>&lt;iframe&gt;</code>, <code>&lt;frame&gt;</code>, or <code>&lt;object&gt;</code> tags. This helps protect against <em>clickjacking</em> attacks, where malicious sites trick users into clicking hidden elements.
+  </p>
+
+  <h3>Available X-Frame-Options Directives</h3>
+  <ul>
+    <li><strong>DENY:</strong> Completely disallows the page from being framed.</li>
+    <li><strong>SAMEORIGIN:</strong> Allows the page to be framed only by pages from the same origin.</li>
+    <li><strong>ALLOW-FROM &lt;uri&gt;:</strong> Allows framing only from the specified origin. Note: This directive has limited browser support.</li>
+  </ul>
+
+  <h3>Why Use X-Frame-Options?</h3>
+  <ul>
+    <li>✅ Protect your visitors from malicious overlays and deceptive clickjacking.</li>
+    <li>✅ Maintain user trust and avoid security warnings.</li>
+    <li>✅ Complement Content Security Policy (CSP) frame-ancestors directive.</li>
+  </ul>
+
+  <h3>Limitations of X-Frame-Options</h3>
+  <p>
+    While still widely supported, the <code>ALLOW-FROM</code> directive is deprecated and not supported by all browsers (notably, Chrome and Edge). For more fine-grained control, it's recommended to use the <code>Content-Security-Policy</code> header with <code>frame-ancestors</code>.
+  </p>
+
+  <h3>How to Implement the Header</h3>
+  <p>Once you generate the appropriate header value using this tool, add it to your server configuration:</p>
+  <ul>
+    <li><strong>Apache:</strong> <code>Header always set X-Frame-Options "VALUE"</code></li>
+    <li><strong>Nginx:</strong> <code>add_header X-Frame-Options "VALUE" always;</code></li>
+    <li><strong>Express.js (Node.js):</strong> Use helmet middleware: <code>helmet.frameguard({ action: 'VALUE' })</code></li>
+  </ul>
+
+  <h3>Best Practices</h3>
+  <ul>
+    <li>Use <code>DENY</code> if your site should never be framed.</li>
+    <li>Use <code>SAMEORIGIN</code> to allow your own domain to embed pages.</li>
+    <li>For trusted external domains, use CSP <code>frame-ancestors</code> instead of <code>ALLOW-FROM</code>.</li>
+  </ul>
+
+  <h3>SEO and Security Benefits</h3>
+  <p>
+    Protecting your site from clickjacking preserves user trust, reduces bounce rates, and helps maintain strong SEO rankings by preventing malicious third-party framing that can cause penalties or degraded user experience.
+  </p>
+
+  <h3>Related Security Headers</h3>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy" target="_blank" rel="noopener">Content Security Policy (CSP)</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options" target="_blank" rel="noopener">X-Content-Type-Options</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security" target="_blank" rel="noopener">Strict-Transport-Security</a></li>
+  </ul>
+
+  <h3>Frequently Asked Questions (FAQ)</h3>
+
+  <p><strong>Q:</strong> Can I use both X-Frame-Options and CSP frame-ancestors?<br />
+  <strong>A:</strong> Yes, using both can provide layered protection. CSP frame-ancestors offers more flexibility.</p>
+
+  <p><strong>Q:</strong> What if I want to allow multiple external domains to frame my site?<br />
+  <strong>A:</strong> Use CSP <code>frame-ancestors</code> directive as <code>X-Frame-Options</code> does not support multiple domains.</p>
+
+  <p><strong>Q:</strong> Does X-Frame-Options affect SEO?<br />
+  <strong>A:</strong> No, it primarily improves security and user trust, indirectly benefiting SEO.</p>
+
+  <h3>More Resources</h3>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options" target="_blank" rel="noopener">MDN Web Docs: X-Frame-Options</a></li>
+    <li><a href="https://owasp.org/www-community/attacks/Clickjacking" target="_blank" rel="noopener">OWASP Clickjacking</a></li>
+    <li><a href="https://securityheaders.com/" target="_blank" rel="noopener">SecurityHeaders.com</a></li>
+  </ul>
+
+  <p><small>© 2025 X-Frame Options Generator by HiStream.me</small></p>
+</div>
+
+<script>
+  const optionSelect = document.getElementById("option");
+  const allowFromUrlInput = document.getElementById("allowFromUrl");
+  const output = document.getElementById("output");
+
+  optionSelect.addEventListener("change", () => {
+    if (optionSelect.value === "ALLOW-FROM") {
+      allowFromUrlInput.disabled = false;
+      allowFromUrlInput.required = true;
+    } else {
+      allowFromUrlInput.value = "";
+      allowFromUrlInput.disabled = true;
+      allowFromUrlInput.required = false;
+    }
+    output.textContent = "";
+  });
+
+  function generateXFrame(event) {
+    event.preventDefault();
+    const option = optionSelect.value;
+    let header = "";
+
+    if (!option) {
+      output.textContent = "Please select an option.";
+      return;
+    }
+
+    if (option === "ALLOW-FROM") {
+      const url = allowFromUrlInput.value.trim();
+      if (!url) {
+        output.textContent = "Please enter a valid URL for ALLOW-FROM.";
+        return;
+      }
+      header = `X-Frame-Options: ALLOW-FROM ${url}`;
+    } else {
+      header = `X-Frame-Options: ${option}`;
+    }
+
+    output.textContent = header;
+  }
+</script>
+
+</body>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://histream.me/about/index.html">About</a>
+    <a href="https://histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://histream.me/tools.html">
+      <img src="https://histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</html>

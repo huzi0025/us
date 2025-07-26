@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W29VHND9');</script>
+<!-- End Google Tag Manager -->
+<script src="https://fpyf8.com/88/tag.min.js" data-zone="159438" async data-cfasync="false"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Scroll Depth Generator Tool - Track User Engagement Easily</title>
+<meta name="description" content="Create custom scroll depth tracking scripts to measure user engagement on your website. Use our free Scroll Depth Generator tool to generate tracking code effortlessly." />
+<meta name="keywords" content="Scroll depth generator, scroll tracking code, user engagement tracking, scroll analytics, web analytics, scroll event generator, Google Analytics scroll tracking, scroll depth monitoring" />
+<link rel="icon" href="https://us.histream.me/favicons/tools.png" type="image/png" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Scroll Depth Generator Tool",
+  "url": "https://us.histream.me/-Tools/scroll-depth-generator",
+  "description": "Free online Scroll Depth Generator Tool to create custom scroll tracking scripts for your website.",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScript enabled",
+  "image": "https://us.histream.me/favicons/tools.png"
+}
+</script>
+
+<style>
+  /* Reset and base */
+  body {
+    margin: 0;
+    padding: 2rem;
+    background: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  label {
+    font-weight: 700;
+    display: block;
+    margin: 1.5rem 0 0.5rem;
+  }
+  input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: #000;
+    background-color: #fff;
+  }
+  button {
+    margin-top: 1.8rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  button:hover {
+    background-color: #222;
+  }
+  textarea {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 300px;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    resize: vertical;
+    background: #f7f7f7;
+    color: #000;
+    box-sizing: border-box;
+  }
+  section.blog {
+    margin-top: 4rem;
+    font-size: 1.15rem;
+    max-width: 850px;
+    line-height: 1.7;
+    color: #111;
+  }
+  section.blog h2, section.blog h3 {
+    margin-top: 2.5rem;
+    font-weight: 700;
+    color: #111;
+  }
+  section.blog p, section.blog ul {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  section.blog ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  section.blog a {
+    color: #000;
+    text-decoration: underline;
+  }
+  section.blog a:hover {
+    text-decoration: none;
+  }
+</style>
+
+<!-- Transparent Full-Width Header with Bottom Space -->
+<style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-bottom: 35px; /* 👈 Adds space below header */
+  }
+
+  .logo img {
+  max-height: 20px;   /* Bigger logo in header */
+  width: auto;
+  height: auto;
+  display: block;
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-buttons {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+    }
+  }
+</style>
+
+<header>
+  <div class="logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Free Tools" />
+    </a>
+  </div>
+  <div class="nav-buttons">
+    <button onclick="location.href='https://tools.histream.me'">Hi Stream</button>
+    <button onclick="location.href='https://us.histream.me/tools.html'">Hi Free Tools</button>
+    <button onclick="location.href='https://saleka.store'">Saleka Store</button>
+  </div>
+</header>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W29VHND9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<main class="container" role="main" aria-label="Scroll Depth Generator Tool">
+  <h1>Scroll Depth Generator Tool</h1>
+
+  <label for="thresholdsInput">Scroll Depth Thresholds (%):</label>
+  <input
+    type="text"
+    id="thresholdsInput"
+    placeholder="e.g. 25,50,75,100"
+    aria-describedby="thresholdHelp"
+    value="25,50,75,100"
+  />
+  <small id="thresholdHelp" style="color:#444;">Enter comma-separated scroll depth percentages (1-100).</small>
+
+  <label for="eventNameInput">Custom Event Name:</label>
+  <input
+    type="text"
+    id="eventNameInput"
+    placeholder="e.g. ScrollDepthReached"
+    value="ScrollDepthReached"
+    aria-describedby="eventHelp"
+  />
+  <small id="eventHelp" style="color:#444;">Name of the event to be pushed on scroll depth.</small>
+
+  <label for="analyticsSelect">Analytics Platform:</label>
+  <select id="analyticsSelect" aria-describedby="analyticsHelp">
+    <option value="gtag">Google Analytics (gtag.js)</option>
+    <option value="ga">Google Analytics (analytics.js)</option>
+    <option value="console">Console Log Only</option>
+  </select>
+  <small id="analyticsHelp" style="color:#444;">Choose which platform to generate tracking code for.</small>
+
+  <button id="generateBtn" aria-live="polite" aria-atomic="true">Generate Scroll Depth Script</button>
+
+  <textarea id="outputScript" aria-label="Generated scroll depth tracking script" readonly></textarea>
+
+  <section class="blog">
+    <h2>What is Scroll Depth Tracking?</h2>
+    <p>
+      Scroll depth tracking measures how far users scroll down a webpage, providing insights into user engagement, content consumption, and website performance.
+    </p>
+
+    <h2>Why Use a Scroll Depth Generator Tool?</h2>
+    <p>
+      Creating custom scroll tracking scripts can be tedious and error-prone. Our Scroll Depth Generator tool helps you quickly generate code tailored to your analytics platform and needs.
+    </p>
+
+    <h3>Benefits of Tracking Scroll Depth</h3>
+    <ul>
+      <li>Understand how users interact with your content</li>
+      <li>Identify drop-off points and optimize page layout</li>
+      <li>Improve conversion rates by analyzing engagement</li>
+      <li>Measure effectiveness of marketing campaigns</li>
+    </ul>
+
+    <h2>How the Scroll Depth Script Works</h2>
+    <p>
+      The generated JavaScript listens for scroll events and fires tracking events at specified scroll percentages, such as 25%, 50%, 75%, and 100%. It ensures events only trigger once per threshold per page load.
+    </p>
+
+    <h3>Supported Analytics Platforms</h3>
+    <ul>
+      <li><strong>Google Analytics (gtag.js):</strong> Modern GA tracking code using <code>gtag('event', ...)</code></li>
+      <li><strong>Google Analytics (analytics.js):</strong> Legacy GA tracking code using <code>ga('send', 'event', ...)</code></li>
+      <li><strong>Console Log Only:</strong> Useful for debugging or custom implementations</li>
+    </ul>
+
+    <h2>Implementing the Generated Script</h2>
+    <p>
+      Copy the generated JavaScript code and paste it before the closing <code>&lt;/body&gt;</code> tag of your HTML or inside your tag manager.
+    </p>
+
+    <h2>SEO and User Experience</h2>
+    <p>
+      Scroll depth tracking helps improve user experience by identifying what content keeps visitors engaged, enabling data-driven content optimization, which positively affects SEO rankings.
+    </p>
+
+    <h2>Common Use Cases</h2>
+    <ul>
+      <li>Content-heavy websites like blogs, news, and magazines</li>
+      <li>E-commerce sites optimizing product page engagement</li>
+      <li>Landing pages measuring campaign performance</li>
+      <li>Single-page applications monitoring user interaction</li>
+    </ul>
+
+    <h2>Advanced Tips</h2>
+    <p>
+      For advanced tracking, consider integrating scroll depth data with heatmaps and session recordings, or combine with other user interaction metrics like clicks and time on page.
+    </p>
+
+    <h2>Privacy and Compliance</h2>
+    <p>
+      Always ensure your tracking complies with privacy laws such as GDPR and CCPA by updating your privacy policies and allowing users to opt out of tracking if necessary.
+    </p>
+
+    <h2>Learn More</h2>
+    <ul>
+      <li><a href="https://www.analyticsmania.com/post/scroll-depth-tracking-google-analytics/" target="_blank" rel="noopener noreferrer">How to Track Scroll Depth in Google Analytics</a></li>
+      <li><a href="https://www.simoahava.com/analytics/scroll-depth-tracking-google-tag-manager/" target="_blank" rel="noopener noreferrer">Scroll Tracking with Google Tag Manager</a></li>
+      <li><a href="https://developers.google.com/analytics/devguides/collection/gtagjs/events" target="_blank" rel="noopener noreferrer">Google Analytics Event Tracking Documentation</a></li>
+    </ul>
+
+    <h2>About This Tool</h2>
+    <p>
+      This Scroll Depth Generator tool is built to empower webmasters, marketers, and developers to easily implement scroll tracking without coding knowledge. It's free, simple, and effective.
+    </p>
+
+    <p>Keep this tool bookmarked and visit often for updates and new features!</p>
+  </section>
+</main>
+
+<script>
+  const thresholdsInput = document.getElementById('thresholdsInput');
+  const eventNameInput = document.getElementById('eventNameInput');
+  const analyticsSelect = document.getElementById('analyticsSelect');
+  const generateBtn = document.getElementById('generateBtn');
+  const outputScript = document.getElementById('outputScript');
+
+  function validateThresholds(str) {
+    if (!str) return [];
+    return str
+      .split(',')
+      .map(s => parseInt(s.trim()))
+      .filter(n => n > 0 && n <= 100);
+  }
+
+  function generateScript(thresholds, eventName, analytics) {
+    // Sanitize eventName for safe usage in JS string literals
+    const safeEventName = eventName.replace(/"/g, '\\"').replace(/'/g, "\\'");
+    const thresholdsArr = JSON.stringify(thresholds);
+
+    if (analytics === 'gtag') {
+      return `// Scroll Depth Tracking Script (Google Analytics gtag.js)
+(function(){
+  const thresholds = ${thresholdsArr};
+  const eventName = "${safeEventName}";
+  let fired = new Set();
+
+  function onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const docHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+    const winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    const scrollPercent = Math.round(((scrollTop + winHeight) / docHeight) * 100);
+
+    thresholds.forEach(t => {
+      if(scrollPercent >= t && !fired.has(t)) {
+        fired.add(t);
+        if (typeof gtag === "function") {
+          gtag('event', eventName, {
+            event_category: 'Scroll Depth',
+            event_label: t + '%',
+            value: t
+          });
+        }
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll);
+})();`;
+    } else if (analytics === 'ga') {
+      return `// Scroll Depth Tracking Script (Google Analytics analytics.js)
+(function(){
+  const thresholds = ${thresholdsArr};
+  const eventName = "${safeEventName}";
+  let fired = new Set();
+
+  function onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const docHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+    const winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    const scrollPercent = Math.round(((scrollTop + winHeight) / docHeight) * 100);
+
+    thresholds.forEach(t => {
+      if(scrollPercent >= t && !fired.has(t)) {
+        fired.add(t);
+        if (typeof ga === "function") {
+          ga('send', 'event', 'Scroll Depth', eventName, t + '%');
+        }
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll);
+})();`;
+    } else {
+      // Console log only
+      return `// Scroll Depth Tracking Script (Console Log Only)
+(function(){
+  const thresholds = ${thresholdsArr};
+  const eventName = "${safeEventName}";
+  let fired = new Set();
+
+  function onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const docHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+    const winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    const scrollPercent = Math.round(((scrollTop + winHeight) / docHeight) * 100);
+
+    thresholds.forEach(t => {
+      if(scrollPercent >= t && !fired.has(t)) {
+        fired.add(t);
+        console.log(eventName + ': ' + t + '% scroll reached.');
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll);
+})();`;
+    }
+  }
+
+  generateBtn.addEventListener('click', () => {
+    const thresholdsRaw = thresholdsInput.value;
+    const eventName = eventNameInput.value.trim() || 'ScrollDepthReached';
+    const analytics = analyticsSelect.value;
+
+    const thresholds = validateThresholds(thresholdsRaw);
+
+    if (thresholds.length === 0) {
+      outputScript.value = '// Please enter valid scroll depth thresholds between 1 and 100, separated by commas.';
+      return;
+    }
+
+    const script = generateScript(thresholds, eventName, analytics);
+    outputScript.value = script;
+  });
+
+  // Generate default script on load
+  window.onload = () => generateBtn.click();
+</script>
+<!-- Footer with Header-Matching Style -->
+<style>
+
+  footer {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+    padding: 30px 5%;
+    text-align: center;
+    border-top: 2px solid #000;
+    margin-top: 50px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer-links a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center footer logo container */
+    margin: 20px 0;
+  }
+
+  .footer-logo img {
+  max-height: 20px;   /* Bigger logo in footer */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  }
+
+  .footer-goal {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .footer-links a {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://us.histream.me/about/index.html">About</a>
+    <a href="https://us.histream.me/privacy-policy/index.html">Privacy Policy</a>
+  </div>
+  <div class="footer-logo">
+    <a href="https://us.histream.me/tools.html">
+      <img src="https://us.histream.me/logos/tools.png" alt="Hi Stream Footer Logo">
+    </a>
+  </div>
+  <div class="footer-goal">
+    <strong>Our Goal:</strong> To build a free streaming platform where everyone can enjoy movies from around the world without any cost or restrictions.
+  </div>
+</footer>
+</body>
+</html>
